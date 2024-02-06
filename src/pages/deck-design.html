@@ -1,0 +1,149 @@
+---
+layout: "base.html"
+description: "Meta description for the page"
+metaTitle: "Title that shows up on google searches"
+tagTitle: "Deck Dolors"
+preloadImg: "/images/cabinets2-1920w.webp"
+preloadCSS: "/css/deck-design.css"
+permalink: "deckdesign/"
+eleventyNavigation:
+  key: Deck Design
+  order: 200
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+<style>
+  #color-buttons {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .red-color-button {
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 62, 62);
+    padding: 1.6rem;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .blue-color-button {
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+
+    background-color: rgb(45, 59, 255);
+    padding: 1.6rem;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .green-color-button {
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: rgb(45, 255, 129);
+    padding: 1.6rem;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  #preview-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+  }
+
+  #preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+<section id="int-hero">
+  <h1 id="home-h">Deck Design</h1>
+  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width:
+  850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <img
+        id="preview-image"
+        src="/assets/images/decks/red_deck.jpg"
+        alt="Preview Image"
+      />
+    </div>
+
+    <div class="cs-right">
+      <span class="cs-topper">Deck Options</span>
+      <h2 class="cs-title">Check Out Our Deck Options</h2>
+      <p class="cs-text">Try it out! Select a color.</p>
+
+      <div class="cs-flex-group">
+        <div id="color-buttons">
+          <div class="red-color-button" onclick="changeImage('red')"></div>
+          <div class="blue-color-button" onclick="changeImage('blue')"></div>
+          <div class="green-color-button" onclick="changeImage('green')"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const previewImage = document.getElementById("preview-image");
+
+      function changeImage(color) {
+        let imageUrl;
+
+        switch (color) {
+          case "red":
+            imageUrl = "/assets/images/decks/red_deck.jpg";
+            break;
+          case "blue":
+            imageUrl = "/assets/images/decks/blue_deck.jpg";
+            break;
+          case "green":
+            imageUrl = "/assets/images/decks/green_deck.jpg";
+            break;
+          default:
+            imageUrl = "default-image.jpg";
+        }
+
+        previewImage.src = imageUrl;
+      }
+    </script>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">
+      Get It Done <br />
+      With Us Today
+    </h2>
+    <p>
+      Transform Your Backyard Today! Build Your Dream Deck Now with a Free
+      Estimate!
+    </p>
+    <a href="/contact.html" class="button-solid">Free Estimate</a>
+  </div>
+  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy',
+  '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
+</section>
