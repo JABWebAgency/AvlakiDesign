@@ -1,7 +1,7 @@
 ---
 layout: "base.html"
-description: "Meta description for the page"
-metaTitle: "Title that shows up on google searches"
+description: "Explore custom deck designs by Decks By Kip. Discover the perfect composite deck for your home and lifestyle."
+metaTitle: "Custom Deck Designs by Decks By Kip"
 tagTitle: "Deck Dolors"
 preloadImg: "/images/cabinets2-1920w.webp"
 preloadCSS: "/css/deck-design.css"
@@ -79,52 +79,46 @@ eleventyNavigation:
 
 <section id="sbs">
   <div class="cs-container">
-    <!-- Left Image Section -->
-    <div class="cs-left">
-      <img
-        id="preview-image"
-        src="/assets/images/decks/red_deck.jpg"
-        alt="Preview Image"
-      />
-    </div>
-
-    <div class="cs-right">
-      <span class="cs-topper">Deck Options</span>
-      <h2 class="cs-title">Check Out Our Deck Options</h2>
-      <p class="cs-text">Try it out! Select a color.</p>
-
-      <div class="cs-flex-group">
-        <div id="color-buttons">
-          <div class="red-color-button" onclick="changeImage('red')"></div>
-          <div class="blue-color-button" onclick="changeImage('blue')"></div>
-          <div class="green-color-button" onclick="changeImage('green')"></div>
+    <section id="services-218">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Deck Design done right</span>
+          <h2 class="cs-title">Check Out Our Designs</h2>
+          <a href="/contact" class="cs-button-solid">Get A Free Estimate</a>
         </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <img
+              src="../assets/images/projects/black_railing_composite.jpg"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            />
+
+            <h3 class="cs-h3">Wooden Deck with Wood Rails</h3>
+          </li>
+
+          <li class="cs-item">
+            <img
+              src="../assets/images/projects/black_railing_composite.jpg"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            />
+            <h3 class="cs-h3">Composite Floor with Wood Rails</h3>
+          </li>
+          <li class="cs-item">
+            <img
+              src="../assets/images/projects/black_railing_composite.jpg"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            />
+            <h3 class="cs-h3">Composite Floor with Aluminum Railing</h3>
+          </li>
+        </ul>
       </div>
-    </div>
-
-    <script>
-      const previewImage = document.getElementById("preview-image");
-
-      function changeImage(color) {
-        let imageUrl;
-
-        switch (color) {
-          case "red":
-            imageUrl = "/assets/images/decks/red_deck.jpg";
-            break;
-          case "blue":
-            imageUrl = "/assets/images/decks/blue_deck.jpg";
-            break;
-          case "green":
-            imageUrl = "/assets/images/decks/green_deck.jpg";
-            break;
-          default:
-            imageUrl = "default-image.jpg";
-        }
-
-        previewImage.src = imageUrl;
-      }
-    </script>
+    </section>
   </div>
 </section>
 
@@ -142,7 +136,7 @@ eleventyNavigation:
       Transform Your Backyard Today! Build Your Dream Deck Now with a Free
       Estimate!
     </p>
-    <a href="/contact.html" class="button-solid">Free Estimate</a>
+    <a href="/contact" class="button-solid">Free Estimate</a>
   </div>
   {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy',
   '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}

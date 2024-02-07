@@ -86,7 +86,7 @@
     /* 60px - 220px */
     margin-bottom: clamp(3.75em, 15.5vw, 13.75em);
     margin: auto;
-    width: 80vw;
+    width: 88vw;
     /* 464px - 562px */
     max-width: clamp(45em, 60vw, 35.125em);
     display: flex;
