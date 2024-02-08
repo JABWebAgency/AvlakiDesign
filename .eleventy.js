@@ -21,7 +21,7 @@ async function imageShortcode(
   // create the metadata for an optimised image
   let metadata = await Image(`${src}`, {
     widths: [200, 400, 850, 1920, 2500],
-    formats: ["webp", "jpeg", "jpg"],
+    formats: ["webp", "jpeg", "jpg", "JPG"],
     urlPath: "/images/",
     outputDir: "./public/images",
     filenameFormat: function (id, src, width, format, options) {
