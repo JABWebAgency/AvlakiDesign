@@ -13,7 +13,7 @@
     --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
   }
   #cs-contact {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     padding: var(--sectionPadding);
   }
   #cs-contact .cs-container {
@@ -30,7 +30,7 @@
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: left;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);
     /* 8px - 12px */
@@ -85,11 +85,11 @@
     height: 4rem;
     margin-top: 0.25rem;
     padding-left: 1.25rem;
-    border: 1px solid #B4B2C7;
+    border: 1px solid #b4b2c7;
     border-radius: 0.5rem;
     /* prevents border & padding from affecting height */
     box-sizing: border-box;
-    transition: border .3s;
+    transition: border 0.3s;
   }
   #cs-contact #cs-form input:hover,
   #cs-contact #cs-form textarea:hover {
@@ -123,7 +123,7 @@
     box-sizing: border-box;
   }
   #cs-contact .cs-button-solid:before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 0%;
@@ -133,7 +133,7 @@
     left: 0;
     z-index: -1;
     border-radius: 0.25rem;
-    transition: width .3s;
+    transition: width 0.3s;
   }
   #cs-contact .cs-button-solid:hover {
     color: var(--bodyTextColorWhite);
@@ -143,12 +143,14 @@
     width: 100%;
   }
   #cs-contact .cs-right-section {
+    border-radius: 1rem;
+    padding-left: 0;
     position: relative;
     height: 20rem;
     /* 24px - 40px top & bottom */
     /* 20px - 40px left & right */
-    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
-    border-radius: 0.5rem;
+    /* padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem); */
+    /* border-radius: 0.5rem; */
     /* cuts off corners on img tag */
     overflow: hidden;
     display: flex;
@@ -177,7 +179,7 @@
   }
   #cs-contact .cs-link:before {
     /* Animated underline */
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     /* current color of the parent */
@@ -187,7 +189,7 @@
     display: block;
     bottom: -0.125rem;
     left: 0;
-    transition: width .3s;
+    transition: width 0.3s;
   }
   #cs-contact .cs-link:hover:before {
     width: 100%;
@@ -207,16 +209,20 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: transform .6s;
+    transition: transform 0.6s;
   }
   #cs-contact .cs-bg-picture:before {
     /* background color overlay */
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
     top: 0;
     left: 0;
     z-index: 1;
@@ -316,6 +322,6 @@
   }
   body.dark-mode #cs-contact .cs-bg-picture img {
     /* lets parent background-color bleed through and darken it */
-    opacity: .5;
+    opacity: 0.5;
   }
 }
