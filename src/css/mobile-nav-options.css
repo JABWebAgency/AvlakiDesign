@@ -27,8 +27,8 @@
     width: auto;
   }
   #navigation .logo img {
-    width: 140px;
-    height: 150px;
+    width: auto;
+    height: 100%;
   }
   #navigation .logo .light {
     display: none;
