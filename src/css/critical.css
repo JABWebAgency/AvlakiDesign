@@ -95,6 +95,19 @@
     flex-wrap: wrap;
     box-sizing: border-box;
   }
+
+  #hero .header-topper {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+
   #hero .cs-topper {
     /* 13px - 16px */
     font-size: clamp(0.8125rem, 1.6vw, 1rem);

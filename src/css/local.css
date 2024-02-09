@@ -18,7 +18,7 @@
   }
   #sbs .cs-left {
     /* scaling the font size with the view width */
-    font-size: min(2.31vw, .7em);
+    font-size: min(2.31vw, 0.7em);
     /* using ems so we can use font size to scale the whole section */
     width: 39.4375em;
     height: 39.75em;
@@ -60,12 +60,25 @@
     margin: auto;
     max-width: 33.875rem;
   }
+
+  #sbs .header-topper {
+    font-size: 1.8rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+
   #sbs .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: left;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 0.25rem;
@@ -97,7 +110,7 @@
   #sbs .cs-flex-group {
     /* 16px - 32px */
     padding: clamp(1rem, 3vw, 2rem);
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     border-radius: 1rem;
     position: relative;
   }
@@ -177,10 +190,10 @@
   }
   body.dark-mode #sbs .cs-job {
     color: var(--bodyTextColorWhite);
-    opacity: .8;
+    opacity: 0.8;
   }
   body.dark-mode #sbs .cs-quote-icon {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 /*-- -------------------------- -->
@@ -203,7 +216,7 @@
   }
   #sbs-r .cs-left {
     /* scaling the font size with the view width */
-    font-size: min(2.31vw, .7em);
+    font-size: min(2.31vw, 0.7em);
     /* using ems so we can use font size to scale the whole section */
     width: 39.4375em;
     height: 39.75em;
@@ -250,7 +263,7 @@
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: left;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 0.25rem;
@@ -282,7 +295,7 @@
   #sbs-r .cs-flex-group {
     /* 16px - 32px */
     padding: clamp(1rem, 3vw, 2rem);
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     border-radius: 1rem;
     position: relative;
   }
@@ -361,10 +374,10 @@
   }
   body.dark-mode #sbs-r .cs-job {
     color: var(--bodyTextColorWhite);
-    opacity: .8;
+    opacity: 0.8;
   }
   body.dark-mode #sbs-r .cs-quote-icon {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 /*-- -------------------------- -->
@@ -390,7 +403,7 @@
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 1rem;
@@ -501,7 +514,7 @@
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 1rem;
@@ -569,7 +582,7 @@
     margin: 0 0 1.25rem;
     padding-bottom: 1.25rem;
     color: var(--bodyTextColor);
-    border-bottom: 1px solid #E8E9EC;
+    border-bottom: 1px solid #e8e9ec;
   }
   #reviews .cs-reviewer {
     font-size: 1rem;
@@ -629,13 +642,13 @@
     padding: 3.125rem 0;
   }
   #cta:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: 0.7;
     top: 0;
     left: 0;
     z-index: -1;
@@ -694,7 +707,7 @@
     display: none;
   }
   #cta:after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 69.25rem;
@@ -719,13 +732,13 @@
     transform: translateX(-50%);
   }
   #cta picture:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: 0.7;
     top: 0;
     left: 0;
     z-index: 1;
