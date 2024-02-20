@@ -11,140 +11,125 @@ eleventyNavigation:
   order: 100
 ---
 
-<!-- Enter html code below -->
+<!-- Usage Notes:
+We made this stitch to overlap the section below it, so if there's a patterned texture or image background on the next section below, it will overlap on top of it. Other Stitches like this would have a white gap between the cards an the next section. In order to make Stitches like this work, we need to add a padding top on the section below it to counteract the overlap. 
+
+ON MOBILE (360px): add padding-top: (654/16rem); using LESS, or padding-top: calc(654 / 16 * 1rem); if you're using SCSS, or padding-top: 40.875rem; if you're just using vanilla CSS.
+
+ON TABLET (768px): Reset to padding-top: (230/16rem); using LESS, padding-top: calc(230 / 16 * 1rem) for SCSS or padding-top: 15.625rem; for CSS
+
+Doing this will complete the overlapping "breaking the container" look.
+-->
+
 <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-1618">
+<section id="hero-1249">
   <div class="cs-container">
     <div class="cs-content">
-      <span class="cs-topper">
-        <svg
-          class="cs-chevron"
-          width="49"
-          height="15"
-          viewBox="0 0 49 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g opacity="0.7">
-            <path
-              d="M0.621948 7.49889L6.40262 15L10.343 15L4.56231 7.49889L10.343 -4.2492e-07L6.40262 -2.52681e-07L0.621948 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-            <path
-              d="M7.62195 7.49889L13.4026 15L17.343 15L11.5623 7.49889L17.343 -4.2492e-07L13.4026 -2.52681e-07L7.62195 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-            <path
-              d="M14.7789 7.49889L20.5596 15L24.5 15L18.7193 7.49889L24.5 -4.2492e-07L20.5596 -2.52681e-07L14.7789 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-            <path
-              d="M22.7789 7.49889L28.5596 15L32.5 15L26.7193 7.49889L32.5 -4.2492e-07L28.5596 -2.52681e-07L22.7789 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-            <path
-              d="M30.7789 7.49889L36.5596 15L40.5 15L34.7193 7.49889L40.5 -4.2492e-07L36.5596 -2.52681e-07L30.7789 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-            <path
-              d="M38.7789 7.49889L44.5596 15L48.5 15L42.7193 7.49889L48.5 -4.2492e-07L44.5596 -2.52681e-07L38.7789 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-          </g>
-        </svg>
-        Plan for A secure future
-        <svg
-          class="cs-chevron"
-          width="49"
-          height="15"
-          viewBox="0 0 49 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g opacity="0.7">
-            <path
-              d="M48.3781 7.49889L42.5974 15L38.657 15L44.4377 7.49889L38.657 -4.2492e-07L42.5974 -2.52681e-07L48.3781 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-            <path
-              d="M41.3781 7.49889L35.5974 15L31.657 15L37.4377 7.49889L31.657 -4.2492e-07L35.5974 -2.52681e-07L41.3781 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-            <path
-              d="M34.2211 7.49889L28.4404 15L24.5 15L30.2807 7.49889L24.5 -4.2492e-07L28.4404 -2.52681e-07L34.2211 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-            <path
-              d="M26.2211 7.49889L20.4404 15L16.5 15L22.2807 7.49889L16.5 -4.2492e-07L20.4404 -2.52681e-07L26.2211 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-            <path
-              d="M18.2211 7.49889L12.4404 15L8.50004 15L14.2807 7.49889L8.50004 -4.2492e-07L12.4404 -2.52681e-07L18.2211 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-            <path
-              d="M10.2211 7.49889L4.4404 15L0.500041 15L6.28071 7.49889L0.500042 -4.2492e-07L4.4404 -2.52681e-07L10.2211 7.49889Z"
-              fill="var(--chevronColor)"
-            />
-          </g>
-        </svg>
-      </span>
       <h1 class="cs-title">
-        Elevate Your Online Presence With Our Leading-Edge Solutions
+        Roofing and Home Renovation Services In Northern Kentucky
       </h1>
-      <a href="" class="cs-button-solid">Request Consultation</a>
+      <p class="cs-text">
+        Transforming spaces, enhancing lives. Let us help you create the perfect
+        environment for your needs.
+      </p>
+      <a href="" class="cs-button-solid">Get A Quote</a>
     </div>
     <ul class="cs-card-group">
       <li class="cs-item">
-        <img
-          class="cs-icon"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg"
-          alt="icon"
-          width="48"
-          height="48"
-        />
-        <h3 class="cs-h3">100% Success Rate</h3>
-        <p class="cs-item-text">
-          We provide some of the finest quality, most responsive and reliable,
-          and cost effective services and solutions.
-        </p>
+        <a href="" class="cs-link">
+          <h3 class="cs-h3">Sustainable System</h3>
+          <p class="cs-item-text">
+            We’ve helped thousands of organizations transform to become relevant
+            of helped thousands.
+          </p>
+        </a>
+        <picture class="cs-item-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure1.jpeg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure1.jpeg
+            "
+          />
+          <img
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure1.jpeg"
+            alt="construction"
+            width="413"
+            height="374"
+            aria-hidden="true"
+          />
+        </picture>
       </li>
       <li class="cs-item">
-        <img
-          class="cs-icon"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/speedometer.svg"
-          alt="icon"
-          width="48"
-          height="48"
-        />
-        <h3 class="cs-h3">Expert SEO Services</h3>
-        <p class="cs-item-text">
-          We offer solutions to help your website reach more users. Watch as
-          your website climbs to the top of google search.
-        </p>
+        <a href="" class="cs-link">
+          <h3 class="cs-h3">Honest Services</h3>
+          <p class="cs-item-text">
+            We’ve helped thousands of organizations transform to become relevant
+            of helped thousands.
+          </p>
+        </a>
+        <picture class="cs-item-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure2.jpg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure2.jpg
+            "
+          />
+          <img
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure2.jpg"
+            alt="construction"
+            width="413"
+            height="374"
+            aria-hidden="true"
+          />
+        </picture>
       </li>
       <li class="cs-item">
-        <img
-          class="cs-icon"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg"
-          alt="icon"
-          width="48"
-          height="48"
-        />
-        <h3 class="cs-h3">Custom Code</h3>
-        <p class="cs-item-text">
-          Websites built with code, rank higher on google search. Page builders
-          lack in performance, which can affect who sees your website.
-        </p>
+        <a href="" class="cs-link">
+          <h3 class="cs-h3">Remodeling Expert</h3>
+          <p class="cs-item-text">
+            We’ve helped thousands of organizations transform to become relevant
+            of helped thousands.
+          </p>
+        </a>
+        <picture class="cs-item-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure3.jpg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure3.jpg
+            "
+          />
+          <img
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure3.jpg"
+            alt="construction"
+            width="413"
+            height="374"
+            aria-hidden="true"
+          />
+        </picture>
       </li>
     </ul>
   </div>
@@ -154,286 +139,748 @@ eleventyNavigation:
     <source
       media="(max-width: 600px)"
       srcset="
-        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7-m.jpeg
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg
       "
     />
     <source
       media="(min-width: 601px)"
       srcset="
-        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg
       "
     />
     <img
       decoding="async"
-      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg"
-      alt="meeting"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg"
+      alt="construction"
       width="2250"
       height="1500"
       aria-hidden="true"
     />
   </picture>
 </section>
-
 <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!--                   Gallery                    -->
 <!-- ============================================ -->
 
-<section id="RPsbs-1008">
+<section id="gallery-406">
   <div class="cs-container">
-    <div class="cs-image-group">
-      <picture class="cs-picture">
-        <!--Desktop-->
-        <source
-          media="(min-width: 1024px)"
-          srcset="
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/beef2.jpg
-          "
-        />
-        <!--Tablet-->
-        <source
-          media="(min-width: 601px)"
-          srcset="
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/beef2-tablet.jpg
-          "
-        />
-        <!--Mobile-->
+    <div class="cs-content">
+      <span class="cs-topper">Our Portfolio</span>
+      <h2 class="cs-title">Some Work from Our Memorable Gallery</h2>
+      <div class="cs-button-group">
+        <button class="cs-button" data-filter="one">All</button>
+        <button class="cs-button" data-filter="two">Kitchen</button>
+        <button class="cs-button" data-filter="three">Office Cleaning</button>
+        <button class="cs-button" data-filter="four">Plumbing</button>
+        <button class="cs-button" data-filter="five">Window Cleaning</button>
+      </div>
+    </div>
+    <!--Gallery 1-->
+    <div class="cs-gallery" data-category="one">
+      <!--Picture 1-->
+      <picture class="cs-image">
         <source
           media="(max-width: 600px)"
           srcset="
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/beef2-m.jpg
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg
           "
         />
         <img
           loading="lazy"
           decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/beef2.jpg"
-          alt="beef"
-          width="522"
-          height="461"
-          aria-hidden="true"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
         />
       </picture>
-      <img
-        class="cs-seal"
-        loading="lazy"
-        decoding="async"
-        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/seal2.svg"
-        alt="seal"
-        width="190"
-        height="182"
-      />
+      <!--Picture 2-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 3-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 4-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 5-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 6-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
     </div>
-    <div class="cs-content">
-      <span class="cs-topper">Our Story</span>
-      <h2 class="cs-title">Who We Are</h2>
-      <p class="cs-text">
-        Hello! I am a seasoned software engineer with a rich experience spanning
-        six years in the dynamic realm of web development. My passion lies in
-        crafting digital experiences that transcend expectations and drive
-        businesses toward success.
-      </p>
-      <p>
-        Beyond coding, my commitment extends to understanding your business
-        goals. I am dedicated to translating your vision into a digital reality
-        that resonates with your audience and propels your business forward.
-      </p>
-      <a href="/contact" class="cs-button-solid"> Contact Us </a>
+    <!--Gallery 2-->
+    <div class="cs-gallery cs-hidden" data-category="two">
+      <!--Picture 1-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 2-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 3-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 4-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 5-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 6-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+    </div>
+    <!--Gallery 3-->
+    <div class="cs-gallery cs-hidden" data-category="three">
+      <!--Picture 1-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 2-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 3-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 4-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 5-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 6-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+    </div>
+    <!--Gallery 4-->
+    <div class="cs-gallery cs-hidden" data-category="four">
+      <!--Picture 1-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 2-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 3-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 4-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 5-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 6-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+    </div>
+    <!--Gallery 5-->
+    <div class="cs-gallery cs-hidden" data-category="five">
+      <!--Picture 1-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 2-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 3-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 4-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 5-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
+      <!--Picture 6-->
+      <picture class="cs-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+      </picture>
     </div>
   </div>
-</section>
-
-<!-- ============================================ -->
-<!--                Why Choose Us                 -->
-<!-- ============================================ -->
-
-<section id="why-choose-1634">
-  <div class="cs-container">
-    <div class="cs-content">
-      <div class="cs-flex">
-        <span class="cs-topper">Why Choose Us</span>
-        <h2 class="cs-title">Grow Your Business with Our New Bold Agency</h2>
-      </div>
-      <p class="cs-text">
-        Established in January 2024, our Web Design Agency is dedicated to
-        empowering small businesses by creating impactful online presences
-        without the burden of exorbitant costs. With a commitment to excellence,
-        I tirelessly work day and night to elevate your digital footprint. Our
-        mission is to enable you to focus on your core competencies, leaving the
-        intricacies of online representation to us. Choose our agency for a
-        partnership built on expertise, dedication, and a shared vision for your
-        business success.
-      </p>
-    </div>
-    <div class="cs-wrapper">
-      <ul class="cs-card-group">
-        <li class="cs-item">
-          <picture class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chat-gold.svg"
-              loading="lazy"
-              decoding="async"
-              alt="icon"
-              width="32"
-              height="32"
-              aria-hidden="true"
-            />
-          </picture>
-          <!-- Text Grouped For Flexbox-->
-          <div class="cs-text-group">
-            <h3 class="cs-h3">Web Design</h3>
-            <p class="cs-item-text">
-              With each website we code, we provide distinct layouts designed to
-              set your business apart from the competition, ensuring a unique
-              and impactful online presence.
-            </p>
-          </div>
-        </li>
-        <li class="cs-item">
-          <picture class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/call-gold.svg"
-              loading="lazy"
-              decoding="async"
-              alt="icon"
-              width="32"
-              height="32"
-              aria-hidden="true"
-            />
-          </picture>
-          <!-- Text Grouped For Flexbox-->
-          <div class="cs-text-group">
-            <h3 class="cs-h3">Enhanced SEO Services</h3>
-            <p class="cs-item-text">
-              We provide supplementary services to enhance your website's SEO,
-              optimizing it for a broader audience visibility on Google search.
-            </p>
-          </div>
-        </li>
-        <li class="cs-item">
-          <picture class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/money-gold.svg"
-              loading="lazy"
-              decoding="async"
-              alt="icon"
-              width="32"
-              height="32"
-              aria-hidden="true"
-            />
-          </picture>
-          <!-- Text Grouped For Flexbox-->
-          <div class="cs-text-group">
-            <h3 class="cs-h3">Custom Code</h3>
-            <p class="cs-item-text">
-              Embrace the power of customization with our websites, meticulously
-              crafted in HTML/CSS. Our approach allows us to tailor every aspect
-              to meet your business needs, while also aligning seamlessly with
-              Google's algorithms, contributing to higher page rankings.
-            </p>
-          </div>
-        </li>
-      </ul>
-      <div class="cs-image-group">
-        <div class="cs-picture-wrapper">
-          <picture class="cs-picture cs-picture1">
-            <!--Mobile Image-->
-            <source
-              media="(max-width: 600px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg
-              "
-            />
-            <!--Tablet and above Image-->
-            <source
-              media="(min-width: 601px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg
-              "
-            />
-            <img
-              loading="lazy"
-              decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg"
-              alt="meeting"
-              width="434"
-              height="414"
-            />
-          </picture>
-          <div class="cs-box">
-            <span class="cs-header">JAB Web Agency</span>
-            <span class="cs-desc"
-              >Focused on high performing customized websites
-            </span>
-          </div>
-        </div>
-        <picture class="cs-picture cs-picture2">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="
-              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg
-            "
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="
-              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg
-            "
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg"
-            alt="on computer"
-            width="197"
-            height="197"
-          />
-        </picture>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!--                     CTA                      -->
-<!-- ============================================ -->
-
-<section id="cta-51">
-  <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">Contact Us</span>
-      <h2 class="cs-title">Get It Done With Us Today</h2>
-      <p class="cs-text">
-        Schedule a free consultation to discuss how we can help your business
-        succeed online.
-      </p>
-      <a href="/contact" class="cs-button-solid">Contact Us</a>
-    </div>
-  </div>
-  <!-- Background Image-->
-  <picture class="cs-picture">
-    <source
-      media="(max-width: 600px)"
-      srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets-m.jpg"
-    />
-    <source
-      media="(min-width: 601px)"
-      srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg"
-    />
-    <img
-      loading="lazy"
-      decoding="async"
-      src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg"
-      alt="cabinets"
-      width="1920"
-      height="1280"
-      aria-hidden="true"
-    />
-  </picture>
 </section>
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -447,4 +894,45 @@ eleventyNavigation:
       }
     });
   }
+
+  class CS_GalleryFilter {
+    filtersSelector = ".cs-button";
+    galleriesSelector = ".cs-gallery";
+    activeClass = "cs-active";
+    hiddenClass = "cs-hidden";
+
+    constructor() {
+      this.$galleries = document.querySelectorAll(this.galleriesSelector);
+      const $filters = document.querySelectorAll(this.filtersSelector);
+
+      this.onClick($filters[0]);
+
+      for (const $filter of $filters) {
+        $filter.addEventListener("click", () => this.onClick($filter));
+      }
+    }
+
+    onClick($filter) {
+      this.filter($filter.dataset.filter);
+
+      const { activeClass } = this;
+
+      this.$activeFilter?.classList.remove(activeClass);
+      $filter.classList.add(activeClass);
+
+      this.$activeFilter = $filter;
+    }
+
+    filter(filter) {
+      const showAll = filter == "all";
+      const { hiddenClass } = this;
+
+      for (const $gallery of this.$galleries) {
+        const show = showAll || $gallery.dataset.category == filter;
+        $gallery.classList.toggle(hiddenClass, !show);
+      }
+    }
+  }
+
+  new CS_GalleryFilter();
 </script>
