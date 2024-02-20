@@ -1,83 +1,150 @@
 ---
-layout: 'base.html'
+layout: "base.html"
 description: "Learn more about Decks By Kip and our commitment to crafting high-quality composite decks for your home."
-metaTitle: 'About Your Decks By Kip'
-tagTitle: 'About'
-preloadImg: '/images/cabinets2-1920w.webp'
-preloadCSS: '/css/about.css'
-permalink: 'about/'
+metaTitle: "About Your Decks By Kip"
+tagTitle: "About"
+preloadImg: "/images/cabinets2-1920w.webp"
+preloadCSS: "/css/about.css"
+permalink: "about/"
 eleventyNavigation:
-    key: About Us
-    order: 200
+  key: About Us
+  order: 200
 ---
 
-<!-- Enter html code below -->
-
 <!-- ============================================ -->
-<!--                    LANDING                   -->
+<!--                   Banner                     -->
 <!-- ============================================ -->
 
-<section id="int-hero">
-  <h1 id="home-h">About Us</h1>
-  {% image './src/images/decksfromipad/IMG_0533.JPG', 'deck', 'cs-picture', 'lazy', '(max-width: 850px) 250px, 3920px'%}
-</section>
+<div id="banner-1014">
+  <div class="cs-container">
+    <picture class="cs-picture">
+      <img
+        class="cs-icon"
+        decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffancy-divider.svg"
+        alt="divider"
+        width="181"
+        height="36"
+        aria-hidden="true"
+      />
+    </picture>
+    <span class="cs-int-title">About Our Agency</span>
+    <p class="cs-text" style="color: white">
+      I started this company in January of 2024 with the goal to help small
+      businesses succeed online.
+    </p>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg
+      "
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg
+      "
+    />
+    <img
+      decoding="async"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg"
+      alt="breakfast"
+      width="1920"
+      height="1000"
+    />
+  </picture>
+</div>
 
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
 
-<section id="sbs">
+<section id="sbs-1014">
   <div class="cs-container">
     <!-- Left Image Section -->
-    <div class="cs-left">
-      {% image './src/images/decksfromipad/IMG_0419.JPG', 'house', 'cs-picture
-      cs-picture1', 'lazy'%} {% image './src/images/decksfromipad/IMG_0485.JPG',
-      'house', 'cs-picture cs-picture2', 'lazy'%}
+    <div class="cs-image-group">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast1.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast1.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast1.jpg"
+          alt="breakfast"
+          width="522"
+          height="581"
+          aria-hidden="true"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast2.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast2.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast2.jpg"
+          alt="breakfast"
+          width="414"
+          height="400"
+          aria-hidden="true"
+        />
+      </picture>
     </div>
     <!-- Right Content Section-->
-    <div class="cs-right">
+    <div class="cs-content">
       <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About Decks By Kip</h2>
+      <h2 class="cs-title">About JAB Web Agency</h2>
       <p class="cs-text">
-        At Decks by Kip, we bring three decades of unparalleled expertise to the
-        world of deck construction. Established in 1990, our family-owned
-        business has been transforming outdoor spaces with exceptional
-        craftsmanship and unwavering dedication. We take pride in our rich
-        history of creating beautiful, functional decks that stand the test of
-        time.            </p>
+        Hello! I am a seasoned software engineer with a rich experience spanning
+        six years in the dynamic realm of web development. My passion lies in
+        crafting digital experiences that transcend expectations and drive
+        businesses toward success.
+      </p>
       <p class="cs-text">
-        As industry pioneers, we've evolved with the latest trends and
-        technologies, ensuring that each deck we build is a masterpiece of
-        design and durability. Our commitment to excellence extends from the
-        initial concept to the final hammering of the last nail, guaranteeing a
-        seamless and stress-free experience for our clients.
-      </p>            </p>
-      <div class="cs-flex-group">
-        <p class="cs-flex-p">
-          With 30 years of expertise, Decks by Kip turns your dream deck into
-          reality. Join satisfied clients and experience our passion for outdoor
-          excellence.                </p>
-        <span class="cs-name">Kip Mueller</span>
-        <span class="cs-job">CEO-Founder</span>
-        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+        Beyond coding, my commitment extends to understanding your business
+        goals. I am dedicated to translating your vision into a digital reality
+        that resonates with your audience and propels your business forward.
+      </p>
+      <div class="cs-quote">
+        <span class="cs-quote-text">
+          Performance drives everything. A beautiful website is nothing without
+          core fundamentals.
+        </span>
+        <span class="cs-name">Jacob Bennett</span>
+        <span class="cs-job">Owner</span>
+        <img
+          class="cs-quote-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+          alt="gavel"
+          width="136"
+          height="77"
+        />
       </div>
-      <a href="/contact" target=”_blank” class="button-solid">Get A FREE ESTIMATE</a>
     </div>
   </div>
-</section>
-
-<!-- ============================================ -->
-<!--             Final Call to Action             -->
-<!-- ============================================ -->
-
-<section id="cta">
-  <div class="container">
-    <h2 class="title">Get It Done <br> With Us Today</h2>
-    <p>
-      Transform Your Backyard Today! Build Your Dream Deck Now with a Free
-      Estimate!        </p>
-    <a href="/contact" class="button-solid">Free Estimate</a>
-  </div>
-  {% image './src/images/decksfromipad/IMG_0408.JPG', 'deck', 'cs-picture
-  cs-picture1', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
 </section>
