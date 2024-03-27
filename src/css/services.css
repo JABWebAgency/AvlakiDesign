@@ -383,13 +383,6 @@
   }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta:after {
-    display: none;
-  }
-}
-
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   #services-218 {

@@ -45,7 +45,7 @@
     text-align: left;
   }
   #reviews .review .star-group {
-    border-top: 1px solid #E7E7E7;
+    border-top: 1px solid #e7e7e7;
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,7 @@
     margin-top: auto;
   }
   #reviews .review .star-group .name {
-    color: #1A1A1A;
+    color: #1a1a1a;
     line-height: 1.5rem;
     text-align: left;
     font-weight: bold;
@@ -94,19 +94,7 @@
     margin-bottom: 9.375rem;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #reviews .review {
-    background: var(--medium);
-  }
-  body.dark-mode #reviews .review .name {
-    color: #fff;
-  }
-  body.dark-mode #reviews .review .desc {
-    color: #fff;
-    opacity: .7;
-  }
-}
+
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
@@ -117,13 +105,13 @@
     padding: 3.125rem 0;
   }
   #cta:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: 0.7;
     top: 0;
     left: 0;
     z-index: -1;
@@ -182,7 +170,7 @@
     display: none;
   }
   #cta:after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 69.25rem;
@@ -207,21 +195,15 @@
     transform: translateX(-50%);
   }
   #cta picture:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: 0.7;
     top: 0;
     left: 0;
     z-index: 1;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta:after {
-    display: none;
   }
 }
