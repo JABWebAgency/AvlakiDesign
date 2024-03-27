@@ -2,8 +2,8 @@
 layout: "base.html"
 description: "Transform your home with high-quality composite decks. Our expert deck building services create lasting and beautiful outdoor spaces for your enjoyment."
 metaTitle: "Your Expert Composite Deck Builders"
-tagTitle: "Roofing Services "
-preloadImg: "/images/landing-1920w.webp"
+tagTitle: "Roofing Services"
+preloadImg: "/images/blue_house.jpeg"
 preloadCSS: "/css/local.css"
 permalink: "/"
 eleventyNavigation:
@@ -149,7 +149,7 @@ Doing this will complete the overlapping "breaking the container" look.
 <!--            Side By Side Reverse              -->
 <!-- ============================================ -->
 
-<section id="sbsr-1599" style="margin-top: 10rem">
+<section id="sbsr-1599">
   <div class="cs-container">
     <div class="cs-content">
       <span class="cs-topper">Falcon Restoration</span>
@@ -504,7 +504,8 @@ Doing this will complete the overlapping "breaking the container" look.
     constructor() {
       this.$galleries = document.querySelectorAll(this.galleriesSelector);
       const $filters = document.querySelectorAll(this.filtersSelector);
-
+      console.log($filters);
+      console.log(this.filtersSelector);
       this.onClick($filters[0]);
 
       for (const $filter of $filters) {

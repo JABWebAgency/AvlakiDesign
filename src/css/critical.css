@@ -553,7 +553,8 @@
   }
   #hero-1249 .cs-title {
     /* 39px - 61px */
-    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    padding-top: 3rem;
+    font-size: clamp(1.4375rem, 6.4vw, 3.8125rem);
     font-weight: 700;
     line-height: 1.2em;
     text-align: inherit;
@@ -2736,6 +2737,7 @@ html {
 @media only screen and (min-width: 0rem) {
   #sbsr-1599 {
     padding: var(--sectionPadding);
+    margin-top: 35rem;
   }
   #sbsr-1599 .cs-container {
     width: 100%;
@@ -2867,6 +2869,9 @@ html {
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  #sbsr-1599 {
+    margin-top: 10rem;
+  }
   #sbsr-1599 .cs-container {
     max-width: 80rem;
     flex-direction: row;
@@ -2888,6 +2893,12 @@ html {
     min-height: clamp(33.125rem, 45vw, 41.25rem);
     height: 100%;
     max-height: 100%;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  #sbsr-1599 {
+    margin-top: 0rem;
   }
 }
 
