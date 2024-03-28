@@ -871,7 +871,7 @@ DELETE!!!
   #hero-1116 .cs-image-group {
     margin: 0;
     /* 48px - 160px */
-    left: calc(clamp(2rem, 10vw, 10rem) * -1);
+    left: calc(clamp(2rem, -5vw, 10rem) * -1);
     z-index: 10;
   }
   #hero-1116 .cs-floater {
