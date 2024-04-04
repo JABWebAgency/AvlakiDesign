@@ -5,6 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #banner-1014 {
+    margin-top: -5rem;
     padding: 0 1rem;
     /* 160px - 245px */
     padding-top: clamp(14rem, 25vw, 15.3125rem);
@@ -67,6 +68,7 @@
     flex: none;
   }
   #banner-1014 .cs-int-title {
+    margin-top: -1rem;
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 6.5vw, 3.8125rem);
     font-weight: 900;
@@ -122,6 +124,10 @@
     background-color: #000;
     position: relative;
     z-index: 1;
+  }
+
+  #banner-1014 .cs-int-title {
+    margin-top: 0rem;
   }
 }
 
