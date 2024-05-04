@@ -8,7 +8,7 @@ preloadCSS: "/css/contact.css"
 permalink: "contact/"
 eleventyNavigation:
   key: Contact
-  order: 400
+  order: 500
 ---
 
 <!-- ============================================ -->
@@ -150,7 +150,7 @@ eleventyNavigation:
 <!--          Google Map Iframe Embed             -->
 <!-- ============================================ -->
 
-<section id="map-1403">
+<section id="map-1403" class="map-container">
   <iframe
     src="https://www.google.com/maps/d/u/1/embed?mid=1bWWFTaiMCtNE-gkHRzw80qcbHy7BtDY&ehbc=2E312F&noprof=1"
     width="640"
@@ -239,3 +239,21 @@ eleventyNavigation:
     </ul>
   </div>
 </section>
+
+<script>
+  $(".map-container")
+    .click(function () {
+      $(this).find("iframe").addClass("clicked");
+    })
+    .mouseleave(function () {
+      $(this).find("iframe").removeClass("clicked");
+    });
+</script>
+<style>
+  .map-container iframe {
+    pointer-events: none;
+  }
+  .map-container iframe.clicked {
+    pointer-events: auto;
+  }
+</style>
