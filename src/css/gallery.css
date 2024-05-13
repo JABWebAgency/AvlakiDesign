@@ -692,3 +692,144 @@
     width: 100%;
   }
 }
+
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #gallery-570 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #gallery-570 .cs-picture {
+    width: 50%;
+    height: auto;
+    /* makes it square */
+    aspect-ratio: 1;
+    display: block;
+    position: relative;
+  }
+  #gallery-570 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Tablet - 650px */
+@media only screen and (min-width: 40.625rem) {
+  #gallery-570 {
+    flex-direction: row;
+  }
+  #gallery-570 .cs-picture {
+    width: 20%;
+  }
+}
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  /* Style the modal (popup style) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Sit on top */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 90%;
+    text-align: center;
+  }
+}
+
+/* Tablet - 650px */
+@media only screen and (min-width: 40.625rem) {
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  /* Style the modal (popup style) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Sit on top */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    max-height: 90%;
+    text-align: center;
+  }
+}
+/* Large Desktop - 1500px */
+@media only screen and (min-width: 93.75rem) {
+  /* Style the modal (popup style) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Sit on top */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    max-height: 90%;
+    text-align: center;
+  }
+}
+
+/* Style the image gallery */
+.gallery img {
+  width: 100px; /* Smaller thumbnail */
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s; /* Smooth transform */
+}
+
+.gallery img:hover {
+  transform: scale(1.1); /* Slightly enlarge images on hover */
+}
+
+/* Style the modal (popup style) */
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+
+/* Caption of Modal Content */
+#caption {
+  color: #ccc;
+  padding: 10px 0;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
