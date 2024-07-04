@@ -46,6 +46,7 @@
     margin: 0 0 1rem 0;
     color: var(--headerColor);
     position: relative;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   }
   #meet-team-858 .cs-button-solid {
     font-size: 1rem;

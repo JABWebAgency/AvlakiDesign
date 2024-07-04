@@ -15,7 +15,7 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
-    background: linear-gradient(177deg, #ff000e45 0%, #ffffff 50%);
+    background: linear-gradient(177deg, #ff000e 0%, #ffffff 70%);
   }
 }
 
@@ -33,9 +33,10 @@
   font-size: clamp(2.4375rem, 5vw, 3.8125rem);
   max-width: none;
   margin-bottom: 1.25rem;
-  /* color: white; */
+  color: white;
   width: 1000px;
   font-weight: 500;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #hero-1956 .cs-container {
@@ -132,6 +133,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 #hero-1956 .cs-item-flex {
   width: 100%;
@@ -334,8 +336,9 @@
     box-sizing: border-box;
     padding: 0.75rem 1rem;
     /* maybe need to fix? */
-    background-color: transparent;
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    /* background-color: transparent; */
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 10000;
   }
@@ -397,7 +400,7 @@
     width: clamp(2.75rem, 6vw, 3rem);
     height: clamp(2.75rem, 6vw, 3rem);
     margin: 0 0 0 auto;
-    background-color: transparent;
+    background-color: white;
     border: none;
     border-radius: 0.25rem;
     display: flex;
@@ -739,10 +742,10 @@
     box-sizing: border-box;
     padding: 0 1rem;
     /* fix this? */
-    background-color: transparent;
+    /* background-color: transparent; */
     color: white;
-    /* background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 10000;
   }
@@ -1621,4 +1624,29 @@
 
 #cs-navigation {
   position: absolute;
+}
+
+.circle {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  width: 500px; /* Adjust the size as needed */
+  height: 500px; /* Adjust the size as needed */
+  background-color: rgb(255 0 0 / 15%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(50px); /* Adjust the blur effect as needed */
+  z-index: 0;
+}
+.circle2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 500px; /* Adjust the size as needed */
+  height: 500px; /* Adjust the size as needed */
+  background-color: rgb(255 0 0 / 15%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(50px); /* Adjust the blur effect as needed */
+  z-index: 0;
 }
