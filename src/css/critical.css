@@ -10,7 +10,7 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
-    background: linear-gradient(177deg, #ff000e 0%, #ffffff 70%);
+    background: linear-gradient(177deg, #a00810 0%, #ffffff 70%);
     margin-top: 2rem;
   }
 }
@@ -433,8 +433,6 @@
   #hero-1956 .cs-item2 {
     grid-column: span 6;
   }
-
-
 }
 
 /* Large Desktop 1200px */
@@ -2008,17 +2006,23 @@
     content: "";
     width: 8.25rem;
     height: 68.75rem;
-    background: -moz-linear-gradient(top,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0.45) 100%);
+    background: -moz-linear-gradient(
+      top,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.45) 100%
+    );
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0.45) 100%);
+    background: -webkit-linear-gradient(
+      top,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.45) 100%
+    );
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0.45) 100%);
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.45) 100%
+    );
     opacity: 0.08;
     transform: rotate(-25deg);
     position: absolute;
@@ -2036,17 +2040,23 @@
     content: "";
     width: 8.25rem;
     height: 75rem;
-    background: -moz-linear-gradient(top,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0.45) 100%);
+    background: -moz-linear-gradient(
+      top,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.45) 100%
+    );
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0.45) 100%);
+    background: -webkit-linear-gradient(
+      top,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.45) 100%
+    );
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0.45) 100%);
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.45) 100%
+    );
     opacity: 0.08;
     transform: rotate(-25deg);
     position: absolute;
@@ -2399,7 +2409,6 @@
     gap: clamp(0.5rem, 2vw, 1.25rem);
   }
 }
-
 
 .footer-services .footer-service-li {
   color: var(--bodyTextColorWhite);

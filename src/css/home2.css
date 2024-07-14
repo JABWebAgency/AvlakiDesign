@@ -774,6 +774,24 @@
     overflow: hidden;
     z-index: 1;
   }
+
+  #sbs-1357 .image {
+    position: absolute;
+    height: 250px;
+    opacity: 100%;
+    right: 50px;
+    display: none;
+  }
+  #sbs-1357 .image2 {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    opacity: 100%;
+    /* right: 50px; */
+    left: 0;
+    bottom: 0px;
+    display: none;
+  }
   #sbs-1357 .cs-container {
     width: 100%;
     /* changes to 1280px at tablet */
@@ -939,9 +957,45 @@
     width: 50%;
     max-width: 19.0625rem;
   }
+  #sbs-1357 .image {
+    position: absolute;
+    height: 250px;
+    opacity: 100%;
+    right: 50px;
+    display: none;
+  }
+  #sbs-1357 .image2 {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    opacity: 70%;
+    /* right: 50px; */
+    left: 0;
+    bottom: 0px;
+    display: none;
+  }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  #sbs-1357 .image {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    opacity: 100%;
+    right: 50px;
+    top: 50px;
+    display: block;
+  }
+  #sbs-1357 .image2 {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    opacity: 100%;
+    /* right: 50px; */
+    left: 0;
+    bottom: 0px;
+    display: block;
+  }
   #sbs-1357 .cs-container {
     max-width: 80rem;
     flex-wrap: nowrap;

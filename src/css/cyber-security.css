@@ -4,6 +4,9 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  .additional-effects {
+    display: none;
+  }
   #banner-1402 {
     padding: var(--sectionPadding);
     /* 190px - 268px */
@@ -127,6 +130,13 @@
 }
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  .additional-effects {
+    position: absolute;
+    opacity: 30%;
+    transform: rotateY(168deg);
+    height: 200px;
+    display: block;
+  }
   #banner-1402 .cs-background:before {
     width: 50%;
     height: 100%;
@@ -532,11 +542,17 @@
 /*-- -------------------------- -->
 <---         Services           -->
 <--- -------------------------- -*/
-
+.additional-effects {
+  display: block;
+}
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #services-1131 {
     padding: var(--sectionPadding);
+  }
+
+  .additional-effects {
+    display: none;
   }
   #services-1131 .cs-container {
     width: 100%;
