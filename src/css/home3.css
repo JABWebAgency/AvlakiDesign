@@ -26,11 +26,11 @@
   }
   #hero-996 .cs-content {
     width: 100%;
-    max-width: 59.6875rem;
+    /* max-width: 70rem; */
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     box-sizing: border-box;
   }
   #hero-996 .cs-topper {
@@ -67,7 +67,7 @@
     font-size: clamp(2.4375rem, 6.4vw, 5rem);
     font-weight: 900;
     line-height: 1.2em;
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 20ch;
     margin: 0 0 2rem 0;
@@ -82,9 +82,9 @@
     /* 16px - 20px */
     font-size: clamp(1rem, 1.95vw, 1.25rem);
     line-height: 1.5em;
-    text-align: left;
+    text-align: center;
     width: 100%;
-    max-width: 39.375rem;
+    max-width: 50rem;
     margin: 0 0 2rem 0;
     color: black;
   }
@@ -298,7 +298,7 @@
     /* Black Color Overlay */
     content: "";
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background: linear-gradient(
       41deg,
       rgba(255, 255, 255, 0.9) 30%,
@@ -307,8 +307,8 @@
     opacity: 1;
     position: absolute;
     display: block;
-    top: 0;
-    left: 0;
+    /* top: 0; */
+    /* left: 0; */
     z-index: 1;
     /* prevents the cursor from interacting with it */
     pointer-events: none;
