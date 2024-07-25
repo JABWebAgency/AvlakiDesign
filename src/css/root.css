@@ -770,3 +770,33 @@
     display: inline-block;
   }
 }
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    /* opacity: 0.75; */
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.35s ease-in-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    /* opacity: 0.75; */
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.35s ease-in-out;
+}
