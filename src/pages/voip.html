@@ -24,7 +24,7 @@ eleventyNavigation:
     <ul class="cs-card-group">
       <li class="cs-item">
         <img
-          class="cs-icon"
+          class="cs-icon slide-in-left"
           aria-hidden="true"
           src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/cube.svg"
           decoding="async"
@@ -57,6 +57,39 @@ eleventyNavigation:
       aria-hidden="true"
     />
   </picture>
+</section>
+
+<section id="sbs-1487">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/svgs/guyphone.svg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/svgs/guyphone.svg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/guyphone.svg"
+          alt="kid"
+          width="647"
+          height="600"
+        />
+      </picture>
+    </div>
+    <div class="cs-content slide-in-right">
+      <!-- <span class="cs-topper">About Stitch Day Care</span> -->
+      <h2 class="cs-title">We’re Passionate About Voice Over IP</h2>
+      <p class="cs-text">
+        At PRO OnCall, we specialize in providing cutting-edge Voice Over IP
+        (VoIP) solutions tailored to meet the unique needs of your business. Our
+        passion for VoIP technology drives us to deliver exceptional service and
+        innovative solutions that transform the way you communicate.
+      </p>
+      <a href="/contact" class="cs-button-solid">Learn More</a>
+    </div>
+  </div>
 </section>
 
 <!-- ============================================ -->
@@ -167,87 +200,30 @@ eleventyNavigation:
   </picture>
 </section> -->
 
+<section id="sbs-1357">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">About Company</span>
+      <h2 class="cs-title">
+        Our Goal Is To Better Secure Your Business Online
+      </h2>
+      <!-- <h3 class="cs-h3">
+        We’re committed to delivering the best digital marketing for businesses
+      </h3> -->
+      <p class="cs-text" style="margin-top: 1rem">
+        There are many variations of passages of Lorem Ipsumavailable, but the
+        majority have suffered alteration in someform, simply free text by
+        injected humour, or randomised.
+      </p>
+      <a href="" class="cs-button-solid">Contact Us</a>
+    </div>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
 <!-- ============================================ -->
 <!--                Side By Side                  -->
 <!-- ============================================ -->
-
-<section id="sbs-1487">
-  <div class="cs-container">
-    <div class="cs-image-group">
-      <!--Top left image-->
-      <picture class="cs-picture cs-picture1">
-        <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
-          srcset="/assets/images/people/voip_person.svg"
-        />
-        <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
-          srcset="/assets/images/people/voip_person.svg"
-        />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/people/voip_person.svg"
-          alt="kid"
-          width="647"
-          height="600"
-        />
-      </picture>
-    </div>
-    <div class="cs-content">
-      <!-- <span class="cs-topper">About Stitch Day Care</span> -->
-      <h2 class="cs-title">We’re Passionate About Voice Over IP</h2>
-      <p class="cs-text">
-        At PRO OnCall, we specialize in providing cutting-edge Voice Over IP
-        (VoIP) solutions tailored to meet the unique needs of your business. Our
-        passion for VoIP technology drives us to deliver exceptional service and
-        innovative solutions that transform the way you communicate.
-      </p>
-      <a href="/contact" class="cs-button-solid">Learn More</a>
-    </div>
-  </div>
-</section>
-
-<section id="sbs-1487">
-  <div class="cs-container">
-    <div class="cs-image-group">
-      <!--Top left image-->
-      <picture class="cs-picture cs-picture1">
-        <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
-          srcset="/assets/images/people/voip_person_2.svg"
-        />
-        <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
-          srcset="/assets/images/people/voip_person_2.svg"
-        />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/people/voip_person_2.svg"
-          alt="kid"
-          width="647"
-          height="600"
-        />
-      </picture>
-    </div>
-    <div class="cs-content">
-      <!-- <span class="cs-topper">About Stitch Day Care</span> -->
-      <h2 class="cs-title">We’re Passionate About Voice Over IP</h2>
-      <p class="cs-text">
-        At PRO OnCall, we specialize in providing cutting-edge Voice Over IP
-        (VoIP) solutions tailored to meet the unique needs of your business. Our
-        passion for VoIP technology drives us to deliver exceptional service and
-        innovative solutions that transform the way you communicate.
-      </p>
-      <a href="/contact" class="cs-button-solid">Learn More</a>
-    </div>
-  </div>
-</section>
 
 <section id="cs-contact-486">
   <div class="cs-container">
@@ -335,4 +311,37 @@ eleventyNavigation:
     };
     item.addEventListener("click", onClick);
   }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let observerOptions = {
+      root: null, // Use the viewport
+      rootMargin: "0px",
+      threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target); // Stop observing once the animation has been triggered
+        }
+      });
+    }, observerOptions);
+
+    document
+      .querySelectorAll(".slide-in-left, .slide-in-right")
+      .forEach((element) => {
+        observer.observe(element);
+      });
+  });
+</script>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    window.setTimeout(
+      document.querySelector("svg").classList.add("animated"),
+      1000
+    );
+  });
 </script>

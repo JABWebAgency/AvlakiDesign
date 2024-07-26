@@ -1574,6 +1574,7 @@
     content: "";
     position: absolute;
     display: block;
+    box-shadow: 2px 2px 3px 0px black;
     background: white;
     opacity: 1;
     /* so it sits on top of the border */
