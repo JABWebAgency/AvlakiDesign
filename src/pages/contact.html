@@ -15,88 +15,247 @@ eleventyNavigation:
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
+<section id="services-1377">
+  <div class="cs-container">
+    <!-- <img
+      class="cs-floater"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Forange-arrow.svg"
+      alt="arrow"
+      loading="lazy"
+      decoding="async"
+      aria-hidden="true"
+    /> -->
+    <div class="cs-content">
+      <!-- <span class="cs-topper">VoIP Solutions</span> -->
+      <h2 class="cs-title">Contact Us</h2>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item" id="contact-ohio">
+        <a class="cs-link">
+          <h3 class="cs-h3">Cincinnati</h3>
+          <p>Get in touch with our Cincinnati office</p>
+        </a>
+      </li>
+      <li class="cs-item" id="contact-dayton">
+        <a class="cs-link">
+          <h3 class="cs-h3">Columbus</h3>
+          <p>Get in touch with our Columbus office</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
 <!-- ============================================ -->
 <!--                   Contact                    -->
 <!-- ============================================ -->
 
 <section id="ContactForm-327" style="margin-top: 5rem">
-  <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">Contact Us</span>
-      <h2 class="cs-title">Get in Touch</h2>
-      <p class="cs-text">
-        Have any questions? Reach out and one of our account managers will get
-        back to you shortly.
-      </p>
-      <!--Form-->
-      <form
-        class="cs-form"
-        id="cs-form-323-327"
-        name="Contact Form"
-        method="post"
-      >
-        <label class="cs-label">
-          Name
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="name-323-327"
-            name="name"
-            placeholder="Name"
-          />
-        </label>
-        <label class="cs-label cs-email">
-          Email
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="email-323-327"
-            name="email"
-            placeholder="Email"
-          />
-        </label>
-        <label class="cs-label cs-phone">
-          Phone
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="phone-323-327"
-            name="phone"
-            placeholder="Phone"
-          />
-        </label>
-        <label class="cs-label">
-          Message
-          <textarea
-            class="cs-input cs-textarea"
-            required
-            name="Message"
-            id="message-323-327"
-            placeholder="Write message..."
-          ></textarea>
-        </label>
-        <button class="cs-button-solid cs-submit" type="submit">
-          Contact Us
-        </button>
-      </form>
+  <div class="contact-form-container" id="contact-form-ohio">
+    <button class="switch-button" id="switch-to-dayton">
+      Click here to contact our Columbus office
+    </button>
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Contact Us</span>
+        <h2 class="cs-title">Get in Touch With Our Cincinnati Office</h2>
+        <p class="cs-text">
+          Have any questions? Reach out and one of our account managers will get
+          back to you shortly.
+        </p>
+        <!--Form-->
+        <form
+          class="cs-form"
+          id="cs-form-323-327"
+          name="Contact Form"
+          method="post"
+        >
+          <label class="cs-label">
+            Name
+            <input
+              class="cs-input"
+              required
+              type="text"
+              id="name-323-327"
+              name="name"
+              placeholder="Name"
+            />
+          </label>
+          <label class="cs-label cs-email">
+            Email
+            <input
+              class="cs-input"
+              required
+              type="text"
+              id="email-323-327"
+              name="email"
+              placeholder="Email"
+            />
+          </label>
+          <label class="cs-label cs-phone">
+            Phone
+            <input
+              class="cs-input"
+              required
+              type="text"
+              id="phone-323-327"
+              name="phone"
+              placeholder="Phone"
+            />
+          </label>
+          <label class="cs-label">
+            Message
+            <textarea
+              class="cs-input cs-textarea"
+              required
+              name="Message"
+              id="message-323-327"
+              placeholder="Write message..."
+            ></textarea>
+          </label>
+          <button class="cs-button-solid cs-submit" type="submit">
+            Contact Us
+          </button>
+        </form>
+      </div>
+      <!--Map Image, pin is made in the Figma then export as one image-->
+      <picture class="cs-map">
+        <source media="(max-width: 600px)" srcset="/assets/images/map.png" />
+        <source media="(min-width: 601px)" srcset="/assets/images/map.png" />
+        <img
+          decoding="async"
+          src="/assets/images/map.png"
+          alt="map"
+          width="610"
+          height="425"
+          aria-hidden="true"
+        />
+      </picture>
     </div>
-    <!--Map Image, pin is made in the Figma then export as one image-->
-    <picture class="cs-map">
-      <source media="(max-width: 600px)" srcset="/assets/images/map.png" />
-      <source media="(min-width: 601px)" srcset="/assets/images/map.png" />
-      <img
-        decoding="async"
-        src="/assets/images/map.png"
-        alt="map"
-        width="610"
-        height="425"
-        aria-hidden="true"
-      />
-    </picture>
   </div>
+
+  <div class="contact-form-container" id="contact-form-dayton">
+    <button class="switch-button" id="switch-to-ohio">
+      Click here to contact our Cincinnati office
+    </button>
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Contact Us</span>
+        <h2 class="cs-title">Get in Touch With Our Columbus Office</h2>
+        <p class="cs-text">
+          Have any questions? Reach out and one of our account managers will get
+          back to you shortly.
+        </p>
+        <!--Form-->
+        <form
+          class="cs-form"
+          id="cs-form-323-327"
+          name="Contact Form"
+          method="post"
+        >
+          <label class="cs-label">
+            Name
+            <input
+              class="cs-input"
+              required
+              type="text"
+              id="name-323-327"
+              name="name"
+              placeholder="Name"
+            />
+          </label>
+          <label class="cs-label cs-email">
+            Email
+            <input
+              class="cs-input"
+              required
+              type="text"
+              id="email-323-327"
+              name="email"
+              placeholder="Email"
+            />
+          </label>
+          <label class="cs-label cs-phone">
+            Phone
+            <input
+              class="cs-input"
+              required
+              type="text"
+              id="phone-323-327"
+              name="phone"
+              placeholder="Phone"
+            />
+          </label>
+          <label class="cs-label">
+            Message
+            <textarea
+              class="cs-input cs-textarea"
+              required
+              name="Message"
+              id="message-323-327"
+              placeholder="Write message..."
+            ></textarea>
+          </label>
+          <button class="cs-button-solid cs-submit" type="submit">
+            Contact Us
+          </button>
+        </form>
+      </div>
+      <!--Map Image, pin is made in the Figma then export as one image-->
+      <picture class="cs-map">
+        <source media="(max-width: 600px)" srcset="/assets/images/map.png" />
+        <source media="(min-width: 601px)" srcset="/assets/images/map.png" />
+        <img
+          decoding="async"
+          src="/assets/images/map.png"
+          alt="map"
+          width="610"
+          height="425"
+          aria-hidden="true"
+        />
+      </picture>
+    </div>
+  </div>
+
+  <script>
+    const ohioButton = document.getElementById("contact-ohio");
+    const daytonButton = document.getElementById("contact-dayton");
+    const ohioForm = document.getElementById("contact-form-ohio");
+    const daytonForm = document.getElementById("contact-form-dayton");
+    const switchToOhioButton = document.getElementById("switch-to-ohio");
+    const switchToDaytonButton = document.getElementById("switch-to-dayton");
+    const buttonsContainer = document.getElementById("services-1377");
+
+    ohioButton.addEventListener("click", () => {
+      daytonForm.style.display = "none"; // Ensure Dayton form is hidden
+      ohioForm.style.display = "flex";
+      ohioButton.style.display = "none";
+      daytonButton.style.display = "inline-block";
+      buttonsContainer.style.display = "none";
+    });
+
+    daytonButton.addEventListener("click", () => {
+      ohioForm.style.display = "none"; // Ensure Ohio form is hidden
+      daytonForm.style.display = "flex";
+      daytonButton.style.display = "none";
+      ohioButton.style.display = "inline-block";
+      buttonsContainer.style.display = "none";
+    });
+
+    switchToOhioButton.addEventListener("click", () => {
+      daytonForm.style.display = "none";
+      ohioForm.style.display = "flex";
+      ohioButton.style.display = "none";
+      daytonButton.style.display = "inline-block";
+    });
+
+    switchToDaytonButton.addEventListener("click", () => {
+      ohioForm.style.display = "none";
+      daytonForm.style.display = "flex";
+      daytonButton.style.display = "none";
+      ohioButton.style.display = "inline-block";
+    });
+  </script>
 </section>
 
 <!-- ============================================ -->
