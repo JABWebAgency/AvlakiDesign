@@ -189,6 +189,8 @@
     width: 2rem;
     height: 2rem;
     display: block;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(100%) saturate(4500%)
+      hue-rotate(345deg) brightness(90%) contrast(100%);
   }
   #services-1666 .cs-button-solid {
     font-size: 1rem;
