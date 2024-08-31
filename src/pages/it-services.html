@@ -24,7 +24,7 @@ eleventyNavigation:
     <ul class="cs-card-group">
       <li class="cs-item">
         <img
-          class="cs-icon"
+          class="cs-icon slide-in-left"
           aria-hidden="true"
           src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/cube.svg"
           decoding="async"
@@ -102,7 +102,7 @@ eleventyNavigation:
         width="690"
       /> -->
     </div>
-    <div class="cs-content">
+    <div class="cs-content slide-in-right">
       <h2 class="cs-title">
         Managed IT Solutions That Set Your
         <span class="cs-color">Business Apart </span>
@@ -111,7 +111,7 @@ eleventyNavigation:
         It’s not enough to simply succeed in today’s marketplace. Instead, you
         must excel to set yourself apart from others in your industry. With our
         managed IT services, we’ll help you take your business where you want it
-        to go by:
+        to go.
       </p>
       <ul class="cs-faq-group">
         <li class="cs-faq-item active">
@@ -130,10 +130,10 @@ eleventyNavigation:
             <span class="cs-indicator" aria-hidden="true"></span>
           </button>
           <p class="cs-item-p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            sapiente placeat enim molestias quam, illum ullam ipsa repellat,
-            necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in
-            recusandae saepe nostrum.
+            We ensure your network runs efficiently by unifying your vendor
+            products into a cohesive system. Our single-pane-of-glass approach
+            provides comprehensive visibility, enabling proactive issue
+            identification and faster troubleshooting.
           </p>
         </li>
         <li class="cs-faq-item">
@@ -154,10 +154,10 @@ eleventyNavigation:
             <span class="cs-indicator" aria-hidden="true"></span>
           </button>
           <p class="cs-item-p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            sapiente placeat enim molestias quam, illum ullam ipsa repellat,
-            necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in
-            recusandae saepe nostrum.
+            We analyze your IT operations to determine if moving from on-premise
+            servers to a modern, cloud-based infrastructure is right for you.
+            Enjoy enhanced reliability, higher uptime, and superior security
+            with a cloud solution.
           </p>
         </li>
         <li class="cs-faq-item">
@@ -176,10 +176,9 @@ eleventyNavigation:
             <span class="cs-indicator" aria-hidden="true"></span>
           </button>
           <p class="cs-item-p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            sapiente placeat enim molestias quam, illum ullam ipsa repellat,
-            necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in
-            recusandae saepe nostrum.
+            We take the guesswork out of optimizing your IT services, aligning
+            them with industry best practices. Our 24/7 Security Operations
+            Center significantly enhances the security of your IT resources.
           </p>
         </li>
         <li class="cs-faq-item">
@@ -198,91 +197,14 @@ eleventyNavigation:
             <span class="cs-indicator" aria-hidden="true"></span>
           </button>
           <p class="cs-item-p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            sapiente placeat enim molestias quam, illum ullam ipsa repellat,
-            necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in
-            recusandae saepe nostrum.
+            By entrusting your IT tasks to PRO OnCall, you can concentrate on
+            expanding your business, knowing that your systems are secure,
+            reliable, and efficiently managed.
           </p>
         </li>
       </ul>
       <a href="" class="cs-button-solid">Contact Us</a>
     </div>
-  </div>
-</section>
-
-<section id="services-1377">
-  <div class="cs-container">
-    <div class="cs-content">
-      <!-- <span class="cs-topper">VoIP Solutions</span> -->
-      <h2 class="cs-title">Our Solutions</h2>
-    </div>
-    <ul class="cs-card-group">
-      <li class="cs-item">
-        <img
-          class="cs-icon"
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/icons/red_3gears.png"
-          alt="icon"
-          width="48"
-          height="48"
-        />
-        <a href="/" class="cs-link">
-          <h3 class="cs-h3">Security</h3>
-          <p>
-            Cyber security audits, penetration testing, and server hardening
-          </p>
-        </a>
-      </li>
-      <li class="cs-item">
-        <img
-          class="cs-icon"
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/icons/red_lock.png"
-          alt="icon"
-          width="48"
-          height="48"
-        />
-        <a href="/" class="cs-link">
-          <h3 class="cs-h3">Virus Protection</h3>
-          <p>
-            Anti-virus/malware measures for websites, email, servers, and
-            devices
-          </p>
-        </a>
-      </li>
-      <li class="cs-item">
-        <img
-          class="cs-icon"
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/icons/red_lock.png"
-          alt="icon"
-          width="48"
-          height="48"
-        />
-        <a href="/" class="cs-link">
-          <h3 class="cs-h3">Security Expertise</h3>
-          <p>Dedicated security experts proactively monitoring your network</p>
-        </a>
-      </li>
-      <li class="cs-item">
-        <img
-          class="cs-icon"
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/icons/red_lock.png"
-          alt="icon"
-          width="48"
-          height="48"
-        />
-        <a href="/" class="cs-link">
-          <h3 class="cs-h3">IT Management</h3>
-          <p>Security built into ALL IT processes and equipment</p>
-        </a>
-      </li>
-    </ul>
   </div>
 </section>
 
@@ -393,4 +315,37 @@ eleventyNavigation:
     };
     item.addEventListener("click", onClick);
   }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let observerOptions = {
+      root: null, // Use the viewport
+      rootMargin: "0px",
+      threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target); // Stop observing once the animation has been triggered
+        }
+      });
+    }, observerOptions);
+
+    document
+      .querySelectorAll(".slide-in-left, .slide-in-right")
+      .forEach((element) => {
+        observer.observe(element);
+      });
+  });
+</script>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    window.setTimeout(
+      document.querySelector("svg").classList.add("animated"),
+      1000
+    );
+  });
 </script>

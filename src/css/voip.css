@@ -403,7 +403,7 @@
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); */
   }
 
   .cs-color {
@@ -618,7 +618,7 @@
     width: 95%;
     max-width: 32.125rem;
     color: var(--bodyTextColorWhite);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); */
   }
   #services-502 .cs-card-group {
     width: 100%;
@@ -1423,6 +1423,7 @@
 @media only screen and (min-width: 0rem) {
   #services-1131 {
     padding: var(--sectionPadding);
+    background-color: #f3f3f38f;
   }
   #services-1131 .cs-container {
     width: 100%;
