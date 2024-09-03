@@ -15,12 +15,9 @@ eleventyNavigation:
 <!--                  Services                    -->
 <!-- ============================================ -->
 
-<section id="services-502">
+<!-- MAYBE ADD BACK -->
+<!-- <section id="services-502">
   <div class="cs-container">
-    <!-- <div class="cs-content">
-      <span class="cs-topper">Service</span>
-      <h2 class="cs-title">Cyber Security</h2>
-    </div> -->
     <ul class="cs-card-group">
       <li class="cs-item">
         <img
@@ -46,8 +43,7 @@ eleventyNavigation:
       </li>
     </ul>
   </div>
-  <!--Background Image-->
-  <picture class="cs-background">
+<picture class="cs-background">
     <img
       loading="lazy"
       decoding="async"
@@ -58,21 +54,21 @@ eleventyNavigation:
       aria-hidden="true"
     />
   </picture>
-</section>
+</section> -->
 
-<section id="sbs-1487">
+<section id="sbs-1487" style="padding-top: 10rem;">
   <div class="cs-container">
     <div class="cs-image-group">
       <!--Top left image-->
       <picture class="cs-picture cs-picture1">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/svgs/guyphone.svg" />
+        <source media="(max-width: 600px)" srcset="/assets/svgs/newhome/voip.svg" />
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/svgs/guyphone.svg" />
+        <source media="(min-width: 601px)" srcset="/assets/svgs/newhome/voip.svg" />
         <img
           loading="lazy"
           decoding="async"
-          src="/assets/svgs/guyphone.svg"
+          src="/assets/svgs/newhome/voip.svg"
           alt="kid"
           width="647"
           height="600"
@@ -81,7 +77,8 @@ eleventyNavigation:
     </div>
     <div class="cs-content slide-in-right">
       <!-- <span class="cs-topper">About Stitch Day Care</span> -->
-      <h2 class="cs-title">We’re Passionate About Voice Over IP</h2>
+      <h2 class="cs-title" style="padding-bottom: 1rem">We’re Passionate About <span class="cs-color">Voice</span> Over IP</h2>
+      
       <p class="cs-text">
         At PRO OnCall, we specialize in providing cutting-edge Voice Over IP
         (VoIP) solutions tailored to meet the unique needs of your business. Our
@@ -221,23 +218,6 @@ eleventyNavigation:
   </picture>
 </section> -->
 
-<section id="sbs-1357">
-  <div class="cs-container">
-    <div class="cs-content">
-      <h2 class="cs-title">
-        Fortify Your VoIP Communications
-      </h2>
-      <!-- <h3 class="cs-h3">
-        We’re committed to delivering the best digital marketing for businesses
-      </h3> -->
-      <p class="cs-text" style="margin-top: 1rem">
-        In today’s digital age, secure and reliable communication is essential. PRO OnCall’s VoIP solutions are cutting-edge and fully protected against threats. With advanced security protocols and continuous monitoring, your communications remain secure, private, and always operational, safeguarding sensitive data and ensuring business continuity.
-      </p>
-      <a href="/contact" class="cs-button-solid">Contact Us</a>
-    </div>
-  </div>
-  <div class="cs-bubbles" aria-hidden="true"></div>
-</section>
 
 <!-- ============================================ -->
 <!--                Side By Side                  -->
@@ -285,6 +265,17 @@ eleventyNavigation:
         />
       </label>
       <label class="cs-label">
+        Company Name
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="phone-486"
+          name="companyName"
+          placeholder="Company Name"
+        />
+      </label>
+      <label class="cs-label">
         Email
         <input
           class="cs-input"
@@ -308,10 +299,7 @@ eleventyNavigation:
       <label class="cs-label cs-label-message">
         What do you need help with?
         <select name="cars" id="cs-select-486">
-          <option value="full renovation">Service 1</option>
-          <option value="sod install">Service 2</option>
-          <option value="yard cleanup">Service 3</option>
-          <option value="landscape design">Service 4</option>
+          <option value="VOIP_Services">VoIP Services</option>
         </select>
       </label>
       <button class="cs-button-solid cs-submit" type="submit">

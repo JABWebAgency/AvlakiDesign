@@ -46,7 +46,6 @@
     margin: 0 0 1rem 0;
     color: var(--headerColor);
     position: relative;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   }
   #meet-team-858 .cs-button-solid {
     font-size: 1rem;
@@ -225,7 +224,7 @@
     content: "";
     width: 100%;
     height: 50%;
-    background: #1a1a1a;
+    /* background: #1a1a1a; */
     opacity: 1;
     position: absolute;
     display: block;
@@ -400,7 +399,7 @@
     padding-bottom: 0;
     position: relative;
     z-index: 1;
-    background-color: #1a1a1a;
+    /* background-color: #1a1a1a; */
   }
   #cta-96:before {
     display: none;
@@ -503,7 +502,6 @@
 
   #services-944 .cs-title {
     font-size: var(--headerFontSize);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     font-weight: 900;
     line-height: 1.2em;
   }
@@ -554,7 +552,7 @@
     overflow: hidden;
   }
   #services-944 .cs-picture-group:hover .cs-picture img {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
   }
   #services-944 .cs-picture-group:hover .cs-picture:before {
     opacity: 0.6;
@@ -562,7 +560,7 @@
   #services-944 .cs-picture {
     width: 100%;
     /* 280px - 380px */
-    height: clamp(17.5rem, 43vw, 23.75rem);
+    height: clamp(17.5rem, 43vw, 33.75rem);
     position: relative;
     display: block;
     z-index: 1;
@@ -574,7 +572,7 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: #1a1a1a;
+    /* background: #1a1a1a; */
     opacity: 0.2;
     top: 0;
     left: 0;
@@ -723,7 +721,7 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: #1a1a1a;
+    /* background: #1a1a1a; */
     opacity: 0.84;
     top: 0;
     left: 0;
@@ -922,7 +920,7 @@
     /* 20px - 32px */
     padding: clamp(1.25rem, 2.3vw, 2rem);
     background-color: #fef7f4;
-    box-shadow: 2px 4px 0px 1px #00000036;
+    box-shadow: 2px 2px 0px 1px #000000de;
     border-radius: 1rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
