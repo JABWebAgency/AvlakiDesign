@@ -920,7 +920,7 @@
     /* 20px - 32px */
     padding: clamp(1.25rem, 2.3vw, 2rem);
     background-color: #fef7f4;
-    box-shadow: 2px 2px 0px 1px #000000de;
+    box-shadow: 1px 2px 0px 1px #00000052;
     border-radius: 1rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
