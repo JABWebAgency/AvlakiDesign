@@ -1064,7 +1064,8 @@
   #meet-us-305 .cs-item {
     list-style: none;
     width: 100%;
-    min-height: 18.875rem;
+    min-height: 30rem;
+
     position: relative;
     aspect-ratio: 1.08609272;
   }
@@ -1138,6 +1139,7 @@
     aspect-ratio: 0.74172185;
     width: 100%;
     max-width: 19.0625rem;
+    min-height: 18.875rem;
   }
 }
 
