@@ -25,7 +25,7 @@
       <div class="cs-ul-wrapper">
         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
           <li class="cs-li">
-            <a href="/" class="cs-li-link cs-active"> Home </a>
+            <a href="/" class="cs-li-link"> Home </a>
           </li>
           <li class="cs-li">
             <a href="/about" class="cs-li-link"> About </a>
@@ -45,22 +45,24 @@
             </span>
             <ul class="cs-drop-ul">
               <li class="cs-drop-li">
-                <a href="/services/cybersecurity" class="cs-li-link cs-drop-link">Cyber Security</a>
+                <a href="/cybersecurity" class="cs-li-link cs-drop-link"
+                  >Cyber Security</a
+                >
               </li>
               <li class="cs-drop-li">
-                <a href="/services/itservices" class="cs-li-link cs-drop-link">IT Services</a>
+                <a href="/itservices" class="cs-li-link cs-drop-link"
+                  >IT Services</a
+                >
               </li>
               <li class="cs-drop-li">
-                <a href="/services/voip" class="cs-li-link cs-drop-link">VoIP</a>
+                <a href="/voip" class="cs-li-link cs-drop-link">VoIP</a>
               </li>
               <li class="cs-drop-li">
-                <a href="/services/additional" class="cs-li-link cs-drop-link">Additional Services</a>
-              </li>
+                <a href="/additional" class="cs-li-link cs-drop-link"
+                  >Additional Services</a
+                >
               </li>
             </ul>
-          </li>
-          <li class="cs-li">
-            <a href="/contact" class="cs-li-link"> Contact</a>
           </li>
         </ul>
       </div>
@@ -70,59 +72,59 @@
 </header>
 
 <script>
-  // Function to set the active link
-  function setActiveLink() {
-    const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll("#cs-navigation .cs-li-link");
+  // // Function to set the active link
+  // function setActiveLink() {
+  //   const currentPath = window.location.pathname;
+  //   const navLinks = document.querySelectorAll("#cs-navigation .cs-li-link");
 
-    navLinks.forEach(link => {
-      // Remove the active class from all links
-      link.classList.remove("cs-active");
+  //   navLinks.forEach(link => {
+  //     // Remove the active class from all links
+  //     link.classList.remove("cs-active");
 
-      // Check if the href matches the current path and add the active class
-      if (link.getAttribute("href") === currentPath) {
-        console.log('link', link)
-        link.classList.add("cs-active");
-      }
-    });
-  }
+  //     // Check if the href matches the current path and add the active class
+  //     if (link.getAttribute("href") === currentPath) {
+  //       console.log('link', link)
+  //       link.classList.add("cs-active");
+  //     }
+  //   });
+  // }
 
-  // Call the function on page load to highlight the active link
-  setActiveLink();
+  // // Call the function on page load to highlight the active link
+  // setActiveLink();
 
-  // add classes for mobile navigation toggling
-  var CSbody = document.querySelector("body");
-  const CSnavbarMenu = document.querySelector("#cs-navigation");
-  const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
+  // // add classes for mobile navigation toggling
+  // var CSbody = document.querySelector("body");
+  // const CSnavbarMenu = document.querySelector("#cs-navigation");
+  // const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
 
-  CShamburgerMenu.addEventListener("click", function () {
-    CShamburgerMenu.classList.toggle("cs-active");
-    CSnavbarMenu.classList.toggle("cs-active");
-    CSbody.classList.toggle("cs-open");
-    // run the function to check the aria-expanded value
-    ariaExpanded();
-  });
+  // CShamburgerMenu.addEventListener("click", function () {
+  //   CShamburgerMenu.classList.toggle("cs-active");
+  //   CSnavbarMenu.classList.toggle("cs-active");
+  //   CSbody.classList.toggle("cs-open");
+  //   // run the function to check the aria-expanded value
+  //   ariaExpanded();
+  // });
 
-  // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
-  function ariaExpanded() {
-    const csUL = document.querySelector("#cs-expanded");
-    const csExpanded = csUL.getAttribute("aria-expanded");
+  // // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
+  // function ariaExpanded() {
+  //   const csUL = document.querySelector("#cs-expanded");
+  //   const csExpanded = csUL.getAttribute("aria-expanded");
 
-    if (csExpanded === "false") {
-      csUL.setAttribute("aria-expanded", "true");
-    } else {
-      csUL.setAttribute("aria-expanded", "false");
-    }
-  }
+  //   if (csExpanded === "false") {
+  //     csUL.setAttribute("aria-expanded", "true");
+  //   } else {
+  //     csUL.setAttribute("aria-expanded", "false");
+  //   }
+  // }
 
-  // mobile nav toggle code
-  const dropDowns = Array.from(
-    document.querySelectorAll("#cs-navigation .cs-dropdown")
-  );
-  for (const item of dropDowns) {
-    const onClick = () => {
-      item.classList.toggle("cs-active");
-    };
-    item.addEventListener("click", onClick);
-  }
+  // // mobile nav toggle code
+  // const dropDowns = Array.from(
+  //   document.querySelectorAll("#cs-navigation .cs-dropdown")
+  // );
+  // for (const item of dropDowns) {
+  //   const onClick = () => {
+  //     item.classList.toggle("cs-active");
+  //   };
+  //   item.addEventListener("click", onClick);
+  // }
 </script>

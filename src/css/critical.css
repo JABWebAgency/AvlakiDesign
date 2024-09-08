@@ -2902,3 +2902,13 @@
     bottom: 0em;
   }
 }
+
+.cs-box-icon-red {
+  text-align: left;
+  width: 3.875rem;
+  height: auto;
+  margin: 0 0 2rem;
+  display: block;
+  filter: invert(26%) sepia(84%) saturate(3672%) hue-rotate(348deg)
+    brightness(92%) contrast(117%);
+}
