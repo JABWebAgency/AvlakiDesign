@@ -747,6 +747,36 @@
   }
 }
 
+@media only screen and (min-width: 64rem) {
+  /* Hide Contact Us button on desktop */
+  .cs-nav-button {
+    display: none !important;
+  }
+}
+
+/* Show Contact Us button on mobile */
+@media (max-width: 768px) {
+  .cs-nav-button {
+    display: none;
+    padding: 10px 20px;
+    /* background-color: #007bff; */
+    color: black;
+    border-radius: 5px;
+    text-decoration: auto;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* Align it within the mobile menu if needed */
+  #cs-navigation.cs-active .cs-nav-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
 <--- -------------------------- -*/

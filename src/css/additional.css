@@ -884,7 +884,6 @@
     grid-column: span 4;
     border-right: 1px solid #e8e8e8;
   }
-  #services-1303 .cs-item:nth-of-type(3),
   #services-1303 .cs-item:nth-of-type(6) {
     border-right: none;
   }
@@ -909,6 +908,7 @@
   #services-1303 .cs-item:hover .cs-item-text {
     opacity: 0.8;
   }
+
   #services-1303 .cs-item:last-of-type {
     border: none;
   }
