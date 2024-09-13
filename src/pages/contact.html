@@ -145,20 +145,25 @@ eleventyNavigation:
   />
 </section>
 
-<section id="map-1403" class="map-container">
-  <iframe
-    src="https://www.google.com/maps/d/u/0/embed?mid=18_xhgWY62Jw2LSf0e89LCGxzvMSfXtI&ehbc=2E312F&noprof=1"
-    width="640"
-    height="480"
-  ></iframe>
-  <style>
-    .map-container iframe {
-      pointer-events: none;
-    }
-    .map-container iframe.clicked {
-      pointer-events: auto;
-    }
-  </style>
+<!-- ============================================ -->
+<!--                    Map                       -->
+<!-- ============================================ -->
+
+<section id="map-720">
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="../assets/images/map4.png" />
+    <!--Tablet and above Image-->
+    <source media="(min-width: 601px)" srcset="../assets/images/map5.png" />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="../assets/images/map4.png"
+      alt="map"
+      width="1280"
+      height="600"
+    />
+  </picture>
 </section>
 
 <!-- TODO: If they choose IT support go to support@partner-central.net ..... etc for others. (review word doc)-->
