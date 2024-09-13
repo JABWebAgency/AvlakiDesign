@@ -518,30 +518,31 @@
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
     text-decoration: none;
     font-weight: 700;
-    text-align: center;
+    overflow: hidden;
     margin: 0;
     color: #fff;
-    min-width: 9.375rem;
-    padding: 0 2rem;
+    padding: 0 3rem;
+    border-radius: 1.875rem;
     background-color: var(--primary);
     display: inline-block;
     position: relative;
     z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
+    transition: color 0.3s;
   }
   #services-944 .cs-button-solid:before {
     content: "";
     position: absolute;
+    display: block;
     height: 100%;
     width: 0%;
-    background: #000;
+    background: black;
     opacity: 1;
     top: 0;
     left: 0;
     z-index: -1;
     transition: width 0.3s;
   }
+
   #services-944 .cs-button-solid:hover:before {
     width: 100%;
   }
@@ -875,30 +876,28 @@
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
     text-decoration: none;
     font-weight: 700;
-    text-align: center;
+    overflow: hidden;
     margin: 0;
     color: #fff;
-    min-width: 9.375rem;
-    padding: 0 1.5rem;
+    padding: 0 3rem;
+    border-radius: 1.875rem;
     background-color: var(--primary);
-    border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
+    transition: color 0.3s;
   }
   #why-choose-892 .cs-button-solid:before {
     content: "";
     position: absolute;
+    display: block;
     height: 100%;
     width: 0%;
-    background: #000;
+    background: black;
     opacity: 1;
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 0.25rem;
     transition: width 0.3s;
   }
   #why-choose-892 .cs-button-solid:hover:before {
@@ -1005,7 +1004,7 @@
   }
   #meet-us-305 .cs-container {
     width: 100%;
-    max-width: 80rem;
+    max-width: 100rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -1130,7 +1129,7 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #meet-us-305 .cs-card-group {
-    max-width: 62.1875rem;
+    max-width: 100rem;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
