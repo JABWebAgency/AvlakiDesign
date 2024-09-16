@@ -386,7 +386,7 @@
   }
 
   #footer-1240 .cs-contact-link:hover {
-    color: var(--primary);
+    color: rgb(255, 106, 106);
   }
 
   #footer-1240 .cs-icon {
@@ -830,6 +830,10 @@
   opacity: 0.8;
   line-height: 1.5em;
   font-size: clamp(0.875rem, 1.5vw, 1rem);
+}
+
+.footer-service-li:hover {
+  color: rgb(255, 106, 106);
 }
 
 /*-- -------------------------- -->
