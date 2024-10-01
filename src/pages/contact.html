@@ -29,9 +29,15 @@ eleventyNavigation:
       class="cs-form"
       id="cs-form-2061"
       name="Contact Form"
-      method="post"
-      netlify
+      method="POST"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
     >
+      <!-- Honeypot field for spam prevention -->
+      <input type="hidden" name="form-name" value="Contact Form" />
+      <p style="display: none">
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
       <label class="cs-label cs-split">
         First Name *
         <input
