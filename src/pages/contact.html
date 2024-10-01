@@ -28,13 +28,13 @@ eleventyNavigation:
     <form
       class="cs-form"
       id="cs-form-2061"
-      name="Contact Form"
+      name="defaultForm"
       method="POST"
       netlify-honeypot="bot-field"
       data-netlify="true"
     >
       <!-- Honeypot field for spam prevention -->
-      <input type="hidden" name="form-name" value="Contact Form" />
+      <input type="hidden" name="form-name" value="defaultForm" />
       <p style="display: none">
         <label>Don’t fill this out: <input name="bot-field" /></label>
       </p>
@@ -98,6 +98,7 @@ eleventyNavigation:
           required
           id="position-2062"
           name="ServiceRequested"
+          onchange="updateFormName()"
         >
           <option value="" disabled selected>Please Choose</option>
           <option value="IT_Support">IT Support</option>
@@ -173,3 +174,18 @@ eleventyNavigation:
 </section>
 
 <!-- TODO: If they choose IT support go to support@partner-central.net ..... etc for others. (review word doc)-->
+<script>
+  function updateFormName() {
+    const form = document.getElementById("cs-form-486");
+    const service = document.getElementById("cs-select-486").value;
+
+    // Change form name dynamically based on selected service
+    if (service === "VOIP_Services") {
+      form.name = "VOIP_Form";
+    } else if (service === "IT_Services") {
+      form.name = "IT_Form";
+    } else if (service === "Telecom_Services") {
+      form.name = "Telecom_Form";
+    }
+  }
+</script>
