@@ -92,6 +92,7 @@ eleventyNavigation:
           required
           id="position-2061"
           name="Position"
+          onchange="setEmailDestination()"
         >
           <option value="" disabled selected>Please Choose</option>
           <option value="IT_Support">IT Support</option>
@@ -167,3 +168,18 @@ eleventyNavigation:
 </section>
 
 <!-- TODO: If they choose IT support go to support@partner-central.net ..... etc for others. (review word doc)-->
+
+<script>
+  function setEmailDestination() {
+    var serviceRequested = document.getElementById("service-requested").value;
+    var form = document.getElementById("cs-form-2061");
+
+    if (serviceRequested === "IT_Support") {
+      form.setAttribute("action", "mailto:jacobbennett1515@gmail.com");
+    } else if (serviceRequested === "Telecom/Other_Services") {
+      form.setAttribute("action", "mailto:jacobdesign15@gmail.com");
+    } else {
+      form.removeAttribute("action"); // default action if needed
+    }
+  }
+</script>
