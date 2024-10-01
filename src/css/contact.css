@@ -186,7 +186,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #map-720 {
-    min-height: 50rem;
+    min-height: 20rem;
     padding: var(--sectionPadding);
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
