@@ -24,11 +24,29 @@ eleventyNavigation:
         empower your business with the right technology.
       </p>
     </div>
-    <!--Form-->
+
+    <label class="cs-label">
+      Service Requested *
+      <select
+        class="cs-input cs-select"
+        required
+        id="position-2062"
+        name="ServiceRequested"
+        onchange="showForm()"
+        required
+      >
+        <option value="" disabled selected>Please Choose</option>
+        <option value="IT_Support">IT Support</option>
+        <option value="Telecom/Other_Services">Telecom / Other Services</option>
+        <option value="General_Sales_Inquiry">General Sales Inquiry</option>
+        <option value="Other">Other</option>
+      </select>
+    </label>
+
     <form
-      class="cs-form"
-      id="cs-form-2061"
-      name="defaultForm"
+      class="cs-form dynamic-form hidden"
+      id="IT_Support"
+      name="IT_SUPPORT_FORM"
       method="POST"
       netlify-honeypot="bot-field"
       data-netlify="true"
@@ -92,21 +110,93 @@ eleventyNavigation:
         </select>
       </label>
       <label class="cs-label">
-        Service Requested *
+        Company Name
+        <input
+          class="cs-input"
+          type="text"
+          id="interview-availability-2061"
+          name="Company Name"
+        />
+      </label>
+      <label class="cs-label cs-message">
+        Additional Information or Requests
+        <textarea
+          class="cs-input cs-textarea"
+          id="previous-experience-2061"
+          name="Additional Information"
+          placeholder="Additional Information..."
+        ></textarea>
+      </label>
+      <div class="cs-wrapper">
+        <button class="cs-button-solid cs-submit" type="submit">Submit</button>
+      </div>
+    </form>
+
+    <!-- General Inquiries Form -->
+    <form
+      class="cs-form dynamic-form hidden"
+      id="Telecom/Other_Services"
+      name="TELECOM_OTHER_SERVICES_FORM"
+      method="POST"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+    >
+      <!-- Honeypot field for spam prevention -->
+      <input type="hidden" name="form-name" value="defaultForm" />
+      <p style="display: none">
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+      <label class="cs-label cs-split">
+        First Name *
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="first-name-2061"
+          name="First Name"
+        />
+      </label>
+      <label class="cs-label cs-split">
+        Last Name *
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="last-name-2061"
+          name="Last Name"
+        />
+      </label>
+      <label class="cs-label cs-split">
+        Email *
+        <input
+          class="cs-input"
+          required
+          type="email"
+          id="email-2061"
+          name="Email"
+        />
+      </label>
+      <label class="cs-label cs-split">
+        Phone Number *
+        <input
+          class="cs-input"
+          required
+          type="tel"
+          id="phone-2061"
+          name="Phone Number"
+        />
+      </label>
+      <label class="cs-label">
+        Are You a New or Existing Customer? *
         <select
           class="cs-input cs-select"
           required
-          id="position-2062"
-          name="ServiceRequested"
-          onchange="updateFormName()"
+          id="position-2061"
+          name="NewOrExisting"
         >
           <option value="" disabled selected>Please Choose</option>
-          <option value="IT_Support">IT Support</option>
-          <option value="Telecom/Other_Services">
-            Telecom / Other Services
-          </option>
-          <option value="General_Sales_Inquiry">General Sales Inquiry</option>
-          <option value="Other">Other</option>
+          <option value="NewCustomer">New</option>
+          <option value="ExistingCustomer">Existing</option>
         </select>
       </label>
       <label class="cs-label">
@@ -131,6 +221,18 @@ eleventyNavigation:
         <button class="cs-button-solid cs-submit" type="submit">Submit</button>
       </div>
     </form>
+
+    <!--Form-->
+    <!-- <form
+      class="cs-form"
+      id="cs-form-2061"
+      name="defaultForm"
+      method="POST"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+    >
+     
+    </form> -->
   </div>
   <img
     class="cs-graphic cs-graphic-left"
@@ -175,18 +277,23 @@ eleventyNavigation:
 
 <!-- TODO: If they choose IT support go to support@partner-central.net ..... etc for others. (review word doc)-->
 <script>
-  function updateFormName() {
-    const form = document.getElementById("cs-form-2061");
-    console.log(form);
-    const service = document.getElementById("position-2062").value;
-    console.log(service);
-    // Change form name dynamically based on selected service
-    if (service === "IT_Support") {
-      form.name = "VOIP_Form";
-    } else if (service === "Telecom/Other_Services") {
-      form.name = "IT_Form";
-    } else if (service === "Telecom_Services") {
-      form.name = "Telecom_Form";
+  function showForm() {
+    // Get the selected value
+    const selectedService = document.getElementById("position-2062").value;
+
+    // Hide all forms
+    document.querySelectorAll(".dynamic-form").forEach((form) => {
+      form.classList.add("hidden");
+    });
+
+    console.log(selectedService);
+    // Show the selected form
+    if (selectedService) {
+      const selectedForm = document.getElementById(selectedService);
+      console.log(selectedForm);
+      if (selectedForm) {
+        selectedForm.classList.remove("hidden");
+      }
     }
   }
 </script>
