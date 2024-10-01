@@ -98,7 +98,6 @@ eleventyNavigation:
           required
           id="position-2061"
           name="Position"
-          onchange="updateFormName()"
         >
           <option value="" disabled selected>Please Choose</option>
           <option value="IT_Support">IT Support</option>
@@ -174,36 +173,3 @@ eleventyNavigation:
 </section>
 
 <!-- TODO: If they choose IT support go to support@partner-central.net ..... etc for others. (review word doc)-->
-
-<script>
-  function updateFormName() {
-    const form = document.getElementById("cs-form-2061");
-    const formNameField = document.getElementById("form-name-field");
-    const selectedService = document.getElementById(
-      "service-requested-2061"
-    ).value;
-
-    // Update form name based on the selected service
-    switch (selectedService) {
-      case "IT_Support":
-        form.setAttribute("name", "IT Support Form");
-        formNameField.setAttribute("value", "IT Support Form");
-        break;
-      case "Telecom/Other_Services":
-        form.setAttribute("name", "Telecom Services Form");
-        formNameField.setAttribute("value", "Telecom Services Form");
-        break;
-      case "General_Sales_Inquiry":
-        form.setAttribute("name", "Sales Inquiry Form");
-        formNameField.setAttribute("value", "Sales Inquiry Form");
-        break;
-      case "Other":
-        form.setAttribute("name", "Other Request Form");
-        formNameField.setAttribute("value", "Other Request Form");
-        break;
-      default:
-        form.setAttribute("name", "Contact Form");
-        formNameField.setAttribute("value", "Contact Form");
-    }
-  }
-</script>
