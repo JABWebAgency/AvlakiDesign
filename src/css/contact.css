@@ -34,7 +34,7 @@
   #contact-2061 .cs-form {
     width: 100%;
     /* 464px - 846px */
-    max-width: clamp(29rem, 59vw, 52.875rem);
+    /* max-width: clamp(29rem, 59vw, 52.875rem); */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 0.75rem;
