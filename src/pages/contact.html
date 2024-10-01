@@ -11,13 +11,22 @@ eleventyNavigation:
 ---
 
 <!-- ============================================ -->
-<!--                   Contact                    -->
+<!--                Contact Form                  -->
 <!-- ============================================ -->
 
-<section id="contact-2061" style="padding-top: 10rem">
+<section id="cs-contact-242" style="margin-top: 5rem">
+  <img
+  class="cs-floater"
+  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Forange-arrow.svg"
+  alt="arrow"
+  loading="lazy"
+  decoding="async"
+  aria-hidden="true"
+/>
   <div class="cs-container">
     <div class="cs-content">
-      <h2 class="cs-title">Get In Touch</h2>
+      <span class="cs-topper">Here To Help</span>
+      <h2 class="cs-title">Contact Us</h2>
       <p class="cs-text">
         Whether you need expert advice, technical support, or a custom solution,
         our team is here to help. Reach out today and let's discuss how we can
@@ -25,446 +34,459 @@ eleventyNavigation:
       </p>
     </div>
 
-    <label class="cs-label">
-      In our commitment to providing excellent service, please inform us of how
-      we can assist you.
-      <select
-        class="cs-input cs-select"
-        required
-        id="position-2062"
-        name="ServiceRequested"
-        onchange="showForm()"
-        required
+    <div id="cs-form-242">
+      <!-- Form -->
+      <label class="cs-label">
+        In our commitment to providing excellent service, please inform us of
+        how we can assist you.
+        <select
+          class="cs-input cs-select"
+          required
+          id="position-2062"
+          name="ServiceRequested"
+          onchange="showForm()"
+          required
+        >
+          <option value="" disabled selected>Please Select An Option</option>
+          <option value="IT_Support">IT Support</option>
+          <option value="Telecom/Other_Services">
+            Telecom / Other Services
+          </option>
+          <option value="General_Sales_Inquiry">General Sales Inquiry</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <form
+        class="cs-form dynamic-form hidden fade-in"
+        id="IT_Support"
+        name="IT_SUPPORT_FORM"
+        method="POST"
+        data-netlify="true"
       >
-        <option value="" disabled selected>Please Choose</option>
-        <option value="IT_Support">IT Support</option>
-        <option value="Telecom/Other_Services">Telecom / Other Services</option>
-        <option value="General_Sales_Inquiry">General Sales Inquiry</option>
-        <option value="Other">Other</option>
-      </select>
-    </label>
+        <label class="cs-label cs-split">
+          First Name *
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="first-name-2061"
+            name="First Name"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Last Name *
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="last-name-2061"
+            name="Last Name"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Email *
+          <input
+            class="cs-input"
+            required
+            type="email"
+            id="email-2061"
+            name="Email"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Phone Number *
+          <input
+            class="cs-input"
+            required
+            type="tel"
+            id="phone-2061"
+            name="Phone Number"
+          />
+        </label>
+        <label class="cs-label">
+          Are You a New or Existing Customer? *
+          <select
+            class="cs-input cs-select"
+            required
+            id="position-2061"
+            name="CustomerStatus"
+          >
+            <option value="" disabled selected>Please Choose</option>
+            <option value="NewCustomer">New</option>
+            <option value="ExistingCustomer">Existing</option>
+          </select>
+        </label>
+        <label class="cs-label">
+          Company Name
+          <input
+            class="cs-input"
+            type="text"
+            id="interview-availability-2061"
+            name="Company Name"
+          />
+        </label>
+        <label class="cs-label cs-message">
+          Additional Information or Requests
+          <textarea
+            class="cs-input cs-textarea"
+            id="previous-experience-2061"
+            name="Additional Information"
+            placeholder="Additional Information..."
+          ></textarea>
+        </label>
+        <div class="cs-wrapper" style="margin-top: 2rem">
+          <button class="cs-button-solid cs-submit" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
 
-    <form
-      class="cs-form dynamic-form hidden fade-in"
-      id="IT_Support"
-      name="IT_SUPPORT_FORM"
-      method="POST"
-      data-netlify="true"
-    >
-      <label class="cs-label cs-split">
-        First Name *
-        <input
-          class="cs-input"
-          required
-          type="text"
-          id="first-name-2061"
-          name="First Name"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Last Name *
-        <input
-          class="cs-input"
-          required
-          type="text"
-          id="last-name-2061"
-          name="Last Name"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Email *
-        <input
-          class="cs-input"
-          required
-          type="email"
-          id="email-2061"
-          name="Email"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Phone Number *
-        <input
-          class="cs-input"
-          required
-          type="tel"
-          id="phone-2061"
-          name="Phone Number"
-        />
-      </label>
-      <label class="cs-label">
-        Are You a New or Existing Customer? *
-        <select
-          class="cs-input cs-select"
-          required
-          id="position-2061"
-          name="CustomerStatus"
-        >
-          <option value="" disabled selected>Please Choose</option>
-          <option value="NewCustomer">New</option>
-          <option value="ExistingCustomer">Existing</option>
-        </select>
-      </label>
-      <label class="cs-label">
-        Company Name
-        <input
-          class="cs-input"
-          type="text"
-          id="interview-availability-2061"
-          name="Company Name"
-        />
-      </label>
-      <label class="cs-label cs-message">
-        Additional Information or Requests
-        <textarea
-          class="cs-input cs-textarea"
-          id="previous-experience-2061"
-          name="Additional Information"
-          placeholder="Additional Information..."
-        ></textarea>
-      </label>
-      <div class="cs-wrapper">
-        <button class="cs-button-solid cs-submit" type="submit">Submit</button>
-      </div>
-    </form>
+      <!-- General Inquiries Form -->
+      <form
+        class="cs-form dynamic-form hidden fade-in"
+        id="Telecom/Other_Services"
+        name="TELECOM_OTHER_SERVICES_FORM"
+        method="POST"
+        data-netlify="true"
+      >
+        <!-- Honeypot field for spam prevention -->
 
-    <!-- General Inquiries Form -->
-    <form
-      class="cs-form dynamic-form hidden fade-in"
-      id="Telecom/Other_Services"
-      name="TELECOM_OTHER_SERVICES_FORM"
-      method="POST"
-      data-netlify="true"
-    >
-      <!-- Honeypot field for spam prevention -->
+        <label class="cs-label cs-split">
+          First Name *
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="first-name-2061"
+            name="First Name"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Last Name *
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="last-name-2061"
+            name="Last Name"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Email *
+          <input
+            class="cs-input"
+            required
+            type="email"
+            id="email-2061"
+            name="Email"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Phone Number *
+          <input
+            class="cs-input"
+            required
+            type="tel"
+            id="phone-2061"
+            name="Phone Number"
+          />
+        </label>
+        <label class="cs-label">
+          Are You a New or Existing Customer? *
+          <select
+            class="cs-input cs-select"
+            required
+            id="position-2061"
+            name="CustomerStatus"
+          >
+            <option value="" disabled selected>Please Choose</option>
+            <option value="NewCustomer">New</option>
+            <option value="ExistingCustomer">Existing</option>
+          </select>
+        </label>
+        <label class="cs-label">
+          Company Name
+          <input
+            class="cs-input"
+            type="text"
+            id="interview-availability-2061"
+            name="Company Name"
+          />
+        </label>
+        <label class="cs-label cs-message">
+          Additional Information or Requests
+          <textarea
+            class="cs-input cs-textarea"
+            id="previous-experience-2061"
+            name="Additional Information"
+            placeholder="Additional Information..."
+          ></textarea>
+        </label>
+        <div class="cs-wrapper" style="margin-top: 2rem">
+          <button class="cs-button-solid cs-submit" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
 
-      <label class="cs-label cs-split">
-        First Name *
-        <input
-          class="cs-input"
-          required
-          type="text"
-          id="first-name-2061"
-          name="First Name"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Last Name *
-        <input
-          class="cs-input"
-          required
-          type="text"
-          id="last-name-2061"
-          name="Last Name"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Email *
-        <input
-          class="cs-input"
-          required
-          type="email"
-          id="email-2061"
-          name="Email"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Phone Number *
-        <input
-          class="cs-input"
-          required
-          type="tel"
-          id="phone-2061"
-          name="Phone Number"
-        />
-      </label>
-      <label class="cs-label">
-        Are You a New or Existing Customer? *
-        <select
-          class="cs-input cs-select"
-          required
-          id="position-2061"
-          name="CustomerStatus"
-        >
-          <option value="" disabled selected>Please Choose</option>
-          <option value="NewCustomer">New</option>
-          <option value="ExistingCustomer">Existing</option>
-        </select>
-      </label>
-      <label class="cs-label">
-        Company Name
-        <input
-          class="cs-input"
-          type="text"
-          id="interview-availability-2061"
-          name="Company Name"
-        />
-      </label>
-      <label class="cs-label cs-message">
-        Additional Information or Requests
-        <textarea
-          class="cs-input cs-textarea"
-          id="previous-experience-2061"
-          name="Additional Information"
-          placeholder="Additional Information..."
-        ></textarea>
-      </label>
-      <div class="cs-wrapper">
-        <button class="cs-button-solid cs-submit" type="submit">Submit</button>
-      </div>
-    </form>
+      <form
+        class="cs-form dynamic-form hidden fade-in"
+        id="General_Sales_Inquiry"
+        name="GENERAL_SALES_INQUIRY_FORM"
+        method="POST"
+        data-netlify="true"
+      >
+        <!-- Honeypot field for spam prevention -->
 
-    <form
-      class="cs-form dynamic-form hidden fade-in"
-      id="General_Sales_Inquiry"
-      name="GENERAL_SALES_INQUIRY_FORM"
-      method="POST"
-      data-netlify="true"
-    >
-      <!-- Honeypot field for spam prevention -->
+        <label class="cs-label cs-split">
+          First Name *
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="first-name-2061"
+            name="First Name"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Last Name *
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="last-name-2061"
+            name="Last Name"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Email *
+          <input
+            class="cs-input"
+            required
+            type="email"
+            id="email-2061"
+            name="Email"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Phone Number *
+          <input
+            class="cs-input"
+            required
+            type="tel"
+            id="phone-2061"
+            name="Phone Number"
+          />
+        </label>
+        <label class="cs-label">
+          Are You a New or Existing Customer? *
+          <select
+            class="cs-input cs-select"
+            required
+            id="position-2061"
+            name="CustomerStatus"
+          >
+            <option value="" disabled selected>Please Choose</option>
+            <option value="NewCustomer">New</option>
+            <option value="ExistingCustomer">Existing</option>
+          </select>
+        </label>
+        <label class="cs-label">
+          Company Name
+          <input
+            class="cs-input"
+            type="text"
+            id="interview-availability-2061"
+            name="Company Name"
+          />
+        </label>
+        <label class="cs-label cs-message">
+          Additional Information or Requests
+          <textarea
+            class="cs-input cs-textarea"
+            id="previous-experience-2061"
+            name="Additional Information"
+            placeholder="Additional Information..."
+          ></textarea>
+        </label>
+        <div class="cs-wrapper" style="margin-top: 2rem">
+          <button class="cs-button-solid cs-submit" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
 
-      <label class="cs-label cs-split">
-        First Name *
-        <input
-          class="cs-input"
-          required
-          type="text"
-          id="first-name-2061"
-          name="First Name"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Last Name *
-        <input
-          class="cs-input"
-          required
-          type="text"
-          id="last-name-2061"
-          name="Last Name"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Email *
-        <input
-          class="cs-input"
-          required
-          type="email"
-          id="email-2061"
-          name="Email"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Phone Number *
-        <input
-          class="cs-input"
-          required
-          type="tel"
-          id="phone-2061"
-          name="Phone Number"
-        />
-      </label>
-      <label class="cs-label">
-        Are You a New or Existing Customer? *
-        <select
-          class="cs-input cs-select"
-          required
-          id="position-2061"
-          name="CustomerStatus"
-        >
-          <option value="" disabled selected>Please Choose</option>
-          <option value="NewCustomer">New</option>
-          <option value="ExistingCustomer">Existing</option>
-        </select>
-      </label>
-      <label class="cs-label">
-        Company Name
-        <input
-          class="cs-input"
-          type="text"
-          id="interview-availability-2061"
-          name="Company Name"
-        />
-      </label>
-      <label class="cs-label cs-message">
-        Additional Information or Requests
-        <textarea
-          class="cs-input cs-textarea"
-          id="previous-experience-2061"
-          name="Additional Information"
-          placeholder="Additional Information..."
-        ></textarea>
-      </label>
-      <div class="cs-wrapper">
-        <button class="cs-button-solid cs-submit" type="submit">Submit</button>
-      </div>
-    </form>
+      <form
+        class="cs-form dynamic-form hidden fade-in"
+        id="Other"
+        name="OTHER_FORM"
+        method="POST"
+        data-netlify="true"
+      >
+        <!-- Honeypot field for spam prevention -->
 
-    <form
-      class="cs-form dynamic-form hidden fade-in"
-      id="Other"
-      name="OTHER_FORM"
-      method="POST"
-      data-netlify="true"
-    >
-      <!-- Honeypot field for spam prevention -->
+        <label class="cs-label cs-split">
+          First Name *
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="first-name-2061"
+            name="First Name"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Last Name *
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="last-name-2061"
+            name="Last Name"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Email *
+          <input
+            class="cs-input"
+            required
+            type="email"
+            id="email-2061"
+            name="Email"
+          />
+        </label>
+        <label class="cs-label cs-split">
+          Phone Number *
+          <input
+            class="cs-input"
+            required
+            type="tel"
+            id="phone-2061"
+            name="Phone Number"
+          />
+        </label>
+        <label class="cs-label">
+          Are You a New or Existing Customer? *
+          <select
+            class="cs-input cs-select"
+            required
+            id="position-2061"
+            name="CustomerStatus"
+          >
+            <option value="" disabled selected>Please Choose</option>
+            <option value="NewCustomer">New</option>
+            <option value="ExistingCustomer">Existing</option>
+          </select>
+        </label>
+        <label class="cs-label">
+          Company Name
+          <input
+            class="cs-input"
+            type="text"
+            id="interview-availability-2061"
+            name="Company Name"
+          />
+        </label>
+        <label class="cs-label cs-message">
+          Additional Information or Requests
+          <textarea
+            class="cs-input cs-textarea"
+            id="previous-experience-2061"
+            name="Additional Information"
+            placeholder="Additional Information..."
+          ></textarea>
+        </label>
+        <div class="cs-wrapper" style="margin-top: 2rem">
+          <button class="cs-button-solid cs-submit" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
 
-      <label class="cs-label cs-split">
-        First Name *
-        <input
-          class="cs-input"
-          required
-          type="text"
-          id="first-name-2061"
-          name="First Name"
+    <!-- Contact Info -->
+    <div class="cs-right-section">
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <picture class="cs-icon-wrapper">
+            <img
+              aria-hidden="true"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg"
+              alt="mail icon"
+              class="cs-icon"
+              width="36"
+              height="36"
+              decoding="async"
+            />
+          </picture>
+          <div class="cs-flex-group">
+            <span class="cs-header">Email</span>
+            <a href="mailto:support@yourdomain.com" class="cs-link"
+              >sales@prooncall.com</a
+            >
+          </div>
+        </li>
+        <li class="cs-li">
+          <picture class="cs-icon-wrapper">
+            <img
+              aria-hidden="true"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg"
+              alt="address icon"
+              class="cs-icon"
+              width="36"
+              height="36"
+              decoding="async"
+            />
+          </picture>
+          <div class="cs-flex-group">
+            <span class="cs-header">Cincinnati Address</span>
+            <a href="" class="cs-link"
+              > 6902 East Kemper Rd. </span> <br />
+              Cincinnati, Ohio 45249</a
+            >
+          </div>
+        </li>
+        <li class="cs-li">
+          <picture class="cs-icon-wrapper">
+            <img
+              aria-hidden="true"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg"
+              alt="address icon"
+              class="cs-icon"
+              width="36"
+              height="36"
+              decoding="async"
+            />
+          </picture>
+          <div class="cs-flex-group">
+            <span class="cs-header">Columbus Address</span>
+            <a href="" class="cs-link"
+              ><span class="cs-block"> 733 Lakeview Plaza Blvd, Suite G </span>
+              <br />
+              Worthington, Ohio 43085
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!-- Picture -->
+      <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="/assets/images/map16.png" />
+        <source media="(min-width: 601px)" srcset="/assets/images/map16.png" />
+        <img
+          class="cs-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map.jpg"
+          alt="google map"
+          width="462"
+          height="438"
         />
-      </label>
-      <label class="cs-label cs-split">
-        Last Name *
-        <input
-          class="cs-input"
-          required
-          type="text"
-          id="last-name-2061"
-          name="Last Name"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Email *
-        <input
-          class="cs-input"
-          required
-          type="email"
-          id="email-2061"
-          name="Email"
-        />
-      </label>
-      <label class="cs-label cs-split">
-        Phone Number *
-        <input
-          class="cs-input"
-          required
-          type="tel"
-          id="phone-2061"
-          name="Phone Number"
-        />
-      </label>
-      <label class="cs-label">
-        Are You a New or Existing Customer? *
-        <select
-          class="cs-input cs-select"
-          required
-          id="position-2061"
-          name="CustomerStatus"
-        >
-          <option value="" disabled selected>Please Choose</option>
-          <option value="NewCustomer">New</option>
-          <option value="ExistingCustomer">Existing</option>
-        </select>
-      </label>
-      <label class="cs-label">
-        Company Name
-        <input
-          class="cs-input"
-          type="text"
-          id="interview-availability-2061"
-          name="Company Name"
-        />
-      </label>
-      <label class="cs-label cs-message">
-        Additional Information or Requests
-        <textarea
-          class="cs-input cs-textarea"
-          id="previous-experience-2061"
-          name="Additional Information"
-          placeholder="Additional Information..."
-        ></textarea>
-      </label>
-      <div class="cs-wrapper">
-        <button class="cs-button-solid cs-submit" type="submit">Submit</button>
-      </div>
-    </form>
-    <!--Form-->
-    <!-- <form
-      class="cs-form"
-      id="cs-form-2061"
-      name="defaultForm"
-      method="POST"
-      netlify-honeypot="bot-field"
-      data-netlify="true"
-    >
-     
-    </form> -->
-  </div>
-  <img
-    class="cs-graphic cs-graphic-left"
-    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/dental-drop-green.svg"
-    alt="drop"
-    width="528"
-    height="830"
-    aria-hidden="true"
-    decoding="async"
-  />
-  <img
-    class="cs-graphic cs-graphic-right"
-    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/dental-drop-blue.svg"
-    alt="drop"
-    width="528"
-    height="830"
-    aria-hidden="true"
-    decoding="async"
-  />
-</section>
-
-<!-- ============================================ -->
-<!--                    Map                       -->
-<!-- ============================================ -->
-
-<div class="container-wrapper" id="map-456">
-  <div class="map" >
-    <!-- You can also add an image tag if needed -->
-  </div>
-  <div class="contact-info">
-    <div class="cs-content">
-      <h2 class="cs-title">Our Locations</h2>
-      <p class="cs-text">
-        We would love to hear about your business and discuss how we can help.
-        Please fill out the form above to schedule a call with one of our
-        account managers.
-      </p>
-      <!-- <span class="cs-heading">Any problem about your services?</span> -->
-      <span style="margin-top: 1rem"></span>
-      <span class="cs-heading"> Cincinnati </span>
-      <a class="cs-link" href="tel:513-489-7600">(513) 489-7600</a>
-      <p class="cs-link"> 6902 East Kemper Rd. Cincinnati, Ohio 45249</p>
-
-      <span style="margin-top: 1rem"></span>
-      <span class="cs-heading"> Columbus </span>
-      <a class="cs-link" href="tel:614-761-1400">(614) 861-1400</a>
-      <p class="cs-link"> 733 Lakeview Plaza Blvd, Suite G Worthington, Ohio 43085
-      </p>
-
-
-      <span style="margin-top: 1rem"></span>
-      <span class="cs-heading"> Dayton </span>
-      <a class="cs-link" href="tel:937-294-5900">(937) 294-5900</a>
+      </picture>
     </div>
   </div>
-  </div>
-</div>
-
-<!-- <section id="map-720">
-  <picture class="cs-background">
-    <source media="(max-width: 600px)" srcset="../assets/images/map5.png" />
-    <source media="(min-width: 601px)" srcset="../assets/images/map5.png" />
-    <img
-      loading="lazy"
-      decoding="async"
-      src="../assets/images/map5.png"
-      alt="map"
-      width="1280"
-      height="600"
-    />
-  </picture>
-</section> -->
+</section>
 
 <!-- TODO: If they choose IT support go to support@partner-central.net ..... etc for others. (review word doc)-->
 <script>
