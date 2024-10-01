@@ -176,13 +176,14 @@ eleventyNavigation:
 <!-- TODO: If they choose IT support go to support@partner-central.net ..... etc for others. (review word doc)-->
 <script>
   function updateFormName() {
-    const form = document.getElementById("cs-form-486");
-    const service = document.getElementById("cs-select-486").value;
-
+    const form = document.getElementById("cs-form-2061");
+    console.log(form);
+    const service = document.getElementById("position-2062").value;
+    console.log(service);
     // Change form name dynamically based on selected service
-    if (service === "VOIP_Services") {
+    if (service === "IT_Support") {
       form.name = "VOIP_Form";
-    } else if (service === "IT_Services") {
+    } else if (service === "Telecom/Other_Services") {
       form.name = "IT_Form";
     } else if (service === "Telecom_Services") {
       form.name = "Telecom_Form";
