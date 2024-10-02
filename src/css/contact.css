@@ -724,6 +724,10 @@
     height: auto;
     display: block;
   }
+
+  .dayton {
+    margin-top: -2rem;
+  }
   #cs-contact-242 .cs-picture {
     width: 100%;
     border-radius: clamp(1rem, 1.5vw, 1.25rem);
@@ -773,10 +777,16 @@
   .cs-floater {
     display: none;
   }
+  .dayton {
+    margin-top: 0rem;
+  }
 }
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  .dayton {
+    margin-top: 0rem;
+  }
   #cs-contact-242 #cs-form-242 {
     display: flex;
     justify-content: space-between;
