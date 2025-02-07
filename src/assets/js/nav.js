@@ -46,3 +46,4 @@ for (const item of dropDowns) {
   };
   item.addEventListener("click", onClick);
 }
+
