@@ -1,10 +1,10 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #ff6a3e;
+    --primary: #0082f3;
     --primaryLight: #ffba43;
     --secondary: #ffba43;
     --secondaryLight: #ffba43;
-    --headerColor: #1a1a1a;
+    --headerColor: #fff;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
@@ -111,8 +111,6 @@ body {
     color: #fff;
   }
   #hero-1957 .cs-title {
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 5.975vw, 3.8125rem);
     margin-bottom: 1rem;
     color: #fff;
   }
