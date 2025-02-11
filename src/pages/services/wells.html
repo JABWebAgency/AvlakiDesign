@@ -4,18 +4,58 @@ description: "Meta description for the page"
 metaTitle: 'Title that shows up on social OG tags'
 tagTitle: 'Title that shows up on google, and is concatenated with | {{ client.name }}'
 preloadImg: '/images/imageName.format'
-preloadCSS: '/css/fileName.css'
+preloadCSS: '/css/content.css'
 permalink: 'services/wells.html'
 eleventyNavigation:
 key: Navigation Name
 order: 1000
 ---
 
-<!-- Enter html code below -->
-<section id="hero-1957">
-	<div class="cs-container">
-		<div class="cs-content">
-			<h1 style="color: black;" class="cs-title">REV1 Wells</h1>
-		</div>
-	</div>
+<div id="banner-716">
+    <div class="cs-container">
+        <span class="cs-int-title">Well Services</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+        <img loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg" alt="pills" width="1280"
+            height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<section id="content-page-716">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Exterior Sump Wells and Dry Wells</h1>
+            <h2>Exterior Sump Wells</h2>
+            <p>At Avlaki, we offer the installation of exterior sump wells to help manage excess water around your
+                property. Exterior sump wells are designed to collect and store groundwater before it can cause flooding
+                or damage to your foundation. Equipped with a pump, the system efficiently moves water away from the
+                home, providing long-term protection against water buildup and ensuring a dry, secure environment for
+                your property.
+            <h2>Dry Wells</h2>
+            <p>We also specialize in dry wells, a sustainable solution for draining excess water on your property. A dry
+                well is an underground system that collects and temporarily stores water, allowing it to slowly
+                percolate into the surrounding soil. This solution is ideal for areas with poor drainage or where water
+                needs to be diverted away from structures, helping to prevent pooling and erosion while maintaining a
+                healthy landscape.</p>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/placeholder.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/placeholder.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/placeholder.webp" width="570" height="680"
+                    aria-hidden="true">
+            </picture>
+
+        </div>
+    </div>
 </section>

@@ -301,7 +301,7 @@
     line-height: 1.2em;
     text-decoration: none;
     margin: 0;
-    color: var(--headerColor);
+    color: black;
     display: inline-block;
     position: relative;
   }
@@ -364,7 +364,6 @@
     height: 0;
     margin: 0;
     padding: 0;
-    background-color: var(--primary);
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
@@ -381,7 +380,7 @@
   #cs-navigation .cs-li-link.cs-drop-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 2vw, 1.25rem);
-    color: #fff;
+    color: black;
   }
 }
 /* Desktop - 1024px */
@@ -435,6 +434,7 @@
     display: block;
     transform: translateY(-0.625rem);
     transition: opacity .6s, transform .6s;
+    background-color: black;
   }
   #cs-navigation .cs-drop-li:nth-of-type(1) {
     transition-delay: .05s;
@@ -484,7 +484,7 @@
     padding: 0.75rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    color: var(--bodyTextColor);
+    color: white;
     display: block;
     transition: color 0.3s, background-color 0.3s;
   }
@@ -658,10 +658,6 @@
   }
   #cs-navigation .cs-li-link:hover {
     color: var(--primary);
-  }
-  #cs-navigation .cs-li-link.cs-active {
-    font-weight: 700;
-    color: var(--headerColor);
   }
   #cs-navigation .cs-button-solid {
     font-size: 1rem;

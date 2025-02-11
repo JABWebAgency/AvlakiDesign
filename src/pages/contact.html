@@ -4,18 +4,85 @@ description: "Meta description for the page"
 metaTitle: 'Title that shows up on social OG tags'
 tagTitle: 'Title that shows up on google, and is concatenated with | {{ client.name }}'
 preloadImg: '/images/imageName.format'
-preloadCSS: '/css/fileName.css'
+preloadCSS: '/css/contact.css'
 permalink: 'contact.html'
 eleventyNavigation:
 key: Navigation Name
 order: 1000
 ---
 
-<!-- Enter html code below -->
-<section id="hero-1957">
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-2320">
     <div class="cs-container">
         <div class="cs-content">
-            <h1 style="color: black;" class="cs-title">REV1 Contact</h1>
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get In Touch With Avlaki</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-323-2320" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="email" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="tel" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label cs-services">
+                    Services
+                    <select class="cs-input" name="Services">
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="New Construction">New Construction</option>
+                        <option value="Remodels">Remodels</option>
+                        <option value="Cabinets">Cabinets</option>
+                    </select>
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message"
+                        placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+            </form>
+        </div>
+        <!--Map Image, pin is made in the Figma then export as one image-->
+        <div class="cs-map">
+            <div class="cs-iframe-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2840.824331521317!2d-93.6461209242686!3d44.60061829064301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f673e7b6c57115%3A0xac89779138456718!2sAvlaki%20Drainage%20Solutions!5e0!3m2!1sen!2sus!4v1739240543062!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="cs-box">
+                <img class="cs-icon" decoding="async" loading="lazy"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/yellow-pin.svg" alt="icon"
+                    width="40" height="40" aria-hidden="true">
+                <div class="cs-flex">
+                    <span class="cs-header">Location</span>
+                    <span class="cs-address">{{client.address.lineOne}}, {{client.address.city}},
+                        {{client.address.county}} {{client.address.postcode}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cs-container2">
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/avlakihero.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/avlakihero.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/avlakihero.jpg" width="1280" height="243">
+        </picture>
+        <div class="cs-hours">
+            <div class="cs-topper">Working Hours</div>
+            <span class="cs-hours-info">Monday - Friday: 7am - 5pm</span>
         </div>
     </div>
 </section>
