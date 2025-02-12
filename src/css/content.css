@@ -119,44 +119,6 @@
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #RPsbs-1445 .cs-button-solid,
-  #RPsbsr-1445 .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: #fff;
-    min-width: 9.375rem;
-    padding: 0 2rem;
-    background-color: var(--primary);
-    border-radius: 0.25rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-  }
-  #RPsbs-1445 .cs-button-solid:before,
-  #RPsbsr-1445 .cs-button-solid:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0.25rem;
-    transition: width .3s;
-  }
-  #RPsbs-1445 .cs-button-solid:hover:before,
-  #RPsbsr-1445 .cs-button-solid:hover:before {
-    width: 100%;
-  }
   #RPsbs-1445 .cs-picture,
   #RPsbsr-1445 .cs-picture {
     width: 100%;
@@ -371,9 +333,6 @@
     #content-page-716 h5,
     #content-page-716 h6 {
         font-size: 1.25rem;
-    }
-    #content-page-716 .cs-button-solid {
-        margin-bottom: 2rem;
     }
     #content-page-716 .cs-color {
         color: var(--primary);

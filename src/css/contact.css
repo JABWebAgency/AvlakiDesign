@@ -91,39 +91,6 @@
     margin-bottom: 0.75rem;
     font-family: inherit;
   }
-  #contact-2320 .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: #fff;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-  }
-  #contact-2320 .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0.25rem;
-    transition: width 0.3s;
-  }
-  #contact-2320 .cs-button-solid:hover:before {
-    width: 100%;
-  }
   #contact-2320 .cs-submit {
     text-transform: uppercase;
     background-color: var(--primary);
@@ -292,9 +259,6 @@
   #contact-2320 .cs-services,
   #contact-2320 .cs-phone {
     width: 47%;
-  }
-  #contact-2320 .cs-button-solid {
-    margin-left: 0;
   }
   #contact-2320 .cs-map {
     max-width: 39.375rem;
