@@ -37,9 +37,11 @@
   }
   #contact-2320 .cs-container2 .cs-topper {
     color: #fff;
+    font-size: 2rem;
   }
   #contact-2320 .cs-content {
     text-align: left;
+    margin-top: 50px;
   }
   #contact-2320 .cs-title {
     margin-bottom: 2rem;
@@ -75,6 +77,9 @@
     border: none;
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
+  }
+  #contact-2320 .cs-input:focus {
+    border-color: red;
   }
   #contact-2320 .cs-input::placeholder {
     color: #7d799c;
@@ -160,7 +165,7 @@
     /* 16px - 32px top & bottom */
     /* 16px left & right */
     padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 2.4vw, 1rem);
-    background-color: #fff;
+    background-color: var(--primary);
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
@@ -169,6 +174,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
+    box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.5)
   }
   #contact-2320 .cs-box:before {
     content: '';
@@ -187,6 +193,7 @@
     width: 2rem;
     height: auto;
     display: block;
+    filter: brightness(0%) contrast(100%) saturate(0%) sepia(0%) invert(100%) grayscale(100%)
   }
   #contact-2320 .cs-flex {
     display: flex;
@@ -197,13 +204,13 @@
     font-weight: 700;
     line-height: 1.2em;
     margin: 0 0 0.5rem;
-    color: black;
+    color: white;
   }
   #contact-2320 .cs-address {
     font-size: clamp(0.75rem, 2.8vw, 1rem);
     line-height: 1.5em;
     margin: 0;
-    color: var(--bodyTextColor);
+    color: rgba(0,0,0,0.75);
   }
   #contact-2320 .cs-hours {
     text-align: center;
@@ -216,7 +223,7 @@
     font-size: clamp(1.25rem, 3vw, 1.5625rem);
     line-height: 1.2em;
     font-weight: 700;
-    width: 60%;
+    width: 100%;
     max-width: 28ch;
     margin: 0;
     color: var(--bodyTextColorWhite);
@@ -229,6 +236,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
   }
   #contact-2320 .cs-background:before {
     /* background color overlay */
@@ -267,7 +275,7 @@
     max-width: 80rem;
   }
   #contact-2320 .cs-content {
-    max-width: 32.625rem;
+    max-width: 40rem;
     /* 24px - 80px */
     padding: clamp(2rem, 5vw, 5rem) 0;
   }
@@ -279,7 +287,7 @@
     color: black;
   }
   #contact-2320 .cs-title {
-    max-width: 32.625rem;
+    max-width: 40rem;
   }
   #contact-2320 .cs-services,
   #contact-2320 .cs-phone {
