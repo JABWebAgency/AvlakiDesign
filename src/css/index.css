@@ -29,7 +29,6 @@
   }
   #hero-1957 .cs-container {
     width: 100%;
-    max-width: 80rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -106,7 +105,6 @@
   }
   #content-1450 .cs-container {
     width: 100%;
-    max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -188,7 +186,6 @@
   }
   #services-1957 .cs-container {
     width: 100%;
-    max-width: 120rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -464,7 +461,6 @@
   #sbs-2291 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
-    max-width: 36.5rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -621,7 +617,6 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #sbs-2291 .cs-container {
-    max-width: 80rem;
     flex-direction: row;
     align-items: stretch;
     gap: 1.25rem;
@@ -652,7 +647,6 @@
   }
   #services-1737 .cs-container {
     width: 100%;
-    max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
