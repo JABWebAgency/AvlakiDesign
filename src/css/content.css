@@ -189,6 +189,7 @@
     justify-content: space-between;
     align-items: stretch;
     position: relative;
+    margin-top: 30px;
   }
   #RPsbs-1445 .cs-content,
   #RPsbsr-1445 .cs-content {
