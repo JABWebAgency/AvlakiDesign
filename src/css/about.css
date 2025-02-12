@@ -221,7 +221,7 @@
     width: 25.875em;
     height: 25em;
     background-color: #fff;
-    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.5);
     /* 6px - 12px */
     border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
     right: 0;
