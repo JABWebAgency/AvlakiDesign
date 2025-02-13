@@ -1,540 +1,88 @@
 ---
-layout: "base.html"
-description: "Get in touch with PRO OnCall Technology for expert IT support and services. We're here to help with all your VoIP, IT security, and managed service needs."
-metaTitle: "Contact PRO OnCall Technology - IT Support & Services"
-tagTitle: "Contact Us"
-preloadCSS: "/css/contact.css"
-permalink: "contact/"
+layout: 'base.html'
+description: "Contact Avlaki Drainage"
+metaTitle: "Avlaki Drainage Solutions | Contact"
+tagTitle: "Contact"
+preloadImg: '/images/imageName.format'
+preloadCSS: '/css/contact.css'
+permalink: 'contact.html'
 eleventyNavigation:
-  key: Contact
-  order: 500
+key: Navigation Name
+order: 1000
 ---
 
 <!-- ============================================ -->
-<!--                Contact Form                  -->
+<!--                   Contact                    -->
 <!-- ============================================ -->
 
-<section id="cs-contact-242" style="margin-top: 5rem">
-  <img
-  class="cs-floater"
-  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Forange-arrow.svg"
-  alt="arrow"
-  loading="lazy"
-  decoding="async"
-  aria-hidden="true"
-/>
-  <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">Here To Help</span>
-      <h2 class="cs-title">Contact Us</h2>
-      <p class="cs-text">
-        Whether you need expert advice, technical support, or a custom solution,
-        our team is here to help. Reach out today and let's discuss how we can
-        empower your business with the right technology.
-      </p>
+<section id="contact-2320">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get in Touch!</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-323-2320" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="email" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="tel" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label cs-services">
+                    Services
+                    <select class="cs-input" name="Services">
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="New Construction">New Construction</option>
+                        <option value="Remodels">Remodels</option>
+                        <option value="Cabinets">Cabinets</option>
+                    </select>
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message"
+                        placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+            </form>
+        </div>
+        <!--Map Image, pin is made in the Figma then export as one image-->
+        <div class="cs-map">
+            <div class="cs-iframe-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2840.824331521317!2d-93.6461209242686!3d44.60061829064301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f673e7b6c57115%3A0xac89779138456718!2sAvlaki%20Drainage%20Solutions!5e0!3m2!1sen!2sus!4v1739240543062!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="cs-box">
+                <img class="cs-icon" decoding="async" loading="lazy"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/yellow-pin.svg" alt="icon"
+                    width="40" height="40" aria-hidden="true">
+                <div class="cs-flex">
+                    <span class="cs-header">Location</span>
+                    <span class="cs-address">{{client.address.lineOne}}, {{client.address.city}},
+                        {{client.address.county}} {{client.address.postcode}}
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div id="cs-form-242">
-      <!-- Form -->
-      <label class="cs-label">
-        In our commitment to providing excellent service, please let us know how we can assist you.
-        <select
-          class="cs-input cs-select"
-          required
-          id="position-2062"
-          name="ServiceRequested"
-          onchange="showForm()"
-          required
-        >
-          <option value="" disabled selected>Please Select An Option</option>
-          <option value="IT_Support">IT Support</option>
-          <option value="Telecom/Other_Services">
-            Telecom / Other Services
-          </option>
-          <option value="General_Sales_Inquiry">General Sales Inquiry</option>
-          <option value="Other">Other</option>
-        </select>
-      </label>
-
-      <form
-        class="cs-form dynamic-form hidden fade-in"
-        id="IT_Support"
-        name="IT_SUPPORT_FORM"
-        method="POST"
-        data-netlify="true"
-      >
-        <label class="cs-label cs-split">
-          First Name *
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="first-name-2061"
-            name="First Name"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Last Name *
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="last-name-2061"
-            name="Last Name"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Email *
-          <input
-            class="cs-input"
-            required
-            type="email"
-            id="email-2061"
-            name="Email"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Phone Number *
-          <input
-            class="cs-input"
-            required
-            type="tel"
-            id="phone-2061"
-            name="Phone Number"
-          />
-        </label>
-        <label class="cs-label">
-          Are You a New or Existing Customer? *
-          <select
-            class="cs-input cs-select"
-            required
-            id="position-2061"
-            name="CustomerStatus"
-          >
-            <option value="" disabled selected>Please Choose</option>
-            <option value="NewCustomer">New</option>
-            <option value="ExistingCustomer">Existing</option>
-          </select>
-        </label>
-        <label class="cs-label">
-          Company Name
-          <input
-            class="cs-input"
-            type="text"
-            id="interview-availability-2061"
-            name="Company Name"
-          />
-        </label>
-        <label class="cs-label cs-message">
-          Additional Information or Requests
-          <textarea
-            class="cs-input cs-textarea"
-            id="previous-experience-2061"
-            name="Additional Information"
-            placeholder="Additional Information..."
-          ></textarea>
-        </label>
-        <div class="cs-wrapper" style="margin-top: 2rem">
-          <button class="cs-button-solid cs-submit" type="submit">
-            Submit
-          </button>
+    <div class="cs-container2">
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/avlakihero.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/avlakihero.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/avlakihero.jpg" width="1280" height="243">
+        </picture>
+        <div class="cs-hours">
+            <div class="cs-topper">Working Hours</div>
+            <span class="cs-hours-info">Monday - Friday: 7am - 5pm</span>
         </div>
-      </form>
-
-      <!-- General Inquiries Form -->
-      <form
-        class="cs-form dynamic-form hidden fade-in"
-        id="Telecom/Other_Services"
-        name="TELECOM_OTHER_SERVICES_FORM"
-        method="POST"
-        data-netlify="true"
-      >
-        <!-- Honeypot field for spam prevention -->
-
-        <label class="cs-label cs-split">
-          First Name *
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="first-name-2061"
-            name="First Name"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Last Name *
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="last-name-2061"
-            name="Last Name"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Email *
-          <input
-            class="cs-input"
-            required
-            type="email"
-            id="email-2061"
-            name="Email"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Phone Number *
-          <input
-            class="cs-input"
-            required
-            type="tel"
-            id="phone-2061"
-            name="Phone Number"
-          />
-        </label>
-        <label class="cs-label">
-          Are You a New or Existing Customer? *
-          <select
-            class="cs-input cs-select"
-            required
-            id="position-2061"
-            name="CustomerStatus"
-          >
-            <option value="" disabled selected>Please Choose</option>
-            <option value="NewCustomer">New</option>
-            <option value="ExistingCustomer">Existing</option>
-          </select>
-        </label>
-        <label class="cs-label">
-          Company Name
-          <input
-            class="cs-input"
-            type="text"
-            id="interview-availability-2061"
-            name="Company Name"
-          />
-        </label>
-        <label class="cs-label cs-message">
-          Additional Information or Requests
-          <textarea
-            class="cs-input cs-textarea"
-            id="previous-experience-2061"
-            name="Additional Information"
-            placeholder="Additional Information..."
-          ></textarea>
-        </label>
-        <div class="cs-wrapper" style="margin-top: 2rem">
-          <button class="cs-button-solid cs-submit" type="submit">
-            Submit
-          </button>
-        </div>
-      </form>
-
-      <form
-        class="cs-form dynamic-form hidden fade-in"
-        id="General_Sales_Inquiry"
-        name="GENERAL_SALES_INQUIRY_FORM"
-        method="POST"
-        data-netlify="true"
-      >
-        <!-- Honeypot field for spam prevention -->
-
-        <label class="cs-label cs-split">
-          First Name *
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="first-name-2061"
-            name="First Name"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Last Name *
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="last-name-2061"
-            name="Last Name"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Email *
-          <input
-            class="cs-input"
-            required
-            type="email"
-            id="email-2061"
-            name="Email"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Phone Number *
-          <input
-            class="cs-input"
-            required
-            type="tel"
-            id="phone-2061"
-            name="Phone Number"
-          />
-        </label>
-        <label class="cs-label">
-          Are You a New or Existing Customer? *
-          <select
-            class="cs-input cs-select"
-            required
-            id="position-2061"
-            name="CustomerStatus"
-          >
-            <option value="" disabled selected>Please Choose</option>
-            <option value="NewCustomer">New</option>
-            <option value="ExistingCustomer">Existing</option>
-          </select>
-        </label>
-        <label class="cs-label">
-          Company Name
-          <input
-            class="cs-input"
-            type="text"
-            id="interview-availability-2061"
-            name="Company Name"
-          />
-        </label>
-        <label class="cs-label cs-message">
-          Additional Information or Requests
-          <textarea
-            class="cs-input cs-textarea"
-            id="previous-experience-2061"
-            name="Additional Information"
-            placeholder="Additional Information..."
-          ></textarea>
-        </label>
-        <div class="cs-wrapper" style="margin-top: 2rem">
-          <button class="cs-button-solid cs-submit" type="submit">
-            Submit
-          </button>
-        </div>
-      </form>
-
-      <form
-        class="cs-form dynamic-form hidden fade-in"
-        id="Other"
-        name="OTHER_FORM"
-        method="POST"
-        data-netlify="true"
-      >
-        <!-- Honeypot field for spam prevention -->
-
-        <label class="cs-label cs-split">
-          First Name *
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="first-name-2061"
-            name="First Name"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Last Name *
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="last-name-2061"
-            name="Last Name"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Email *
-          <input
-            class="cs-input"
-            required
-            type="email"
-            id="email-2061"
-            name="Email"
-          />
-        </label>
-        <label class="cs-label cs-split">
-          Phone Number *
-          <input
-            class="cs-input"
-            required
-            type="tel"
-            id="phone-2061"
-            name="Phone Number"
-          />
-        </label>
-        <label class="cs-label">
-          Are You a New or Existing Customer? *
-          <select
-            class="cs-input cs-select"
-            required
-            id="position-2061"
-            name="CustomerStatus"
-          >
-            <option value="" disabled selected>Please Choose</option>
-            <option value="NewCustomer">New</option>
-            <option value="ExistingCustomer">Existing</option>
-          </select>
-        </label>
-        <label class="cs-label">
-          Company Name
-          <input
-            class="cs-input"
-            type="text"
-            id="interview-availability-2061"
-            name="Company Name"
-          />
-        </label>
-        <label class="cs-label cs-message">
-          Additional Information or Requests
-          <textarea
-            class="cs-input cs-textarea"
-            id="previous-experience-2061"
-            name="Additional Information"
-            placeholder="Additional Information..."
-          ></textarea>
-        </label>
-        <div class="cs-wrapper" style="margin-top: 2rem">
-          <button class="cs-button-solid cs-submit" type="submit">
-            Submit
-          </button>
-        </div>
-      </form>
     </div>
-
-    <!-- Contact Info -->
-    <div class="cs-right-section">
-      <ul class="cs-ul">
-        <li class="cs-li">
-          <picture class="cs-icon-wrapper">
-            <img
-              aria-hidden="true"
-              src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg"
-              alt="mail icon"
-              class="cs-icon"
-              width="36"
-              height="36"
-              decoding="async"
-            />
-          </picture>
-          <div class="cs-flex-group">
-            <span class="cs-header">Email</span>
-            <a href="mailto:support@yourdomain.com" class="cs-link"
-              >sales@prooncall.com</a
-            >
-          </div>
-        </li>
-        <li class="cs-li">
-          <picture class="cs-icon-wrapper">
-            <img
-              aria-hidden="true"
-              src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg"
-              alt="address icon"
-              class="cs-icon"
-              width="36"
-              height="36"
-              decoding="async"
-            />
-          </picture>
-          <div class="cs-flex-group">
-            <span class="cs-header">Cincinnati</span>
-            <a class="cs-link" href="tel:513-489-7660">(513) 489-7660</a>
-            <br> 
-            <a href="" class="cs-link"
-              > 6902 East Kemper Rd. </span> <br />
-              Cincinnati, Ohio 45249</a
-            >
-         
-
-          </div>
-        </li>
-        <li class="cs-li">
-          <picture class="cs-icon-wrapper">
-            <img
-              aria-hidden="true"
-              src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg"
-              alt="address icon"
-              class="cs-icon"
-              width="36"
-              height="36"
-              decoding="async"
-            />
-          </picture>
-          <div class="cs-flex-group">
-            <span class="cs-header">Columbus</span>
-            <a class="cs-link" href="tel:614-761-1400">(614) 761-1400</a>
-            <br>
-
-            <a href="" class="cs-link"
-              ><span class="cs-block"> 733 Lakeview Plaza Blvd, Suite G               <br />
-              </span>
-              Worthington, Ohio 43085
-            </a>
-
-          </div>
-        </li>
-        <li class="cs-li">
-          <picture class="cs-icon-wrapper">
-            <img
-              aria-hidden="true"
-              
-              src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg"
-              alt="address icon"
-              class="cs-icon dayton"
-              width="36"
-              height="36"
-              decoding="async"
-            />
-          </picture>
-          <div class="cs-flex-group">
-            <span class="cs-header">Dayton</span>
-            <a href="tel:937-294-5900" class="cs-link"
-              ><span class="cs-block"> (937) 294-5900</span>
-              <br />
-            </a>
-          </div>
-        </li>
-      </ul>
-      <!-- Picture -->
-      <picture class="cs-picture">
-        <source media="(max-width: 600px)" srcset="/assets/images/map16.png" />
-        <source media="(min-width: 601px)" srcset="/assets/images/map16.png" />
-        <img
-          class="cs-img"
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map.jpg"
-          alt="google map"
-          width="462"
-          height="438"
-        />
-      </picture>
-    </div>
-  </div>
 </section>
-
-<!-- TODO: If they choose IT support go to support@partner-central.net ..... etc for others. (review word doc)-->
-<script>
-  function showForm() {
-    // Get the selected value
-    const selectedService = document.getElementById("position-2062").value;
-
-    // Hide all forms
-    document.querySelectorAll(".dynamic-form").forEach((form) => {
-      form.classList.add("hidden");
-    });
-
-    console.log(selectedService);
-    // Show the selected form
-    if (selectedService) {
-      const selectedForm = document.getElementById(selectedService);
-      console.log(selectedForm);
-      if (selectedForm) {
-        selectedForm.classList.remove("hidden");
-      }
-    }
-  }
-</script>

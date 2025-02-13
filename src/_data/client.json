@@ -1,13 +1,15 @@
 {
-  "name": "Pro On Call Technologies",
-  "email": "sales@prooncall.com",
-  "phone": "513-489-7660",
-  "phoneFormatted": "(513) 489-7660",
+  "name": "Avlaki Drainage Solutions",
+  "email": "info@avlakidesign.com",
+  "facebook": "https://www.facebook.com/avlakilifescapes",
+  "instagram":"https://www.instagram.com/avlakilifescapes",
+  "phone": "9522923511",
+  "phoneFormatted": "(952) 292-3511",
   "address": {
-    "lineOne": "6902 East Kemper Rd.",
-    "city": "Cincinnati",
-    "county": "OH",
-    "postcode": "45249"
+    "lineOne": "24151 Aberdeen Avenue",
+    "city": "Belle Plaine",
+    "county": "MN",
+    "postcode": "56011"
   },
-  "domain": "www.prooncall.com"
+  "domain": "www.avlakidesign.com"
 }

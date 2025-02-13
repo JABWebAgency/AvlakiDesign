@@ -1,599 +1,228 @@
 ---
 layout: "base.html"
-description: "PRO On Call Technologies offers advanced IT solutions, including VoIP, IT security, and managed services. Strengthen your business with dependable technology and expert support."
-metaTitle: "PRO On Call Technologies - Leading IT Solutions Provider"
-tagTitle: "IT Solutions"
-preloadCSS: "/css/local.css"
+description: "Avlaki is the drainage company you are looking for. We solve the challenging problems water creates on a
+daily basis. From standing water in a portion of your yard to designing a drainage system to redirect the water from one
+location to a more suitable location. We won't say we have seen it all but we have a long list of \"That's a first\"."
+metaTitle: "Avlaki Drainage Solutions | Home"
+tagTitle: "Home"
+preloadCSS: "/css/index.css"
 permalink: "/"
 eleventyNavigation:
-  key: Home
-  order: 100
+key: Home
+order: 100
 ---
 
-<!-- Usage Notes:
-We made this stitch to overlap the section below it, so if there's a patterned texture or image background on the next section below, it will overlap on top of it. Other Stitches like this would have a white gap between the cards an the next section. In order to make Stitches like this work, we need to add a padding top on the section below it to counteract the overlap. 
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-ON MOBILE (360px): add padding-top: (654/16rem); using LESS, or padding-top: calc(654 / 16 * 1rem); if you're using SCSS, or padding-top: 40.875rem; if you're just using vanilla CSS.
-
-ON TABLET (768px): Reset to padding-top: (230/16rem); using LESS, padding-top: calc(230 / 16 * 1rem) for SCSS or padding-top: 15.625rem; for CSS
-
-Doing this will complete the overlapping "breaking the container" look.
--->
-
-<section id="hero-1951">
-  <div class="cs-container">
-    <div class="cs-content">
-      <h2 class="cs-title slide-in-left">
-        <span class="cs-color">Reliable</span> And
-        <span class="cs-color">Powerful</span> Technology Solutions
-      </h2>
-
-      <p class="cs-text slide-in-left">
-        Securing Your Business with Advanced Technology, Streamlined IT
-        Services, and Reliable Communication Solutions.
-      </p>
-      <a class="cs-button-solid slide-in-left" href="/#services-366"
-        >Our Services</a
-      >
-      <div class="cs-reviews slide-in-left">
-        <div class="cs-reviews-flex">
-          <img
-            class="cs-reviews-img"
-            decoding="async"
-            fetchpriority="high"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile1.png"
-            alt="icon"
-            width="48"
-            height="48"
-          />
-          <img
-            class="cs-reviews-img"
-            decoding="async"
-            fetchpriority="high"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile2.png"
-            alt="icon"
-            width="48"
-            height="48"
-          />
-          <img
-            class="cs-reviews-img"
-            decoding="async"
-            fetchpriority="high"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile3.png"
-            alt="icon"
-            width="48"
-            height="48"
-          />
-          <img
-            class="cs-reviews-img"
-            decoding="async"
-            fetchpriority="high"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile4.png"
-            alt="icon"
-            width="48"
-            height="48"
-          />
-          <span class="cs-reviews-number">+2k</span>
+<section id="hero-1957">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Avlaki <span style="color: white;">Drainage Solutions</span></h1>
         </div>
-        <div class="cs-flex">
-          <h3 class="cs-rating">
-            Ratings<img
-              class="cs-rating-icon"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/lil-star.svg"
-              alt="star"
-              width="16"
-              height="16"
-              loading="lazy"
-              decoding="async"
-            />5.0
-          </h3>
-          <p class="cs-reviews-text">Trusted by Clients</p>
+        <div>
+            <a href="/contact.html" class="cs-button-solid">Contact Us</a>
         </div>
-      </div>
     </div>
-    <div class="cs-image-group slide-in-right">
-      <picture class="cs-picture cs-left">
-        <source
-          media="(max-width: 600px)"
-          srcset="/assets/svgs/newhome/test1.svg"
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="/assets/svgs/newhome/test1.svg"
-        />
-        <img
-          decoding="async"
-          src="/assets/svgs/newhome/test1.svg"
-          alt="pancake"
-          width="305"
-          height="600"
-          aria-hidden="true"
-        />
-      </picture>
+    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/avlakihero.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/avlakihero.jpg">
+        <img src="/assets/images/avlakihero.jpg">
+    </picture>
+</section>
+
+<section id="services-header">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our <span style="color: var(--primary);">Services</span></h2>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ============================================ -->
-<!--                  Services                    -->
+<!--                   Services                   -->
 <!-- ============================================ -->
 
-<section id="services-366">
-  <div class="cs-container">
-    <div class="cs-content">
-      <h2 class="cs-title">Our <span class="cs-color">Services</span></h2>
-      <p class="cs-text">
-        Empowering your business to thrive. We provide expert support to ensure
-        your growth, innovation, and seamless transitions during times of
-        expansion and change.
-      </p>
+<section id="services-1957">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/services/drains.html" class="cs-link">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg"
+                            alt="icon" width="32" height="32">
+                    </picture>
+                    <div class="cs-flex">
+                        <span class="cs-topper">Drains</span>
+                        <h3 class="cs-h3">Offering French and Curtain Drains</h3>
+                    </div>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="/assets/images/curtain.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/curtain.jpg">
+                    <img decoding="async" src="/assets/images/curtain.jpg" alt="curtain" width="455" height="337"
+                        aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/services/wells.html" class="cs-link">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg"
+                            alt="icon" width="32" height="32">
+                    </picture>
+                    <div class="cs-flex">
+                        <span class="cs-topper">Wells</span>
+                        <h3 class="cs-h3">Offering Exterior Sump Wells and Dry Wells</h3>
+                    </div>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="/assets/images/wells.jpeg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/wells.jpeg">
+                    <img decoding="async" src="/assets/images/wells.jpeg" alt="wells" width="455" height="337"
+                        aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/services/drainage.html" class="cs-link">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg"
+                            alt="icon" width="32" height="32">
+                    </picture>
+                    <div class="cs-flex">
+                        <span class="cs-topper">Drainage</span>
+                        <h3 class="cs-h3">Offering Downspouts and Foundation Drainage</h3>
+                    </div>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="/assets/images/foundation.jpeg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/foundation.jpeg">
+                    <img decoding="async" src="/assets/images/foundation.jpeg" alt="foundation" width="455" height="337"
+                        aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/services/grading.html" class="cs-link">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg"
+                            alt="icon" width="32" height="32">
+                    </picture>
+                    <div class="cs-flex">
+                        <span class="cs-topper">Grading/Excavating</span>
+                        <h3 class="cs-h3">Offering All Grading and Excavating Needs</h3>
+                    </div>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="/assets/images/excavating.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/excavating.jpg">
+                    <img decoding="async" src="/assets/images/excavating.jpg" alt="Excavating" width="455" height="337"
+                        aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
     </div>
-    <ul class="cs-card-group">
-      <li class="cs-item">
-        <a href="/cybersecurity" class="cs-link">
-          <div class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/outline/shield.svg"
-              alt="icon"
-              width="48"
-              height="48"
-            />
-            <!--Create a span to make more bubbles with pesudo elements-->
-            <span class="cs-bubble" aria-hidden="true"></span>
-          </div>
-          <h3 class="cs-h3">Cyber Security</h3>
-          <p class="cs-item-text">
-            Secure your data and systems with our robust cybersecurity
-            solutions.
-          </p>
-        </a>
-      </li>
-      <li class="cs-item">
-        <a href="/itservices" class="cs-link">
-          <div class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/outline/services.svg"
-              alt="icon"
-              width="48"
-              height="48"
-            />
-            <!--Create a span to make more bubbles with pesudo elements-->
-            <span class="cs-bubble" aria-hidden="true"></span>
-          </div>
-          <h3 class="cs-h3">IT Services</h3>
-          <p class="cs-item-text">
-            Streamline your IT operations with our expert management and
-            support.
-          </p>
-        </a>
-      </li>
-      <li class="cs-item">
-        <a href="/voip" class="cs-link">
-          <div class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/outline/voip.svg"
-              alt="icon"
-              width="48"
-              height="48"
-            />
-            <!--Create a span to make more bubbles with pesudo elements-->
-            <span class="cs-bubble" aria-hidden="true"></span>
-          </div>
-          <h3 class="cs-h3">VoIP</h3>
-          <p class="cs-item-text">
-            Enhance communication with our reliable, cost-effective VoIP
-            solutions.
-          </p>
-        </a>
-      </li>
-    </ul>
-    <a href="/contact" class="cs-button-solid">Contact Us</a>
-  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<section id="stats-1022">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Stats</span>
+            <h2 class="cs-title">Customer Satisfaction</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-number">90+</span>
+                <span class="cs-desc">Locations</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">57</span>
+                <span class="cs-desc">Menus</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">4.9</span>
+                <span class="cs-desc">Average Rating</span>
+            </li>
+        </ul>
+    </div>
 </section>
 
 <!-- ============================================ -->
 <!--                Side By Side                  -->
 <!-- ============================================ -->
 
-<section id="sbs-1982">
-  <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">Secure Your Business</span>
+<section id="sbs-2291">
+    <div class="cs-container">
+        <!-- Left Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">All Your Water Needs</span>
+            <h2 class="cs-title">Water Solutions</h2>
+            <p class="cs-text">
+                Avlaki is a pioneering company specializing in advanced water solutions, particularly in the field of
+                drainage systems. With a focus on efficiency and sustainability, they offer cutting-edge technology
+                designed to manage water flow, prevent flooding, and safeguard infrastructures. Whether it's
+                residential, commercial, or industrial applications, Avlaki tailors its solutions to meet the specific
+                needs of each client, ensuring optimal performance and longevity.<br /><br />
 
-      <h2 class="cs-title">Technology That Empowers Your Business</h2>
-      <br />
-      <p class="cs-text">
-        At PRO On Call, we specialize in delivering technology solutions that
-        drive your business forward. Servicing in Columbus, Dayton and
-        Cincinnati, Ohio, we’re dedicated to securing your digital landscape,
-        optimizing your IT infrastructure, and enhancing communication through
-        advanced VoIP systems. Our local presence means we understand the unique
-        needs of businesses in our community, offering personalized service that
-        makes a tangible difference.
-      </p>
-      <p class="cs-text">
-        We believe that the right technology can transform the way you work,
-        ensuring efficiency, security, and growth. Whether you're looking to
-        protect your data, streamline your operations, or improve connectivity,
-        our team is here to provide expert solutions tailored to your business
-        needs. Trust us to be your partner in navigating the ever-evolving world
-        of technology.
-      </p>
-      <a href="/contact" class="cs-button-solid">Get Started</a>
-      <div class="cs-ratings">
-        <div class="cs-stars">
-          <img
-            class="cs-star"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg"
-            alt="star"
-            width="24"
-            height="24"
-            aria-hidden="true"
-          />
-          <img
-            class="cs-star"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg"
-            alt="star"
-            width="24"
-            height="24"
-            aria-hidden="true"
-          />
-          <img
-            class="cs-star"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg"
-            alt="star"
-            width="24"
-            height="24"
-            aria-hidden="true"
-          />
-          <img
-            class="cs-star"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg"
-            alt="star"
-            width="24"
-            height="24"
-            aria-hidden="true"
-          />
-          <img
-            class="cs-star"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg"
-            alt="star"
-            width="24"
-            height="24"
-            aria-hidden="true"
-          />
+                Known for their commitment to quality, Avlaki has built a reputation for being the best in the industry.
+                Their team of experts combines years of experience with innovative approaches, ensuring every project is
+                completed to the highest standards. With a proven track record of success and a dedication to customer
+                satisfaction, Avlaki continues to lead the way in water management, setting the bar for excellence in
+                drainage solutions.
+            </p>
+            <div class="cs-features">
+                <h3 class="cs-h3">Key Features:</h3>
+                <ul class="cs-ul">
+                    <li class="cs-li">Innovative Technology</li>
+                    <li class="cs-li">Tailored Solutions</li>
+                    <li class="cs-li">Sustainable and Quality</li>
+                </ul>
+            </div>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="/contact.html">Contact Us</a>
         </div>
-        <div class="cs-rating">
-          <h3 class="cs-h3">99.99% Customer Satisfaction</h3>
-          <p class="cs-rating-text">
-            Based on 2000+ reviews from business owners
-          </p>
+        <!-- Right Image Section -->
+        <div class="cs-image-group">
+            <!--Floating Box-->
+            <div class="cs-box">
+                <span class="cs-number">12K+</span>
+                <div class="cs-flex">
+                    <span class="cs-desc">Water projects that combine beauty and functionality.</span>
+                </div>
+            </div>
+            <!--Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/whyavlaki.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/whyavlaki.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/whyavlaki.jpg" width="630" height="630"
+                    aria-hidden="true">
+            </picture>
         </div>
-        <img
-          class="cs-icon"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dentist-tooth.svg"
-          alt="star"
-          width="20"
-          height="20"
-        />
-      </div>
     </div>
-    <div class="cs-image-group">
-      <picture class="cs-background">
-        <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
-          srcset="
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/staff-smiling.jpeg
-          "
-        />
-        <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
-          srcset="
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/staff-smiling.jpeg
-          "
-        />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/staff-smiling.jpeg"
-          alt="staff member smiling"
-          width="630"
-          height="680"
-        />
-      </picture>
-      <div class="cs-box">
-        <img
-          class="cs-box-icon"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/teal-users.svg"
-          alt="people"
-          width="60"
-          height="60"
-        />
-        <span class="cs-desc"> 2,000+ </span>
-        <p class="cs-box-text">Businesses safe guarded with PRO On Call</p>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- ============================================ -->
-<!--                 Why Choose Us                -->
+<!--                    CTA                       -->
 <!-- ============================================ -->
 
-<section id="why-choose-1824">
-  <div class="cs-container">
-    <div class="cs-image-group">
-      <picture class="cs-picture">
-        <img
-          style="border-radius: 20px"
-          loading="lazy"
-          decoding="async"
-          src="./assets/svgs/business-team.svg"
-          alt="body builder"
-          width="562"
-          height="568"
-        />
-      </picture>
+<section id="cta-1014">
+    <div class="cs-container">
+        <div class="cs-left-section">
+            <h2 class="cs-title">GET A QUOTE TODAY!</h2>
+            <a href="/contact.html" class="cs-button-solid">Contact</a>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="/assets/images/avlakihero.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/avlakihero.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/avlakihero.jpg" width="275"
+                height="132">
+        </picture>
     </div>
-    <div class="cs-content">
-      <span class="cs-topper">Why Choose Us</span>
-      <h2 class="cs-title">Our Values</h2>
-    </div>
-    <div class="cs-flex">
-      <div class="cs-box">
-        <div class="cs-box-content" data-box="one">
-          <img
-            class="cs-box-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-house.svg"
-            alt="icon"
-            width="62"
-            height="62"
-          />
-          <h3 class="cs-h3">Customer Focus</h3>
-          <p class="cs-box-text">
-            At PRO OnCall, we don’t just offer services, we build lasting
-            partnerships. We genuinely care about our clients and are committed
-            to being your trusted partner in navigating the complex world of
-            technology. <br />
-            <br />Our goal is to understand your unique business needs and
-            tailor solutions that not only meet but exceed your expectations.
-            With PRO OnCall, your success is our success.
-          </p>
-        </div>
-        <div class="cs-box-content cs-hidden" data-box="two">
-          <img
-            class="cs-box-icon-red"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/hourglass-1a.svg"
-            alt="icon"
-            width="62"
-            height="62"
-          />
-          <h3 class="cs-h3">Innovation</h3>
-          <p class="cs-box-text">
-            In the ever-evolving tech landscape, staying ahead of the curve is
-            crucial. PRO OnCall is dedicated to bringing you the best and most
-            advanced technology solutions. <br />
-            <br />We embrace innovation by carefully evaluating cutting-edge
-            technologies and implementing those that provide real, tangible
-            benefits—without exposing your business to unnecessary risks. Our
-            focus is on future-proofing your operations while maintaining
-            stability.
-          </p>
-        </div>
-        <div class="cs-box-content cs-hidden" data-box="three">
-          <img
-            class="cs-box-icon-red"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/book-1a.svg"
-            alt="icon"
-            width="62"
-            height="62"
-          />
-          <h3 class="cs-h3">Integrity</h3>
-          <p class="cs-box-text">
-            With over 60 years in business, PRO OnCall has built a reputation
-            for integrity and reliability. Many of our staff members have over
-            two decades of experience in the industry, offering a wealth of
-            knowledge and a commitment to upholding our values. <br />
-            <br />We believe in doing business the right way—honesty,
-            transparency, and a handshake you can trust. When you work with PRO
-            OnCall, you’re partnering with a team that stands by its word.
-          </p>
-        </div>
-        <div class="cs-box-content cs-hidden" data-box="four">
-          <img
-            class="cs-box-icon-red"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/invoice-1a.svg"
-            alt="icon"
-            width="62"
-            height="62"
-          />
-          <h3 class="cs-h3">Collaboration</h3>
-          <p class="cs-box-text">
-            At PRO OnCall, we believe that the best solutions come from
-            collaboration. Our company is composed of several specialized
-            departments that work together, leveraging diverse expertise to
-            deliver comprehensive technology solutions. <br />
-            <br />
-            We take a team approach, both within our company and in our work
-            with clients, ensuring that every project benefits from collective
-            insights and a shared commitment to excellence.
-          </p>
-        </div>
-      </div>
-      <div class="cs-button-group">
-        <button class="cs-button cs-active" data-filter="one">
-          <picture class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              loading="lazy"
-              decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/house-1a.svg"
-              alt="icon"
-              width="32"
-              height="32"
-            />
-          </picture>
-          <span class="cs-button-text">Customer Focus</span>
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-arrow.svg"
-            alt="icon"
-            width="32"
-            height="32"
-          />
-        </button>
-        <button class="cs-button" data-filter="two">
-          <picture class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              loading="lazy"
-              decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/hourglass-1a.svg"
-              alt="icon"
-              width="32"
-              height="32"
-            />
-          </picture>
-          <span class="cs-button-text">Innovation</span>
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-arrow.svg"
-            alt="icon"
-            width="32"
-            height="32"
-          />
-        </button>
-        <button class="cs-button" data-filter="three">
-          <picture class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              loading="lazy"
-              decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/book-1a.svg"
-              alt="icon"
-              width="32"
-              height="32"
-            />
-          </picture>
-          <span class="cs-button-text">Integrity</span>
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-arrow.svg"
-            alt="icon"
-            width="32"
-            height="32"
-          />
-        </button>
-        <button class="cs-button" data-filter="four">
-          <picture class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              loading="lazy"
-              decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/invoice-1a.svg"
-              alt="icon"
-              width="32"
-              height="32"
-            />
-          </picture>
-          <span class="cs-button-text">Collaboration</span>
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-arrow.svg"
-            alt="icon"
-            width="32"
-            height="32"
-          />
-        </button>
-      </div>
-    </div>
-  </div>
 </section>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll("#why-choose-1824 .cs-button");
-    const boxContents = document.querySelectorAll(
-      "#why-choose-1824 .cs-box-content"
-    );
-
-    // Function to show the corresponding box content and hide others
-    function showBoxContent(button) {
-      const filterValue = button.getAttribute("data-filter");
-
-      boxContents.forEach((box) => {
-        if (box.getAttribute("data-box") === filterValue) {
-          box.classList.remove("cs-hidden");
-        } else {
-          box.classList.add("cs-hidden");
-        }
-      });
-
-      buttons.forEach((btn) => {
-        if (btn === button) {
-          btn.classList.add("cs-active");
-        } else {
-          btn.classList.remove("cs-active");
-        }
-      });
-    }
-
-    // Event listeners for screens below 1024px
-    if (window.matchMedia("(max-width: 1024px)").matches) {
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => showBoxContent(button));
-      });
-    }
-
-    // Event listeners for screens above 1024px
-    if (window.matchMedia("(min-width: 1024px)").matches) {
-      buttons.forEach((button) => {
-        button.addEventListener("mouseover", () => showBoxContent(button));
-      });
-    }
-  });
-</script>
