@@ -62,6 +62,10 @@ body {
   display: none;
 }
 
+#main {
+  padding-top: 136px;
+}
+
 *, *:before, *:after {
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -104,6 +108,10 @@ body {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  #cs-navigation .cs-button-icon,
+  #cs-navigation .cs-icon {
+    filter: hue-rotate(230deg) saturate(1.5) brightness(0.9);
+  }
   body.dark-mode #dark-mode-toggle .cs-sun {
     transform: translate(-50%, -50%);
     opacity: 1;
@@ -303,6 +311,7 @@ body {
     width: 1.25rem;
     height: auto;
     display: block;
+    filter: hue-rotate(230deg) saturate(1.5) brightness(0.9);
   }
   #cs-navigation .cs-header {
     display: none;
@@ -495,6 +504,7 @@ body {
     height: auto;
     display: block;
     transition: transform 0.3s;
+    filter: hue-rotate(230deg) saturate(1.5) brightness(0.9);
   }
   #cs-navigation .cs-nav-button .cs-info {
     display: flex;
