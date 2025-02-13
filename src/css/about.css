@@ -307,7 +307,7 @@
     z-index: 1;
   }
   #services-1737 .cs-item:nth-last-of-type(odd) {
-    background-color: #1A1A1A;
+    background-color: var(--primary);
   }
   #services-1737 .cs-item:nth-last-of-type(odd) .cs-h3,
   #services-1737 .cs-item:nth-last-of-type(odd) .cs-item-text {
