@@ -391,8 +391,9 @@
     align-items: stretch;
   }
   #services-1974 .cs-picture {
-    height: auto;
-    padding: 3.8125rem 0 0 0.25rem;
+    height: 200px;
+    width: 200px;
+    padding: 0;
   }
 }
 /* Small Desktop - 1024px */
