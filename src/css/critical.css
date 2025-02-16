@@ -71,7 +71,7 @@
     content: "";
     width: 0%;
     height: 100%;
-    background: #ffffff;
+    background: black;
     opacity: 1;
     position: absolute;
     top: 0;
@@ -80,7 +80,7 @@
     transition: width 0.3s;
   }
   #hero-2152 .cs-button-solid:hover {
-    color: var(--headerColor);
+    color: white;
   }
   #hero-2152 .cs-button-solid:hover:before {
     width: 100%;
@@ -1708,7 +1708,7 @@ html {
   #services-2132 .cs-item {
     /* 280px - 440px */
     height: clamp(17.5rem, 35vw, 27.5rem);
-    grid-column: span 4;
+    grid-column: span 3;
   }
   #services-2132 .cs-stats-group {
     display: flex;
