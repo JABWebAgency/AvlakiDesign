@@ -152,6 +152,7 @@
     align-items: stretch;
     position: relative;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   #RPsbs-1445 .cs-content,
   #RPsbsr-1445 .cs-content {
@@ -161,6 +162,7 @@
   #RPsbsr-1445 .cs-picture {
     height: auto;
     width: 55%;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
   }
 }
 

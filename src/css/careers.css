@@ -1,150 +1,172 @@
 /*-- -------------------------- -->
-<---          Careers           -->
+<---          Contact           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #careers-2065 {
+  #contact-2061 {
     padding: var(--sectionPadding);
     overflow: hidden;
     position: relative;
-    z-index: 1;
   }
-  #careers-2065 .cs-container {
+  #contact-2061 .cs-container {
     width: 100%;
-    max-width: 80rem;
+    max-width: 59rem;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-    margin-top: 100px;
-  }
-  #careers-2065 .cs-title {
-    color: black;
-  }
-  #careers-2065 .cs-content {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #careers-2065 .cs-wrapper {
-    display: flex;
-    flex-direction: column;
-    /* 32px - 48px */
-    gap: clamp(2rem, 4vw, 3rem);
-  }
-  #careers-2065 .cs-picture {
-    width: 100%;
-    /* 400px - 752px */
-    height: clamp(25rem, 50vw, 47rem);
-    overflow: hidden;
-    border-radius: 1rem;
-    display: block;
-    position: relative;
-    z-index: 1;
-  }
-  #careers-2065 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #careers-2065 .cs-events {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
+    margin-top: 8rem;
   }
-  #careers-2065 .cs-card-group {
+  #contact-2061 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
     width: 100%;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
   }
-  #careers-2065 .cs-item {
-    text-decoration: none;
-    list-style: none;
+  #contact-2061 .cs-text {
+    max-width: none;
+  }
+  #contact-2061 .cs-form {
     width: 100%;
-    /* prevents padding from affecting height and width */
-    box-sizing: border-box;
-    padding-bottom: 2rem;
-    overflow: hidden;
-    border-bottom: 1px solid #e8e8e8;
+    /* 464px - 846px */
+    max-width: clamp(29rem, 59vw, 52.875rem);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.75rem;
+  }
+  #contact-2061 .cs-label {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5em;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
-    /* 16px - 24px */
-    gap: clamp(1rem, 2vw, 1.5rem);
+    grid-column: span 12;
+    gap: 0.5rem;
+  }
+  #contact-2061 .cs-input {
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding-left: 1.5rem;
+    background-color: #f7f7f7;
+    color: var(--bodyTextColor);
+    border: none;
+    border-radius: 0.5rem;
+  }
+  #contact-2061 .cs-select,
+  #contact-2061 .cs-date {
+    /* as the select arrow/date calendar icon are not affected by padding, we can use a transparent border on the select element to pad the arrow as much as we need */
+    border-right: 1.5rem solid rgba(0, 0, 0, 0);
+  }
+  #contact-2061 .cs-textarea {
+    height: 7.5rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+  }
+  #contact-2061 .cs-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    grid-column: span 12;
+  }
+  #contact-2061 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 0.5rem;
+    display: inline-block;
     position: relative;
     z-index: 1;
   }
-  #careers-2065 .cs-item:last-of-type {
-    padding: 0;
-    border-bottom: none;
+  #contact-2061 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
   }
-  #careers-2065 .cs-info-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  #contact-2061 .cs-button-solid:hover:before {
+    width: 100%;
   }
-  #careers-2065 .cs-info {
-    display: flex;
-    flex-direction: column;
+  #contact-2061 .cs-submit {
+    border: none;
   }
-  #careers-2065 .cs-h3 {
-    font-size: 1.5625rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    margin: 0 0 0.75rem 0;
-    color: black;
+  #contact-2061 .cs-submit:hover {
+    cursor: pointer;
   }
-  #careers-2065 .cs-flex {
-    margin: 0 0 0.75rem 0;
-    display: flex;
-    gap: 1rem;
-  }
-  #careers-2065 .cs-time,
-  #careers-2065 .cs-location {
-    font-size: 1rem;
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--bodyTextColor);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  #careers-2065 .cs-icon {
-    width: 1rem;
-    height: auto;
+  #contact-2061 .cs-graphic {
+    display: none;
+    position: absolute;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #careers-2065 .cs-wrapper {
-    flex-direction: row;
+  #contact-2061 .cs-split {
+    grid-column: span 6;
   }
-  #careers-2065 .cs-picture {
-    max-width: 21.25rem;
+  #contact-2061 .cs-graphic {
+    display: block;
+  }
+  #contact-2061 .cs-graphic-left {
+    width: 33rem;
     height: auto;
+    bottom: -6.6875rem;
+    left: -24.5625rem;
   }
-  #careers-2065 .cs-events {
-    width: 70%;
-    min-width: 24.25rem;
-    justify-content: flex-start;
+  #contact-2061 .cs-graphic-right {
+    width: 30.1875rem;
+    height: auto;
+    top: -2.125rem;
+    right: -19.75rem;
   }
 }
-/* Small Desktop - 1024px */
+/* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #careers-2065 .cs-info-wrapper {
-    flex-direction: row;
+  #contact-2061 .cs-graphic-left {
+    right: -20.1875rem;
+    bottom: -3.25rem;
+  }
+  #contact-2061 .cs-graphic-right {
+    right: -18.125rem;
   }
 }
-                                
+/* Large Desktop - 1920px */
+@media only screen and (min-width: 120rem) {
+  #contact-2061 .cs-graphic-left {
+    margin-right: 47.5rem;
+    right: 50%;
+    bottom: 0;
+    left: initial;
+  }
+  #contact-2061 .cs-graphic-right {
+    margin-left: 48.4375rem;
+    right: initial;
+    left: 50%;
+  }
+}
