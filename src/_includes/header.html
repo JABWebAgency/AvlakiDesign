@@ -54,13 +54,19 @@
       <div class="cs-ul-wrapper">
         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
           <li class="cs-li">
-            <a href="/about.html" class="cs-li-link">About</a>
+            <a href="/about.html" class="cs-li-link
+              {% if page.url == '/about.html' %} cs-active {% endif %}
+              ">About</a>
           </li>
           <li class="cs-li">
-            <a href="/careers.html" class="cs-li-link">Careers</a>
+            <a href="/careers.html" class="cs-li-link
+              {% if page.url == '/careers.html' %} cs-active {% endif %}
+              ">Careers</a>
           </li>
           <li class="cs-li">
-            <a href="/contact.html" class="cs-li-link">Contact</a>
+            <a href="/contact.html" class="cs-li-link
+              {% if page.url == '/contact.html' %} cs-active {% endif %}
+              ">Contact</a>
           </li>
           <li class="cs-li cs-dropdown" tabindex="0">
             <span class="cs-li-link">
@@ -70,16 +76,24 @@
             </span>
             <ul class="cs-drop-ul">
               <li class="cs-drop-li">
-                <a href="/drainage" class="cs-li-link cs-drop-link">Drainage</a>
+                <a href="/drainage" class="cs-li-link cs-drop-link
+              {% if page.url == '/drainage/' %} cs-active {% endif %}
+                  ">Drainage</a>
               </li>
               <li class="cs-drop-li">
-                <a href="/drains" class="cs-li-link cs-drop-link">Drains</a>
+                <a href="/drains" class="cs-li-link cs-drop-link
+              {% if page.url == '/drains/' %} cs-active {% endif %}
+                  ">Drains</a>
               </li>
               <li class="cs-drop-li">
-                <a href="/grading" class="cs-li-link cs-drop-link">Grading</a>
+                <a href="/grading" class="cs-li-link cs-drop-link
+              {% if page.url == '/grading/' %} cs-active {% endif %}
+                  ">Grading</a>
               </li>
               <li class="cs-drop-li">
-                <a href="/wells" class="cs-li-link cs-drop-link">Wells</a>
+                <a href="/wells" class="cs-li-link cs-drop-link 
+              {% if page.url == '/wells/' %} cs-active {% endif %}
+                  ">Wells</a>
               </li>
             </ul>
           </li>
