@@ -1078,18 +1078,20 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #F3F3F3;
+    background-color: var(--primary);
     position: absolute;
     display: block;
     top: 0;
     left: 0;
     z-index: -1;
+    border-radius: 10px;
   }
   #cs-navigation .cs-button-icon {
     width: 1.25rem;
     height: auto;
     display: block;
     transition: transform 0.3s;
+    filter: hue-rotate(180deg) saturate(0) brightness(5);
   }
   #cs-navigation .cs-info {
     display: flex;
@@ -1138,23 +1140,22 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     padding: 0 1.75rem;
-    color: var(--headerColor);
-    border: 1px solid var(--headerColor);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
     transition: color 0.3s, background-color 0.3s;
+    background-color: var(--primary);
+    border-radius: 10px;
   }
   #cs-navigation .cs-button-border:hover {
     background-color: var(--headerColor);
     color: #fff;
   }
-  #cs-navigation .cs-button-border:hover .cs-icon {
-    filter: grayscale(1) brightness(1000%);
-  }
   #cs-navigation .cs-button-border .cs-icon {
     width: 1.25rem;
+    filter: grayscale(1) brightness(10000%);
   }
 }
                                 
@@ -1332,7 +1333,7 @@ body {
         margin: 0;
         color: #fff;
         padding: 0 3rem;
-        border-radius: 1.875rem;
+        border-radius: 10px;
         background-color: var(--primary);
         display: inline-block;
         position: relative;

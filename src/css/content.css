@@ -82,8 +82,8 @@
   #services-1666 .cs-faq-item {
     list-style: none;
     width: 100%;
-    background-color: transparent;
-    border: 1px solid #e8e8e8;
+    background-color: white;
+    border: 1px solid var(--primary);
     padding: 0;
     box-sizing: border-box;
     transition: border-bottom 0.3s;
@@ -189,6 +189,7 @@
     width: 2rem;
     height: 2rem;
     display: block;
+    filter: hue-rotate(190deg) saturate(1.5) brightness(0.5);
   }
   #services-1666 .cs-button-solid {
     font-size: 1rem;
@@ -207,6 +208,7 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    border-radius: 10px;
   }
   #services-1666 .cs-button-solid:before {
     content: "";
@@ -220,6 +222,7 @@
     left: 0;
     z-index: -1;
     transition: width 0.3s;
+    border-radius: 10px;
   }
   #services-1666 .cs-button-solid:hover:before {
     width: 100%;
