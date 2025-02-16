@@ -70,32 +70,45 @@
                             </span>
                             <ul class="cs-drop-ul">
                                 <li class="cs-drop-li">
-                                    <a href="/services/drainage.html" class="cs-li-link cs-drop-link">Drainage</a>
+                                    <a href="/services/drainage.html" class="cs-li-link cs-drop-link
+              {% if page.url == '/services/drainage.html' %} cs-active {% endif %}
+                                        ">Drainage</a>
                                 </li>
                                 <li class="cs-drop-li">
-                                    <a href="/services/drains.html" class="cs-li-link cs-drop-link">Drains</a>
+                                    <a href="/services/drains.html" class="cs-li-link cs-drop-link
+              {% if page.url == '/services/drains.html' %} cs-active {% endif %}
+                                        ">Drains</a>
                                 </li>
                                 <li class="cs-drop-li">
-                                    <a href="/services/grading.html"
-                                        class="cs-li-link cs-drop-link">Grading/Excavating</a>
+                                    <a href="/services/grading.html" class="cs-li-link cs-drop-link
+              {% if page.url == '/services/grading.html' %} cs-active {% endif %}
+                                        ">Grading/Excavating</a>
                                 </li>
                                 <li class="cs-drop-li">
-                                    <a href="/services/wells.html" class="cs-li-link cs-drop-link">Wells</a>
+                                    <a href="/services/wells.html" class="cs-li-link cs-drop-link
+              {% if page.url == '/services/wells.html' %} cs-active {% endif %}
+                                        ">Wells</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="cs-li">
-                            <a href="/about.html" class="cs-li-link">
+                            <a href="/about.html" class="cs-li-link
+              {% if page.url == '/about.html' %} cs-active {% endif %}
+                                ">
                                 About
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="/contact.html" class="cs-li-link">
+                            <a href="/contact.html" class="cs-li-link
+              {% if page.url == '/contact.html' %} cs-active {% endif %}
+                                ">
                                 Contact
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="/careers.html" class="cs-li-link">
+                            <a href="/careers.html" class="cs-li-link
+              {% if page.url == '/careers.html' %} cs-active {% endif %}
+                                ">
                                 Careers
                             </a>
                         </li>
