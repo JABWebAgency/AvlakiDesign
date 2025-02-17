@@ -189,7 +189,7 @@
     width: 2rem;
     height: 2rem;
     display: block;
-    filter: hue-rotate(190deg) saturate(1.5) brightness(0.5);
+    filter: hue-rotate(180deg) saturate(7) brightness(0.6);
   }
   #services-1666 .cs-button-solid {
     font-size: 1rem;
