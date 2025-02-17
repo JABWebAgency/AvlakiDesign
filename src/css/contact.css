@@ -216,6 +216,7 @@
     max-width: 64rem;
     margin: 0 auto 0 0;
     padding: 2.5rem 1.5rem;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
   }
   #contact-1750 .cs-picture-group {
     width: 90%;

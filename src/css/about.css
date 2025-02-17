@@ -71,6 +71,7 @@
     width: auto;
     height: 2rem;
     display: block;
+    filter:hue-rotate(135deg) saturate(4) brightness(0.5); 
   }
   #why-choose-1882 .cs-h3 {
     font-size: 1.25rem;
