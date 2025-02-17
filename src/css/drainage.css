@@ -8,7 +8,6 @@
     margin-top: 8rem;
     padding: var(--sectionPadding);
     overflow: hidden;
-    background-color: rgba(0,140,245,0.2);
     position: relative;
     z-index: 1;
   }
