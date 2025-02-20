@@ -5,7 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #why-choose-2058 {
-    background-color: #f5fcfb;
+    background-color: #fff;
     position: relative;
     z-index: 1;
   }
@@ -40,7 +40,7 @@
     font-weight: 700;
     line-height: 1.2em;
     width: max-content;
-    color: var(--secondary);
+    color: var(--primary);
     display: inline-block;
   }
   #why-choose-2058 .cs-small-picture {
@@ -146,8 +146,8 @@
     transform: translate(-50%, -50%) scale(0) !important;
   }
   #why-choose-2058 .cs-icon {
-    width: 1.25rem;
-    height: auto;
+    margin-right: 20px;
+    filter: invert(1) brightness(100);
   }
 }
 /* Tablet - 768px */
@@ -368,4 +368,8 @@
   #sbs-1014 .cs-content {
     margin: 0;
   }
+}
+
+.flex-row {
+  display: flex;
 }
