@@ -178,6 +178,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
     /* 24px - 30px */
     gap: clamp(1.5rem, 3vw, 1.875rem);
   }
@@ -192,7 +193,7 @@
     align-items: center;
     width: 2.5rem;
     height: 2.5rem;
-    border: 1px solid var(--secondary);
+    background-color: var(--primary);
     border-radius: 50%;
     transition: background-color 0.3s, transform 0.3s;
   }
@@ -249,4 +250,8 @@
 
 #contact-1392 {
   display: none;
+}
+
+.cs-social-icon {
+  filter: grayscale(1) invert(1) brightness(1112%);
 }

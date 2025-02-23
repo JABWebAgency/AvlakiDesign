@@ -330,6 +330,7 @@ html {
     transition: color 0.3s;
   }
   #cs-navigation .cs-toggle {
+    border-radius: 10px;
     width: 3rem;
     height: 3rem;
     margin: 0;
@@ -445,16 +446,17 @@ html {
     text-decoration: none;
     width: 2rem;
     height: 2rem;
-    background-color: #f7f7f7;
+    background-color: var(--primary);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   #cs-navigation .cs-social-icon {
+    filter: grayscale(1) invert(1) brightness(1112%);
     width: 0.75rem;
     height: auto;
-    opacity: 0.6;
+    opacity: 1;
     display: block;
   }
   #cs-navigation .cs-bottom-bar {
@@ -964,7 +966,7 @@ html {
     text-decoration: none;
     width: 2rem;
     height: 2rem;
-    background-color: #f7f7f7;
+    background-color: var(--primary);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -972,12 +974,14 @@ html {
     transition: background-color 0.3s;
   }
   #cs-navigation .cs-social-link:hover {
-    background-color: var(--primary);
+    background-color: black;
   }
   #cs-navigation .cs-social-icon {
+    filter: grayscale(1) invert(1) brightness(1112%);
+
     width: 0.75rem;
     height: auto;
-    opacity: 0.6;
+    opacity: 1;
     display: block;
   }
   #cs-navigation .cs-location {
@@ -1505,14 +1509,14 @@ html {
     background-color: var(--primary);
   }
   #footer-1392 .cs-social-link:hover .cs-social-icon {
-    filter: grayscale(1) brightness(1000%);
+    filter: hue-rotate(180deg) saturate(0) brightness(5);
     opacity: 1;
   }
   #footer-1392 .cs-social-icon {
     width: 0.75rem;
     height: auto;
     display: block;
-    opacity: 0.6;
+    opacity: 1;
     transition: opacity 0.3s;
   }
   #footer-1392 .cs-copyright {
