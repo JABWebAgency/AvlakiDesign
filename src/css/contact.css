@@ -1,93 +1,35 @@
 /*-- -------------------------- -->
 <---          Contact           -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #contact-1879 {
+  #contact-569 {
     padding: var(--sectionPadding);
-    background-color: #FAF6F2;
-    overflow: hidden;
+    background-color: #fafbfc;
     position: relative;
     z-index: 1;
   }
-  #contact-1879 .cs-container {
+  #contact-569 .cs-container {
     width: 100%;
-    /* changes to 1280px at desktop */
-    max-width: 44rem;
+    /* changes to 1064px at desktop */
+    max-width: 34.375rem;
     margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 3rem;
   }
-  #contact-1879 .cs-image-group {
-    font-size: min(2.24vw, 0.9em);
-    width: 39.5em;
-    height: 49.2em;
-    display: block;
-    position: relative;
-    z-index: 1;
+  #contact-569 .cs-left {
+    max-width: 39.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
   }
-  #contact-1879 .cs-picture {
-    width: 34.9em;
-    height: 49.6em;
-    box-sizing: border-box;
-    background-color: rgba(0,130,243,0.1);
-    overflow: hidden;
-    border: 8px solid rgba(0,130,243,0.1);;
-    border-radius: 16.25rem;
-    position: absolute;
-    z-index: -1;
-  }
-  #contact-1879 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.7s;
-  }
-  #contact-1879 .cs-graphic {
-    height: auto;
-    position: absolute;
-  }
-  #contact-1879 .cs-brown {
-    width: 10.3125em;
-    top: 0em;
-    right: 3em;
-    z-index: -2;
-  }
-  #contact-1879 .cs-peach {
-    width: 4.3125em;
-    top: 1em;
-    right: 10em;
-  }
-  #contact-1879 .cs-beige {
-    width: 30em;
-    top: 4em;
-    right: 10em;
-    z-index: -3;
-  }
-  #contact-1879 .cs-leaf {
-    width: 14em;
-    bottom: 0em;
-    left: 1em;
-    z-index: 1;
-  }
-  #contact-1879 .cs-dots {
-    width: 16.35em;
-    right: 1em;
-    bottom: 1em;
-    z-index: -2;
-  }
-  #contact-1879 .cs-lines {
-    width: 15.39em;
-    bottom: 0em;
-  }
-  #contact-1879 .cs-content {
-    /* set text align to left if content needs to be left aligned */
+  #contact-569 .cs-content {
+    /* set text aling to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
     display: flex;
@@ -95,147 +37,216 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #contact-1879 .cs-title {
-    /* 48px - 64px */
-    margin-bottom: clamp(3rem, 6.3vw, 4rem);
-  }
-  #contact-1879 .cs-form {
-    padding: 2rem 1rem;
-    background-color: rgba(0,130,243,0.1);
-    /* 32px - 40px */
-    border-radius: clamp(2rem, 4vw, 2.5rem);
+
+  #contact-569 .cs-form {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    /* 16px - 20px */
-    row-gap: clamp(1rem, 2vw, 1.25rem);
+    align-items: center;
+    gap: 1rem;
   }
-  #contact-1879 .cs-label {
+  #contact-569 .cs-label {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
-    font-weight: 700;
-    line-height: 1.2em;
     width: 100%;
     color: var(--headerColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 0.25rem;
   }
-  #contact-1879 .cs-input {
+  #contact-569 .cs-input {
     font-size: 1rem;
     width: 100%;
-    height: 3.5rem;
+    height: 2.5rem;
+    padding: 0;
+    padding-left: 1.5rem;
+    color: var(--headerColor);
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
-    /* 11px - 16px top & bottom */
-    /* 16px - 24px left & right */
-    padding: clamp(0.6875rem, 1.5vw, 1rem) clamp(1rem, 2vw, 1.5rem);
-    background-color: #FAF6F2;
-    color: var(--headerColor);
-    border: none;
-    border-radius: 1rem;
     transition: border-color 0.3s;
   }
-  #contact-1879 .cs-input:hover {
+  #contact-569 .cs-input:hover {
     border-color: var(--secondary);
   }
-  #contact-1879 .cs-input:focus {
+  #contact-569 .cs-input:focus {
     outline: 1px solid var(--secondary);
   }
-  #contact-1879 .cs-input::placeholder {
+  #contact-569 .cs-input::placeholder {
     color: #7d799c;
     opacity: 0.6;
+    font-size: 0.875rem;
   }
-  #contact-1879 .cs-textarea {
-    font-family: inherit;
-    /* 120px - 192px */
-    min-height: clamp(7.5rem, 28vw, 12rem);
-    margin-bottom: 1rem;
+  #contact-569 .cs-textarea {
+    /* 120px - 140px */
+    min-height: clamp(7.5rem, 28vw, 8.75rem);
     padding-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-family: inherit;
   }
-  #contact-1879 .cs-button-solid {
-    font-size: 1rem;
-    font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-align: center;
+  #contact-569 .cs-submit {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.6vw, 1.5625rem);
+    /* 56px - 70px */
+    line-height: clamp(3.5rem, 7vw, 4.375rem);
     text-decoration: none;
-    min-width: 9.375rem;
+    font-weight: 700;
+    text-align: center;
     margin: 0;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
     padding: 0 1.5rem;
     background-color: var(--primary);
-    color: #fff;
-    border-radius: 0.25rem;
+    transition: color 0.3s, background-color 0.3s;
     display: inline-block;
     position: relative;
     z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
   }
-  #contact-1879 .cs-button-solid:before {
+  #contact-569 .cs-submit:before {
     content: "";
-    width: 0%;
-    height: 100%;
-    background: #000;
-    opacity: 1;
-    border-radius: 10px;
     position: absolute;
+    height: 100%;
+    width: 0%;
+    background: var(--secondary);
+    border-radius: 10px;
+    opacity: 1;
     top: 0;
     left: 0;
     z-index: -1;
     transition: width 0.3s;
   }
-  #contact-1879 .cs-button-solid:hover:before {
+  #contact-569 .cs-submit:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  #contact-569 .cs-submit:hover:before {
     width: 100%;
   }
-  #contact-1879 .cs-submit {
-    line-height: 3.5rem;
-    min-width: 13.375rem;
-    border: none;
-    border-radius: 10px;
+  #contact-569 .cs-right {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 3rem;
   }
-  #contact-1879 .cs-text {
-    font-size: 0.875rem;
+  #contact-569 .cs-flex {
+    /* resets to 100% at desktop */
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  #contact-569 .cs-header {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 5vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+    display: block;
+  }
+  #contact-569 .cs-link {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.4vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    margin: 0;
+    color: var(--headerColor);
+    display: block;
+  }
+  #contact-569 .cs-link:hover {
+    text-decoration: underline;
+  }
+  #contact-569 .cs-phone {
+    /* scoot it 8px up to override the 16px gap on the parent and make it 8px */
+    margin-top: -0.5rem;
+  }
+  #contact-569 .cs-social {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* 24px - 30px */
+    gap: clamp(1.5rem, 3vw, 1.875rem);
+  }
+  #contact-569 .cs-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #contact-569 .cs-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--secondary);
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  #contact-569 .cs-social-link:hover {
+    background-color: var(--secondary);
+    transform: translateY(-0.25rem);
+  }
+  #contact-569 .cs-social-link:hover .cs-icon {
+    /* turn icon white */
+    filter: grayscale(1) brightness(1000%);
+  }
+  #contact-569 .cs-icon {
+    width: auto;
+    height: 0.9375rem;
   }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #contact-1879 .cs-form {
-    /* 32px - 40px */
-    padding: clamp(2rem, 4vw, 2.5rem);
-    /* 16px - 20px */
-    column-gap: clamp(1rem, 2vw, 1.25rem);
+/* Tablet - 650px */
+@media only screen and (min-width: 40.625rem) {
+  #contact-569 .cs-label {
+    width: 48.4%;
   }
-  #contact-1879 .cs-label {
-    width: 47.6%;
-  }
-  #contact-1879 .cs-message {
+  #contact-569 .cs-message {
     width: 100%;
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #contact-1879 .cs-container {
-    max-width: 80rem;
+  #contact-569 .cs-container {
+    max-width: 66.5rem;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    /* 48px - 60px */
-    gap: clamp(3rem, 6vw, 3.75rem);
+    align-items: flex-end;
   }
-  #contact-1879 .cs-image-group {
-    font-size: min(0.95vw, 1em);
+  #contact-569 .cs-left {
+    width: 60%;
+  }
+  #contact-569 .cs-submit {
+    width: 15rem;
+  }
+  #contact-569 .cs-right {
+    width: 19rem;
+    flex-direction: column;
+    /* prevent flexbox from squishing it */
     flex: none;
   }
-  #contact-1879 .cs-form {
-    /* 514px - 738px */
-    width: clamp(32.125rem, 50vw, 46.125rem);
+  #contact-569 .cs-flex {
+    width: 100%;
+  }
+  #contact-569 .cs-social {
+    /* adds an extra 16px + 48px row gap on the parent to make 64px space between */
+    margin-top: 1rem;
   }
 }
 
 #contact-1392 {
-    display: none;
+  display: none;
 }

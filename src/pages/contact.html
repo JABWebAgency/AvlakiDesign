@@ -1,11 +1,11 @@
 ---
-layout: 'base.html'
+layout: "base.html"
 description: "Contact Avlaki Drainage"
 metaTitle: "Avlaki Drainage Solutions | Contact"
 tagTitle: "Contact"
-preloadImg: '/images/imageName.format'
-preloadCSS: '/css/contact.css'
-permalink: 'contact.html'
+preloadImg: "/images/imageName.format"
+preloadCSS: "/css/contact.css"
+permalink: "contact.html"
 eleventyNavigation:
 key: Navigation Name
 order: 1000
@@ -15,50 +15,129 @@ order: 1000
 <!--                   Contact                    -->
 <!-- ============================================ -->
 
-<section id="contact-1879">
-    <div class="cs-container">
-        <div class="cs-image-group">
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/dig.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/dig.jpg">
-                <img loading="lazy" decoding="async" src="" width="324" height="467">
-            </picture>
-        </div>
-        <div class="cs-content">
-            <span class="cs-topper">Get in Touch</span>
-            <h2 class="cs-title">Get in Touch</h2>
-            <!--Form-->
-            <form class="cs-form" id="cs-form-1879" name="Contact Form" method="post">
-                <label class="cs-label">
-                    First Name*
-                    <input class="cs-input" required type="text" id="name-1879" name="name" placeholder="John">
-                </label>
-                <label class="cs-label">
-                    Last Name*
-                    <input class="cs-input" required type="text" id="phone-1879" name="phone" placeholder="Moore">
-                </label>
-                <label class="cs-label">
-                    Email*
-                    <input class="cs-input" required type="text" id="email-1879" name="email"
-                        placeholder="name@company.com">
-                </label>
-                <label class="cs-label">
-                    Phone*
-                    <input class="cs-input" required type="text" id="hear-1879" name="heat"
-                        placeholder="+1 (206) 987-6543">
-                </label>
-                <label class="cs-label cs-message">
-                    Message*
-                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1879"
-                        placeholder="Hello, I am interested..."></textarea>
-                </label>
-                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
-                <p class="cs-text">
-                    By filling out this form you agree to receive email, text, and phone communications from Avlaki
-                </p>
-            </form>
-        </div>
+<section id="contact-569">
+  <div class="cs-container">
+    <div class="cs-left">
+      <div class="cs-content">
+        <span class="cs-topper">Contact Us</span>
+        <h2 class="cs-title">Get in Touch</h2>
+        <p class="cs-text">
+          Avlaki provides expert water solutions, ensuring lasting protection
+          and peace of mind.
+        </p>
+      </div>
+      <!--Form-->
+      <form
+        class="cs-form"
+        id="cs-form-569"
+        name="Contact Form"
+        method="post"
+        netlify
+      >
+        <label class="cs-label">
+          Name
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="name-569"
+            name="name"
+            placeholder="Name"
+          />
+        </label>
+        <label class="cs-label">
+          Phone
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="phone-569"
+            name="phone"
+            placeholder="Phone"
+          />
+        </label>
+        <label class="cs-label">
+          Email
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="email-569"
+            name="email"
+            placeholder="Email"
+          />
+        </label>
+        <label class="cs-label">
+          How did you hear about us?
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="hear-569"
+            name="heat"
+            placeholder="How did you hear about us?"
+          />
+        </label>
+        <label class="cs-label cs-message">
+          Message
+          <textarea
+            class="cs-input cs-textarea"
+            required
+            name="Message"
+            id="message-569"
+            placeholder="Write message..."
+          ></textarea>
+        </label>
+        <button class="cs-submit" type="submit">Send</button>
+      </form>
     </div>
+    <div class="cs-right">
+      <!--Address-->
+      <div class="cs-flex">
+        <span class="cs-header">Our Location</span>
+        <a href="" class="cs-link"
+          >{{ client.address.lineOne }} {{ client.address.city }}, {{
+          client.address.county }} {{client.address.postcode }}</a
+        >
+      </div>
+      <!--Contacts-->
+      <div class="cs-flex">
+        <span class="cs-header">Quick Contacts</span>
+        <a href="mailto:{{client.email}}" class="cs-link">{{client.email}}</a>
+
+        <a href="tel:{{ client.phone }}" class="cs-link cs-phone"
+          >{{client.phoneFormatted}}</a
+        >
+      </div>
+      <!--Social-->
+      <ul class="cs-social">
+        <li class="cs-li">
+          <a href="{{ client.facebook }}" class="cs-social-link">
+            <img
+              class="cs-social-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg"
+              alt="logo"
+              width="12"
+              height="12"
+              aria-hidden="true"
+              decoding="async"
+            />
+          </a>
+        </li>
+        <li class="cs-li">
+          <a href="{{ client.instagram }}" class="cs-social-link">
+            <img
+              class="cs-social-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg"
+              alt="logo"
+              width="12"
+              height="12"
+              aria-hidden="true"
+              decoding="async"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
