@@ -704,13 +704,15 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+    background-color: #f7f7f7;
   }
   #why-choose-890:before {
     /* background color, done in a pseudo so it pulls from the variable color */
     content: "";
     width: 100%;
     height: 100%;
-    background: var(--primary);
+    background: #f7f7f7;
+
     opacity: 0.03;
     position: absolute;
     display: block;
@@ -782,6 +784,7 @@
     gap: clamp(1rem, 2vw, 1.25rem);
   }
   #why-choose-890 .cs-item {
+    border: 1px solid black;
     width: 100%;
     text-align: left;
     list-style: none;
@@ -798,7 +801,7 @@
     grid-column: span 2;
     position: relative;
     z-index: 1;
-    box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
   #why-choose-890 .cs-icon {
     width: 3rem;
@@ -841,6 +844,7 @@
     z-index: 1;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
   }
   #why-choose-890 .cs-button-solid:before {
     content: "";
@@ -938,6 +942,7 @@
     position: relative;
     z-index: 1;
     text-align: center;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
   }
   #services-1264 .cs-button-solid:before {
     content: "";
@@ -982,10 +987,10 @@
     grid-column: span 12;
     /* set text align to center if content needs to be centrally aligned */
     text-align: left;
+    border: 2px solid black;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
   }
-  #services-1264 .cs-item:hover {
-    outline: 2px solid var(--primary);
-  }
+
   #services-1264 .cs-h2 {
     font-size: 1.25rem;
     line-height: 1.2em;
@@ -1181,6 +1186,7 @@
     z-index: 1;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
   }
   #cta-403 .cs-button-solid:before {
     content: "";
@@ -1323,6 +1329,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     border-radius: 0.25rem;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
   }
   #cta-1072 .cs-button-solid:before {
     content: "";
