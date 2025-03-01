@@ -333,6 +333,8 @@
     width: 100%;
     /* makes image act like a background image */
     object-fit: cover;
+    border: 2px solid black;
+    border-radius: 20px;
   }
   #sbs-1014 .cs-picture1 {
     width: 32.625em;

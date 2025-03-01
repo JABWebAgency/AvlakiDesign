@@ -694,6 +694,7 @@
     bottom: 0;
     left: 0;
     z-index: 1;
+    border-radius: 20px;
   }
   #quote-1688 .cs-background img {
     width: 100%;
@@ -702,6 +703,9 @@
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
   }
 }
 /* Tablet - 768px */
@@ -963,6 +967,8 @@
   #services-1628 .cs-item:hover .cs-picture img {
     opacity: 0.5;
     transform: scale(1.2);
+    border-radius: 20px;
+    border: 2px solid black;
   }
   #services-1628 .cs-link {
     text-decoration: none;
@@ -979,6 +985,8 @@
     overflow: hidden;
     display: block;
     position: relative;
+    border-radius: 20px;
+    border: 2px solid black;
   }
   #services-1628 .cs-picture img {
     position: absolute;
