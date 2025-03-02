@@ -758,6 +758,8 @@ html {
     cursor: pointer;
   }
   #cs-navigation .cs-dropdown:hover .cs-drop-ul {
+    margin-top: 0;
+
     transform: scaleY(1);
     opacity: 1;
     visibility: visible;
