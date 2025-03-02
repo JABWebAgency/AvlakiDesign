@@ -718,7 +718,7 @@
   }
   #quote-1688 .cs-quote {
     /* 16px - 25px */
-    font-size: clamp(1rem, 2.5vw, 10.5625rem);
+    font-size: clamp(1rem, 2.3vw, 10.5625rem);
     font-weight: 700;
     line-height: 1.2em;
     max-width: 78rem;
