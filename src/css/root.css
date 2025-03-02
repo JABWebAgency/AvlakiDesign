@@ -702,7 +702,7 @@ html {
     transform: scale(1);
   }
   #cs-navigation .cs-dropdown.cs-active .cs-drop-link {
-    padding-bottom: 1rem;
+    padding-bottom: 0.25rem;
     opacity: 1;
   }
   #cs-navigation .cs-dropdown .cs-li-link {
@@ -713,7 +713,7 @@ html {
     width: 1.5rem;
     height: auto;
     margin-left: 0.25rem;
-    filter: grayscale(1) brightness(1000%);
+    filter: grayscale(1) brightness(0%);
     position: absolute;
     top: 50%;
     right: -1.25rem;
@@ -734,10 +734,11 @@ html {
     gap: 0.75rem;
     transform: scale(0);
     transform-origin: top center;
-    transition: height 0.3s, opacity 0.3s, transform 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s;
     padding-left: 0;
     /* background-color: #489ef1; */
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    background-color: #0780f5;
   }
   #cs-navigation .cs-drop-li {
     list-style: none;
@@ -746,7 +747,7 @@ html {
   #cs-navigation .cs-li-link.cs-drop-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 2vw, 1.25rem);
-    color: black;
+    color: white;
   }
 }
 /* Desktop - 1024px */
@@ -772,6 +773,7 @@ html {
     width: 1.5rem;
     height: auto;
     display: inline-block;
+    /* filter: grayscale(1) invert(1) brightness(1112%); */
   }
   #cs-navigation .cs-drop-ul {
     min-width: 12.5rem;
