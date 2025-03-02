@@ -355,9 +355,6 @@
     right: 0;
     bottom: 0;
   }
-  #sbs-1014 .cs-topper {
-    font-size: 2em;
-  }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
@@ -1441,4 +1438,16 @@
     /* Makes img tag act as a background image */
     object-fit: cover;
   }
+}
+
+.cs-topper {
+  font-size: var(--topperFontSize);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: inherit;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  display: block;
 }
