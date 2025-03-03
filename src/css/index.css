@@ -65,6 +65,9 @@
     height: auto;
   }
   #hero-1617 .cs-title {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 8.4vw, 5.8125rem);
     font-weight: 700;
