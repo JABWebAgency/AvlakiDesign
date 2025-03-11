@@ -128,12 +128,14 @@ order: 1000
       </p>
     </div>
     <!--Form-->
+
     <form
       class="cs-form"
       id="cs-form-2061"
       name="Careers Form"
-      method="post"
-      netlify
+      action="https://www.formbackend.com/f/4e8ef6d855e880e7"
+      enctype="multipart/form-data"
+      method="POST"
     >
       <label class="cs-label cs-split">
         First Name *
@@ -155,6 +157,7 @@ order: 1000
           name="Last Name"
         />
       </label>
+
       <label class="cs-label cs-split">
         Email *
         <input
@@ -185,6 +188,19 @@ order: 1000
           name="Start Date"
         />
       </label>
+      <label class="cs-label">
+        What Are Your Qualifications?
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="qualifications-2061"
+          name="Qualifications"
+        />
+      </label>
+      <label class="cs-label-upload" for="my_file">Upload Resume</label>
+      <input type="file" id="my_file" name="my_file" />
+
       <div class="cs-wrapper" style="margin-top: 3rem">
         <button class="cs-button-solid cs-submit" type="submit">Apply</button>
       </div>
