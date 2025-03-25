@@ -3,129 +3,239 @@
 <!-- ============================================ -->
 
 <header id="cs-navigation">
-  <div class="cs-container">
-    <a href="/" class="cs-logo" aria-label="back to home">
+  <!--Nav Logo-->
+  <a href="/" class="cs-logo cs-desktop" aria-label="back to home">
+    <div class="cs-logo-wrapper">
+      <!--Default Logo-->
       <img
-        src="/assets/images/header/pro-oncall.png"
+        class="cs-default"
+        src="/assets/images/logos/Original on Transparent.webp"
         alt="logo"
-        width="210"
-        height="29"
+        width="250"
+        height="150"
         aria-hidden="true"
         decoding="async"
       />
-    </a>
-    <nav class="cs-nav" role="navigation">
-      <button class="cs-toggle" aria-label="mobile menu toggle">
-        <div class="cs-box" aria-hidden="true">
-          <span class="cs-line cs-line1" aria-hidden="true"></span>
-          <span class="cs-line cs-line2" aria-hidden="true"></span>
-          <span class="cs-line cs-line3" aria-hidden="true"></span>
-        </div>
-      </button>
-      <div class="cs-ul-wrapper">
-        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-          <li class="cs-li">
-            <a href="/" class="cs-li-link"> Home </a>
-          </li>
-          <li class="cs-li">
-            <a href="/about" class="cs-li-link"> About </a>
-          </li>
-          <li class="cs-li cs-dropdown" tabindex="0">
-            <span class="cs-li-link">
-              Services
-              <img
-                class="cs-drop-icon"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg"
-                alt="dropdown icon"
-                width="15"
-                height="15"
-                decoding="async"
-                aria-hidden="true"
-              />
-            </span>
-            <ul class="cs-drop-ul">
-              <li class="cs-drop-li">
-                <a href="/cybersecurity" class="cs-li-link cs-drop-link"
-                  >Cyber Security</a
-                >
-              </li>
-              <li class="cs-drop-li">
-                <a href="/itservices" class="cs-li-link cs-drop-link"
-                  >IT Services</a
-                >
-              </li>
-              <li class="cs-drop-li">
-                <a href="/voip" class="cs-li-link cs-drop-link">VoIP</a>
-              </li>
-              <li class="cs-drop-li">
-                <a href="/additional" class="cs-li-link cs-drop-link"
-                  >Additional Services</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us</a>
+    </div>
+  </a>
+  <div class="cs-middle">
+    <!--Top Bar-->
+    <div class="cs-top-bar">
+      <div class="cs-top-social">
+        <a href="{{ client.facebook }}" class="cs-social-link">
+          <img
+            class="cs-social-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg"
+            alt="logo"
+            width="12"
+            height="12"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+        <a href="{{ client.instagram }}" class="cs-social-link">
+          <img
+            class="cs-social-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg"
+            alt="logo"
+            width="12"
+            height="12"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
       </div>
-    </nav>
-    <a href="/contact" class="cs-button-solid">Contact Us</a>
+      <ul class="cs-location">
+        <li class="cs-item cs-remove">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-pin1.svg"
+            alt="icon"
+            width="20"
+            height="20"
+            aria-hidden="true"
+            decoding="async"
+          />
+          {{ client.address.city }}, {{ client.address.county }} {{
+          client.address.postcode }}
+        </li>
+        <li class="cs-item">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-clock1.svg"
+            alt="icon"
+            width="20"
+            height="20"
+            aria-hidden="true"
+            decoding="async"
+          />
+          M-F: 7:00am - 5:00pm
+        </li>
+      </ul>
+    </div>
+    <div class="cs-bottom-bar">
+      <a href="/" class="cs-logo cs-mobile" aria-label="back to home">
+        <div class="cs-logo-wrapper">
+          <!--Default Logo-->
+          <img
+            class="cs-default"
+            src="/assets/images/logos/Original on Transparent.webp"
+            alt="logo"
+            width="200"
+            height="50"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </div>
+      </a>
+      <!--Navigation List-->
+      <nav class="cs-nav" role="navigation">
+        <!--Mobile Nav Toggle-->
+        <button class="cs-toggle" aria-label="mobile menu toggle">
+          <div class="cs-box" aria-hidden="true">
+            <span class="cs-line cs-line1" aria-hidden="true"></span>
+            <span class="cs-line cs-line2" aria-hidden="true"></span>
+            <span class="cs-line cs-line3" aria-hidden="true"></span>
+          </div>
+        </button>
+        <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+        <div class="cs-ul-wrapper">
+          <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+            <li class="cs-li">
+              <a
+                href="/home2.html"
+                class="cs-li-link {% if page.url == '/about.html' %} cs-active {% endif %}"
+              >
+                Home 2
+              </a>
+            </li>
+            <li class="cs-li">
+              <a
+                href="/home3.html"
+                class="cs-li-link {% if page.url == '/about.html' %} cs-active {% endif %}"
+              >
+                Home 3
+              </a>
+            </li>
+            <li class="cs-li cs-dropdown" tabindex="0">
+              <span class="cs-li-link">
+                Services
+                <img
+                  class="cs-drop-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/arrow-dwon2.svg"
+                  alt="dropdown icon"
+                  width="24"
+                  height="24"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </span>
+              <ul class="cs-drop-ul">
+                <li class="cs-drop-li">
+                  <a
+                    href="/services/drainage.html"
+                    class="cs-li-link cs-drop-link {% if page.url == '/services/drainage.html' %} cs-active {% endif %}"
+                    >Structure Drainage</a
+                  >
+                </li>
+                <li class="cs-drop-li">
+                  <a
+                    href="/services/drains.html"
+                    class="cs-li-link cs-drop-link {% if page.url == '/services/drains.html' %} cs-active {% endif %}"
+                    >Yard Drainage</a
+                  >
+                </li>
+                <li class="cs-drop-li">
+                  <a
+                    href="/services/grading.html"
+                    class="cs-li-link cs-drop-link {% if page.url == '/services/grading.html' %} cs-active {% endif %}"
+                    >Grading and Excavating</a
+                  >
+                </li>
+                <li class="cs-drop-li">
+                  <a
+                    href="/services/wells.html"
+                    class="cs-li-link cs-drop-link {% if page.url == '/services/wells.html' %} cs-active {% endif %}"
+                    >Water Collection</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="cs-li">
+              <a
+                href="/about.html"
+                class="cs-li-link {% if page.url == '/about.html' %} cs-active {% endif %}"
+              >
+                About
+              </a>
+            </li>
+            <li class="cs-li">
+              <a
+                href="/careers.html"
+                class="cs-li-link {% if page.url == '/careers.html' %} cs-active {% endif %}"
+              >
+                Careers
+              </a>
+            </li>
+            <li class="cs-li">
+              <a
+                href="/contact.html"
+                class="cs-li-link {% if page.url == '/contact.html' %} cs-active {% endif %}"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a class="cs-nav-button cs-tablet" href="">
+        <picture class="cs-wrapper">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-phone1.svg"
+            alt="icon"
+            width="24"
+            height="24"
+          />
+        </picture>
+        <div class="cs-info">
+          <span class="cs-header">Call Us</span>
+          <span class="cs-link-content">(604) 555-0234</span>
+        </div>
+      </a>
+      <a href="/contact.html" class="cs-button-border">
+        Get In Touch
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/up-right-arrow.svg"
+          alt="icon"
+          width="20"
+          height="20"
+        />
+      </a>
+    </div>
+  </div>
+  <div class="cs-contact-wrapper">
+    <a class="cs-desktop-button" href="tel:{{ client.phone }}">
+      <picture class="cs-wrapper">
+        <img
+          class="cs-button-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-phone1.svg"
+          alt="icon"
+          width="24"
+          height="24"
+        />
+      </picture>
+      <div class="cs-info">
+        <span class="cs-header">Call Us</span>
+        <span class="cs-link-content">{{ client.phoneFormatted }}</span>
+      </div>
+    </a>
   </div>
 </header>
-
-<script>
-  // // Function to set the active link
-  // function setActiveLink() {
-  //   const currentPath = window.location.pathname;
-  //   const navLinks = document.querySelectorAll("#cs-navigation .cs-li-link");
-
-  //   navLinks.forEach(link => {
-  //     // Remove the active class from all links
-  //     link.classList.remove("cs-active");
-
-  //     // Check if the href matches the current path and add the active class
-  //     if (link.getAttribute("href") === currentPath) {
-  //       console.log('link', link)
-  //       link.classList.add("cs-active");
-  //     }
-  //   });
-  // }
-
-  // // Call the function on page load to highlight the active link
-  // setActiveLink();
-
-  // // add classes for mobile navigation toggling
-  // var CSbody = document.querySelector("body");
-  // const CSnavbarMenu = document.querySelector("#cs-navigation");
-  // const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
-
-  // CShamburgerMenu.addEventListener("click", function () {
-  //   CShamburgerMenu.classList.toggle("cs-active");
-  //   CSnavbarMenu.classList.toggle("cs-active");
-  //   CSbody.classList.toggle("cs-open");
-  //   // run the function to check the aria-expanded value
-  //   ariaExpanded();
-  // });
-
-  // // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
-  // function ariaExpanded() {
-  //   const csUL = document.querySelector("#cs-expanded");
-  //   const csExpanded = csUL.getAttribute("aria-expanded");
-
-  //   if (csExpanded === "false") {
-  //     csUL.setAttribute("aria-expanded", "true");
-  //   } else {
-  //     csUL.setAttribute("aria-expanded", "false");
-  //   }
-  // }
-
-  // // mobile nav toggle code
-  // const dropDowns = Array.from(
-  //   document.querySelectorAll("#cs-navigation .cs-dropdown")
-  // );
-  // for (const item of dropDowns) {
-  //   const onClick = () => {
-  //     item.classList.toggle("cs-active");
-  //   };
-  //   item.addEventListener("click", onClick);
-  // }
-</script>
