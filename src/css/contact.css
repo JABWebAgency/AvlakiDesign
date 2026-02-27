@@ -29,6 +29,12 @@
   }
   #contact-569 .cs-form-wrapper {
     width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #contact-569 .cs-form-wrapper iframe {
+    width: 100%;
+    border: none;
   }
   #contact-569 .cs-right {
     width: 100%;
