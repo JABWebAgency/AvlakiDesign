@@ -9,7 +9,7 @@
     <link rel="canonical" href="https://{{ client.domain }}{{ page.url }}" />
 
     <meta name="description" content="{{ description }}" />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="{{ keywords }}" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YEFXVZGW7"></script>
@@ -87,6 +87,109 @@
     <link rel="stylesheet" href="{{ preloadCSS }}" />
 
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "{{ client.name }}",
+      "description": "Expert drainage and excavation solutions serving the south metro Twin Cities area. Specializing in foundation drainage, French drains, curtain drains, grading, excavation, and water collection systems.",
+      "url": "https://{{ client.domain }}",
+      "telephone": "{{ client.phoneFormatted }}",
+      "email": "{{ client.email }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ client.address.lineOne }}",
+        "addressLocality": "{{ client.address.city }}",
+        "addressRegion": "{{ client.address.county }}",
+        "postalCode": "{{ client.address.postcode }}",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.5433,
+        "longitude": -93.5763
+      },
+      "areaServed": [
+        {% for area in client.serviceAreas %}
+        {
+          "@type": "City",
+          "name": "{{ area }}",
+          "addressRegion": "MN"
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ],
+      "sameAs": [
+        "{{ client.facebook }}",
+        "{{ client.instagram }}"
+      ],
+      "image": "https://{{ client.domain }}/assets/images/avlaki.png",
+      "priceRange": "$$",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Drainage and Excavation Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Foundation Drainage"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "French Drains"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Curtain Drains"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Downspout Drainage"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Grading"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Excavation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Exterior Sump Basins"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dry Well/Rain Garden"
+            }
+          }
+        ]
+      }
+    }
+    </script>
 
     <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
     <title>

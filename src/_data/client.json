@@ -11,5 +11,6 @@
     "county": "MN",
     "postcode": "56071"
   },
-  "domain": "www.avlakidesign.com"
+  "domain": "www.avlakidesign.com",
+  "serviceAreas": ["Shakopee", "Prior Lake", "Chaska", "Lakeville", "Minnetonka", "Edina", "Plymouth", "Waconia", "Savage", "New Prague", "Belle Plaine", "Jordan", "Carver", "Heidelberg", "Victoria", "Burnsville", "Elko New Market"]
 }
