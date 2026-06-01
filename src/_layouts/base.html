@@ -243,15 +243,33 @@
           }
         }
 
-        // Form submissions
+        // Form submissions — hold the form briefly so gtag can flush the
+        // event before formbackend's redirect navigates the browser away.
         document.querySelectorAll("form.lead-form").forEach(function (form) {
-          form.addEventListener("submit", function () {
-            track("generate_lead", {
-              form_id: form.id || "",
-              form_name: form.getAttribute("name") || "",
-              form_location: form.dataset.formLocation || location.pathname,
-              page_path: location.pathname,
-            });
+          form.addEventListener("submit", function (e) {
+            if (form.dataset.trackingFired === "1") return; // second pass: let it submit
+            e.preventDefault();
+            var submitted = false;
+            function go() {
+              if (submitted) return;
+              submitted = true;
+              form.dataset.trackingFired = "1";
+              form.submit();
+            }
+            if (typeof gtag === "function") {
+              gtag("event", "generate_lead", {
+                form_id: form.id || "",
+                form_name: form.getAttribute("name") || "",
+                form_location: form.dataset.formLocation || location.pathname,
+                page_path: location.pathname,
+                event_callback: go,
+                transport_type: "beacon",
+              });
+              // Safety net if gtag never fires the callback
+              setTimeout(go, 1200);
+            } else {
+              go();
+            }
           });
         });
 
