@@ -85,6 +85,7 @@
     <!-- Loading in page specific CSS sheets from css block -->
     <link rel="stylesheet" href="/css/critical.css" />
     <link rel="stylesheet" href="{{ preloadCSS }}" />
+    <link rel="stylesheet" href="/css/quick-quote.css" />
 
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
@@ -212,7 +213,7 @@
 
     <!--
         This script adds a class to the body after scrolling 100px
-        and we used these body.scroll styles to create some on scroll 
+        and we used these body.scroll styles to create some on scroll
         animations with the navbar
     -->
     <script defer>
@@ -223,6 +224,55 @@
         } else {
           document.querySelector("body").classList.remove("scroll");
         }
+      });
+    </script>
+
+    <!--
+        Lead / conversion tracking. Fires GA4 events that should be
+        marked as Key Events in GA4 admin and imported into Google Ads
+        as the conversion source.
+        - generate_lead: fires when any form with class "lead-form" is submitted
+        - phone_click:   fires when a tel: link is clicked
+        - email_click:   fires when a mailto: link is clicked
+    -->
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        function track(name, params) {
+          if (typeof gtag === "function") {
+            gtag("event", name, params || {});
+          }
+        }
+
+        // Form submissions
+        document.querySelectorAll("form.lead-form").forEach(function (form) {
+          form.addEventListener("submit", function () {
+            track("generate_lead", {
+              form_id: form.id || "",
+              form_name: form.getAttribute("name") || "",
+              form_location: form.dataset.formLocation || location.pathname,
+              page_path: location.pathname,
+            });
+          });
+        });
+
+        // Phone + email click tracking
+        document.addEventListener("click", function (e) {
+          var a = e.target.closest("a");
+          if (!a) return;
+          var href = a.getAttribute("href") || "";
+          if (href.indexOf("tel:") === 0) {
+            track("phone_click", {
+              phone_number: href.replace("tel:", ""),
+              link_text: (a.textContent || "").trim().slice(0, 50),
+              page_path: location.pathname,
+            });
+          } else if (href.indexOf("mailto:") === 0) {
+            track("email_click", {
+              email: href.replace("mailto:", ""),
+              page_path: location.pathname,
+            });
+          }
+        });
       });
     </script>
   </body>

@@ -172,7 +172,7 @@
           </ul>
         </div>
       </nav>
-      <a class="cs-nav-button cs-tablet" href="">
+      <a class="cs-nav-button cs-tablet" href="tel:{{ client.phone }}">
         <picture class="cs-wrapper">
           <img
             class="cs-icon"
@@ -186,7 +186,7 @@
         </picture>
         <div class="cs-info">
           <span class="cs-header">Call Us</span>
-          <span class="cs-link-content">(604) 555-0234</span>
+          <span class="cs-link-content">{{ client.phoneFormatted }}</span>
         </div>
       </a>
       <a href="/contact" class="cs-button-border">
